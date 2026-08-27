@@ -27,7 +27,7 @@ export default function Footer() {
                       decoding={"async"}
                       width={"400"}
                       height={"205"}
-                      src={"image/Group 1171275761.png"}
+                      src={"image/Group 1171275756.png"}
                       alt={""}
                       title={""}
                       className={"wp-image-1488"}

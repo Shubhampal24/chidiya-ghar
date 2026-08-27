@@ -77,30 +77,30 @@ button, input, select, textarea { font: inherit; }
 .diviBtn {
   border: 1px solid var(--dark-brown); background: var(--cream); color: var(--dark-brown);
   font-family: 'Playfair Display', serif; font-weight: 600; font-size: 16px;
-  padding: 10px 30px; box-shadow: 0px 0px 0px 5px var(--cream);
-  transition: box-shadow 300ms ease; display: inline-flex; cursor: pointer; border-radius: 0;
+  padding: 10px 30px; 
+  transition: all 300ms ease; display: inline-flex; cursor: pointer; border-radius: 25px;
 }
-.diviBtn:hover { box-shadow: 0px 0px 0px 8px var(--cream); color: var(--dark-brown); }
+.diviBtn:hover { color: var(--dark-brown); opacity: 0.9; }
 
 .diviBtnDark {
   border: 1px solid var(--cream); background: var(--dark-brown); color: var(--cream);
   font-family: 'Playfair Display', serif; font-weight: 600; font-size: 16px;
-  padding: 10px 30px; box-shadow: 0px 0px 0px 5px var(--dark-brown);
-  transition: box-shadow 300ms ease; display: inline-flex; cursor: pointer; border-radius: 0;
+  padding: 10px 30px; 
+  transition: all 300ms ease; display: inline-flex; cursor: pointer; border-radius: 25px;
 }
-.diviBtnDark:hover { box-shadow: 0px 0px 0px 8px var(--dark-brown); color: var(--cream); }
+.diviBtnDark:hover { color: var(--cream); opacity: 0.9; }
 
 .diviBtnBrown {
   border: 1px solid var(--cream); background: var(--brown); color: var(--cream);
   font-family: 'Playfair Display', serif; font-weight: 600; font-size: 16px;
-  padding: 10px 30px; box-shadow: 0px 0px 0px 5px var(--brown);
-  transition: box-shadow 300ms ease; display: inline-flex; cursor: pointer; border-radius: 0;
+  padding: 10px 30px; 
+  transition: all 300ms ease; display: inline-flex; cursor: pointer; border-radius: 25px;
 }
-.diviBtnBrown:hover { box-shadow: 0px 0px 0px 8px var(--brown); color: var(--cream); }
+.diviBtnBrown:hover { color: var(--cream); opacity: 0.9; }
 
 .outlineBtn {
   background: transparent; border: 1px solid var(--brown); color: var(--brown);
-  padding: 10px 20px; display: inline-flex; cursor: pointer; transition: 0.3s;
+  padding: 10px 20px; display: inline-flex; cursor: pointer; transition: 0.3s; border-radius: 25px;
 }
 .outlineBtn:hover { background: var(--brown); color: var(--white); }
 
@@ -132,23 +132,23 @@ button, input, select, textarea { font: inherit; }
 .heroContent p { font-size: 17px; line-height: 1.6; max-width: 500px; margin-bottom: 40px; font-weight: 300; }
 
 /* Booking */
-.bookingWrap { background: var(--cream); padding: 30px 40px; box-shadow: 0 5px 30px rgba(0,0,0,0.15); max-width: 1050px; margin: auto; }
+.bookingWrap { background: var(--cream); padding: 30px 40px; box-shadow: 0 5px 30px rgba(0,0,0,0.15); max-width: 1050px; margin: auto; border-radius: 25px; }
 .booking { display: grid; grid-template-columns: 1fr 1fr 0.5fr 0.5fr auto; gap: 15px; align-items: end; }
 .field label { display: block; font-size: 12px; font-weight: 600; color: var(--ink); margin-bottom: 8px; }
 .input, select {
   height: 48px; border: 1px solid var(--tan); background: var(--white);
-  width: 100%; padding: 0 15px; color: var(--muted); border-radius: 0; font-size: 14px;
+  width: 100%; padding: 0 15px; color: var(--muted); border-radius: 25px; font-size: 14px;
 }
 .input input { border: 0; outline: 0; width: 100%; background: transparent; font-size: 14px; margin-left: 10px; }
-.booking .diviBtnDark { height: 48px; padding: 0 30px; margin-bottom: 0px; font-size: 15px; box-shadow: 0px 0px 0px 3px var(--dark-brown); }
-.booking .diviBtnDark:hover { box-shadow: 0px 0px 0px 5px var(--dark-brown); }
+.booking .diviBtnDark { height: 48px; padding: 0 30px; margin-bottom: 0px; font-size: 15px; border-radius: 25px; }
+.booking .diviBtnDark:hover { opacity: 0.9; }
 
 /* Intro (Two Col) */
 .twoCol {
   display: grid; grid-template-columns: 1fr 1fr; gap: 60px;
   align-items: center; padding: 100px 0; background: var(--white);
 }
-.roundedImg { width: 100%; aspect-ratio: 1; object-fit: cover; }
+.roundedImg { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 25px; }
 .intro p { color: var(--ink); line-height: 1.6; font-size: 16px; margin-bottom: 30px; }
 
 /* Facilities */
@@ -162,8 +162,8 @@ button, input, select, textarea { font: inherit; }
 .roomSection { padding: 100px 0; background: var(--cream); }
 .roomSection .sectionTitle h2 { color: var(--brown); }
 .roomGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
-.roomCard { border: 1px solid var(--brown); background: var(--white); text-align: center; }
-.roomCard > img { width: 100%; height: 280px; object-fit: cover; }
+.roomCard { border: 1px solid var(--brown); background: var(--white); text-align: center; border-radius: 25px; }
+.roomCard > img { width: 100%; height: 280px; object-fit: cover; border-radius: 25px; }
 .roomBody { padding: 30px; }
 .roomBody h3 { font-family: "Playfair Display", serif; font-size: 26px; color: var(--ink); margin: 0 0 20px; }
 .roomBody .diviBtnDark { margin-top: 20px; }
@@ -171,8 +171,8 @@ button, input, select, textarea { font: inherit; }
 /* Services */
 .services { padding: 100px 0; background: var(--white); display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 60px; align-items: center; }
 .serviceCards { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
-.service { border: 1px solid var(--cream); background: var(--white); text-align: center; }
-.service img { width: 100%; height: 220px; object-fit: cover; }
+.service { border: 1px solid var(--cream); background: var(--white); text-align: center; border-radius: 25px; }
+.service img { width: 100%; height: 220px; object-fit: cover; border-radius: 25px; }
 .service > div { padding: 25px; }
 .service h3 { font-family: "Playfair Display", serif; font-size: 22px; color: var(--brown); margin: 0 0 10px; }
 
@@ -183,7 +183,7 @@ button, input, select, textarea { font: inherit; }
 }
 .offerInner {
   background: var(--cream); border: 1px solid var(--brown); box-shadow: 0px 0px 0px 20px var(--cream);
-  padding: 50px; max-width: 600px; text-align: left; position: relative; z-index: 2; margin-left: auto; margin-right: auto;
+  padding: 50px; max-width: 600px; text-align: left; position: relative; z-index: 2; margin-left: auto; margin-right: auto; border-radius: 25px;
 }
 .offerInner h2 { font-family: "Playfair Display", serif; font-size: 50px; color: var(--brown); margin: 0 0 10px; font-weight: 900; }
 .offerInner h3 { font-family: "Playfair Display", serif; font-size: 30px; color: var(--ink); margin: 0 0 20px; }
@@ -192,7 +192,7 @@ button, input, select, textarea { font: inherit; }
 .gallery { padding: 100px 0; background: var(--white); text-align: center; }
 .gallery .sectionTitle { display: flex; flex-direction: column; align-items: center; }
 .galleryGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-top: 40px; }
-.galleryGrid img { width: 100%; aspect-ratio: 1.2; object-fit: cover; transition: 0.3s; }
+.galleryGrid img { width: 100%; aspect-ratio: 1.2; object-fit: cover; transition: 0.3s; border-radius: 25px; }
 .galleryGrid img:hover { opacity: 0.8; }
 
 /* Team */
@@ -217,7 +217,7 @@ button, input, select, textarea { font: inherit; }
 .news { background: var(--white); padding: 100px 0; }
 .news .sectionTitle { display: flex; flex-direction: column; align-items: center; text-align: center; margin-bottom: 50px; }
 .newsGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
-.news article { border: 1px solid var(--cream); background: var(--white); padding: 25px; text-align: left; }
+.news article { border: 1px solid var(--cream); background: var(--white); padding: 25px; text-align: left; border-radius: 25px; }
 .date { font-size: 13px; color: var(--terracotta); font-weight: 700; margin-bottom: 15px; }
 .news h3 { font-family: "Playfair Display", serif; font-size: 24px; color: var(--ink); margin: 0 0 15px; }
 .news p { font-size: 15px; line-height: 1.6; color: var(--ink); margin-bottom: 20px; }
@@ -533,6 +533,7 @@ footer { background: var(--cream); color: var(--ink); padding: 80px 0 0; }
   display: flex !important;
   flex-direction: column !important;
   transition: transform 0.25s ease, box-shadow 0.25s ease !important;
+  border-radius: 25px !important;
 }
 
 .dh-custom-single-acc:hover {
@@ -558,6 +559,7 @@ footer { background: var(--cream); color: var(--ink); padding: 80px 0 0; }
   object-fit: cover !important;
   display: block !important;
   transition: transform 0.35s ease !important;
+  border-radius: 25px !important;
 }
 
 .dh-custom-single-acc:hover .mphb-loop-room-thumbnail img {
@@ -585,7 +587,7 @@ footer { background: var(--cream); color: var(--ink); padding: 80px 0 0; }
   cursor: pointer !important;
   transition: all 0.2s ease !important;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08) !important;
-  border-radius: 0 !important;
+  border-radius: 25px !important;
   line-height: normal !important;
   display: inline-block !important;
 }
@@ -796,6 +798,7 @@ footer { background: var(--cream); color: var(--ink); padding: 80px 0 0; }
   object-fit: cover !important;
   display: block !important;
   transition: transform 0.35s ease, opacity 0.25s ease !important;
+  border-radius: 25px !important;
 }
 
 .dh-gallery-item:hover img {
