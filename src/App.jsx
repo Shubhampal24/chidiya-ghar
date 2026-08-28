@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header.jsx";
 import HeroSection from "./components/HeroSection.jsx";
 import WhoWeAreSection from "./components/WhoWeAreSection.jsx";
@@ -12,15 +13,17 @@ import TestimonialsSection from "./components/TestimonialsSection.jsx";
 import NewsSection from "./components/NewsSection.jsx";
 import Footer from "./components/Footer.jsx";
 import PluginAssets from "./components/PluginAssets.jsx";
+import {
+  AccommodationsPage,
+  AboutUsPage,
+  BlogPage,
+  ContactUsPage,
+  SearchResultsPage,
+  OurServicesPage,
+  MyAccountPage,
+} from "./pages/Pages.jsx";
 
-export default function App() {
-  // The original WordPress/Divi export ships a batch of third-party plugin
-  // scripts (jQuery, MotoPress hotel booking, Divi builder motion/sticky
-  // scripts, mediaelement, etc). They're rendered as real <script> tags via
-  // PluginAssets, but scripts written into the DOM through
-  // dangerouslySetInnerHTML are not auto-executed by the browser, so each
-  // one is re-created and re-inserted here to force execution -- exactly as
-  // the original site's bootstrap did.
+function HomePage() {
   useEffect(() => {
     const root = document.getElementById("root");
     if (!root) return;
@@ -36,7 +39,7 @@ export default function App() {
 
         if (script.src) {
           newScript.onload = resolve;
-          newScript.onerror = resolve; // continue even if one fails
+          newScript.onerror = resolve;
         } else {
           newScript.innerHTML = script.innerHTML;
         }
@@ -94,5 +97,22 @@ export default function App() {
       </div>
       <PluginAssets />
     </div>
+  );
+}
+
+export default function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/accommodations" element={<AccommodationsPage />} />
+      <Route path="/about-us" element={<AboutUsPage />} />
+      <Route path="/blog" element={<BlogPage />} />
+      <Route path="/contact-us" element={<ContactUsPage />} />
+      <Route path="/search-results" element={<SearchResultsPage />} />
+      <Route path="/our-services" element={<OurServicesPage />} />
+      <Route path="/my-account" element={<MyAccountPage />} />
+      {/* Catch-all: redirect unknown paths back to home */}
+      <Route path="*" element={<HomePage />} />
+    </Routes>
   );
 }

@@ -1,7 +1,12 @@
 export default function WhoWeAreSection() {
   return (
     <>
-      <div className={"et_pb_section et_pb_section_1 et_section_regular"}>
+      <div
+        className={"et_pb_section et_pb_section_1 et_section_regular"}
+        style={{
+          background: "linear-gradient(rgba(253, 251, 248, 0.94), rgba(253, 251, 248, 0.94)), url('image/acc-2.png') center/cover no-repeat",
+        }}
+      >
         {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
         <div className={"et_pb_row et_pb_row_2 et_pb_gutters2"}>
           {"\n\t\t\t\t"}
@@ -43,7 +48,7 @@ export default function WhoWeAreSection() {
             >
               {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
               <div className={"et_pb_text_inner"}>
-                <p>{"Best Stay in the Town"}</p>
+                <p>{"Welcome to Chidiya Ghar"}</p>
               </div>
               {"\n\t\t\t"}
             </div>
@@ -54,15 +59,10 @@ export default function WhoWeAreSection() {
             >
               {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
               <div className={"et_pb_text_inner"}>
-                <h2>{"chidiya ghar – Who we are"}</h2>
+                <h2>{"A Home With Character"}</h2>
                 {"\n"}
                 <p>
-                  <strong>{"Lorem Ipsum"}</strong>
-                  <span>
-                    {
-                      " is simply a dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
-                    }
-                  </span>
+                  {"Chidiya Ghar is thoughtfully designed to bring together comfort, character and a sense of belonging. Every space is created to feel warm, welcoming and effortlessly livable. Named after the Hindi word for \"Bird House,\" Chidiya Ghar is a home that breathes — alive with natural light, botanical details and the quiet warmth of a place designed with love."}
                 </p>
               </div>
               {"\n\t\t\t"}
@@ -78,7 +78,7 @@ export default function WhoWeAreSection() {
                 href={"#"}
                 data-icon={""}
               >
-                {"Know More"}
+                {"Discover Our Spaces"}
               </a>
               {"\n\t\t\t"}
             </div>

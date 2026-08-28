@@ -43,12 +43,12 @@ button, input, select, textarea { font: inherit; }
 
 /* Header */
 .header {
-  min-height: 70px;
+  min-height: 54px;
   background: var(--cream);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 max(24px, calc((100% - 1200px) / 2));
+  padding: 4px max(24px, calc((100% - 1200px) / 2));
   position: relative;
   z-index: 20;
   box-shadow: 0 2px 60px 0 rgba(0,0,0,0.09);
@@ -58,15 +58,16 @@ button, input, select, textarea { font: inherit; }
 .footerLogo img { height: 70px; margin-bottom: 20px; }
 
 /* Nav */
-.nav { display: flex; align-items: center; gap: 30px; font-size: 15px; font-weight: 400; color: var(--ink); }
+.nav { display: flex; align-items: center; gap: 22px; font-size: 14px; font-weight: 500; color: var(--ink); letter-spacing: 0.3px; }
 .nav > a, .navDrop > button {
-  height: 70px; display: flex; align-items: center; gap: 5px;
+  height: 54px; display: flex; align-items: center; gap: 4px;
   border: 0; background: transparent; color: var(--ink); cursor: pointer;
+  padding: 0 4px; white-space: nowrap;
 }
 .nav > a.active, .nav > a:hover, .navDrop > button:hover { color: var(--terracotta); }
 .navDrop { position: relative; }
 .dropdown {
-  position: absolute; top: 70px; left: -14px; background: var(--cream);
+  position: absolute; top: 100%; left: -14px; background: var(--cream);
   min-width: 200px; box-shadow: 0 12px 35px rgba(0,0,0,.13); display: none;
 }
 .dropdown.show, .navDrop:hover .dropdown { display: block; }
@@ -138,8 +139,15 @@ button, input, select, textarea { font: inherit; }
 .input, select {
   height: 48px; border: 1px solid var(--tan); background: var(--white);
   width: 100%; padding: 0 15px; color: var(--muted); border-radius: 25px; font-size: 14px;
+  display: flex; align-items: center; justify-content: center;
 }
-.input input { border: 0; outline: 0; width: 100%; background: transparent; font-size: 14px; margin-left: 10px; }
+.input input {
+  border: 0; outline: 0; width: 100%; height: 100%; background: transparent;
+  font-size: 14px; margin: 0; text-align: center;
+}
+.input input::placeholder {
+  text-align: center;
+}
 .booking .diviBtnDark { height: 48px; padding: 0 30px; margin-bottom: 0px; font-size: 15px; border-radius: 25px; }
 .booking .diviBtnDark:hover { opacity: 0.9; }
 
@@ -511,8 +519,8 @@ footer { background: var(--cream); color: var(--ink); padding: 80px 0 0; }
 .dh-acc-card-col,
 .dh-custom-5-cards-row > div {
   flex: 1 1 0 !important;
-  width: 19% !important;
-  max-width: 20% !important;
+  width: 23% !important;
+  max-width: 24% !important;
   min-width: 0 !important;
   margin: 0 !important;
   float: none !important;
@@ -537,8 +545,9 @@ footer { background: var(--cream); color: var(--ink); padding: 80px 0 0; }
 }
 
 .dh-custom-single-acc:hover {
-  transform: translateY(-3px) !important;
-  box-shadow: 0 10px 22px rgba(94, 48, 35, 0.12) !important;
+  transform: translateY(-5px) scale(1.02) !important;
+  box-shadow: 0 15px 35px rgba(94, 48, 35, 0.15) !important;
+  z-index: 10 !important;
 }
 
 /* Image Thumbnail Container */
@@ -866,6 +875,7 @@ footer { background: var(--cream); color: var(--ink); padding: 80px 0 0; }
   background: #F3E9DC !important;
   padding: 20px 24px !important;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+  border-radius: 25px !important;
 }
 
 .horizontal-search-form .mphb_sc_search-form {
@@ -919,10 +929,10 @@ p.mphb-required-fields-tip,
 .horizontal-search-form .mphb_sc_search-form select {
   height: 48px !important;
   line-height: 46px !important;
-  padding: 0 14px !important;
+  padding: 0 16px !important;
   background: #FFFFFF !important;
   border: 1px solid #DAB49D !important;
-  border-radius: 0px !important;
+  border-radius: 25px !important;
   font-family: 'DM Sans', Arial, sans-serif !important;
   font-size: 14px !important;
   color: #5E3023 !important;
@@ -948,14 +958,14 @@ p.mphb-required-fields-tip,
 .horizontal-search-form .mphb_sc_search-wrapper .button,
 .horizontal-search-form .mphb_sc_search-form input[type="submit"] {
   height: 48px !important;
-  line-height: 40px !important;
+  line-height: 48px !important;
   padding: 0 20px !important;
   margin: 0 !important;
   background-color: #5E3023 !important;
   color: #F3E9DC !important;
-  border: 4px solid #5E3023 !important;
-  box-shadow: inset 0 0 0 1px #F3E9DC !important;
-  border-radius: 0px !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 25px !important;
   font-family: 'Playfair Display', Georgia, serif !important;
   font-size: 18px !important;
   font-weight: 500 !important;
@@ -972,8 +982,8 @@ p.mphb-required-fields-tip,
 .horizontal-search-form .mphb_sc_search-wrapper .button:hover,
 .horizontal-search-form .mphb_sc_search-form input[type="submit"]:hover {
   background-color: #C08552 !important;
-  border-color: #C08552 !important;
-  box-shadow: inset 0 0 0 1px #FFFFFF !important;
+  border: none !important;
+  box-shadow: none !important;
   color: #FFFFFF !important;
 }
 
@@ -1201,12 +1211,374 @@ p.mphb-required-fields-tip,
   }
 }
 
+/* ====================================================
+   Global 25px Rounded Edges (Buttons, Fields, Boxes)
+   ==================================================== */
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+.et_pb_button,
+.et_pb_more_button,
+.button,
+.diviBtn,
+.diviBtnDark,
+.diviBtnBrown,
+.outlineBtn,
+.dh-page-btn,
+.mphb-book-button,
+.mphb-confirm-reservation,
+.mphb-reserve-btn,
+.mphb_sc_search-submit-button,
+.horizontal-search-form .mphb_sc_search-wrapper .button,
+.horizontal-search-form .mphb_sc_search-form input[type="submit"],
+.et_pb_newsletter_button,
+body #page-container .et_pb_section .et_pb_slider_0.et_pb_slider .et_pb_more_button.et_pb_button,
+body #page-container .et_pb_section .et_pb_slider_1.et_pb_slider .et_pb_more_button.et_pb_button,
+body #page-container .et_pb_section .et_pb_button_0,
+body #page-container .et_pb_section .et_pb_button_1 {
+  border-radius: 25px !important;
+  box-shadow: none !important;
+  border: none !important;
+  outline: none !important;
+}
 
+body #page-container .et_pb_section .et_pb_slider_0.et_pb_slider .et_pb_more_button.et_pb_button:hover,
+body #page-container .et_pb_section .et_pb_slider_1.et_pb_slider .et_pb_more_button.et_pb_button:hover,
+body #page-container .et_pb_section .et_pb_button_0:hover,
+body #page-container .et_pb_section .et_pb_button_1:hover {
+  box-shadow: none !important;
+  border: none !important;
+  outline: none !important;
+}
 
+/* All inputs, textboxes, selects, datepickers, textareas */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="url"],
+input[type="date"],
+input[type="number"],
+select,
+textarea,
+.input,
+.mphb-datepick,
+.et_pb_newsletter_form .input,
+.horizontal-search-form .mphb_sc_search-form input[type="text"],
+.horizontal-search-form .mphb_sc_search-form select {
+  border-radius: 25px !important;
+}
 
+/* All cards, boxes, wrappers, search forms, containers */
+.horizontal-search-form .mphb_sc_search-wrapper.horizontal-center,
+.horizontal-search-form .mphb_sc_search-wrapper,
+.mphb-divi-availability-search_0,
+.bookingWrap,
+.roomCard,
+.service,
+.dh-custom-single-acc,
+.dh-news-card,
+.dh-gallery-item,
+.dh-gallery-item img,
+.dh-custom-single-acc .mphb-loop-room-thumbnail,
+.dh-custom-single-acc .mphb-loop-room-thumbnail img,
+.dh-custom-price-acc .mphb-regular-price,
+.et_pb_team_member,
+.et_pb_team_member_0.et_pb_team_member,
+.et_pb_team_member_1.et_pb_team_member,
+.et_pb_team_member_2.et_pb_team_member,
+.et_pb_team_member_3.et_pb_team_member,
+.et_pb_column_10,
+.et_pb_column_11,
+.et_pb_column_12,
+.et_pb_column_14,
+.et_pb_column_15,
+.et_pb_column_17,
+.mphb-service,
+.mphb_sc_services-wrapper,
+.mphb-loop-service-thumbnail,
+.mphb-loop-service-thumbnail img,
+.et_pb_blog_0 .et_pb_blog_grid .et_pb_post,
+.news article,
+.dropdown,
+.sub-menu {
+  border-radius: 25px !important;
+}
 
+/* Fix overlapping dotted divider lines site-wide */
+.et_pb_divider:before,
+.et_pb_divider:after,
+.et_pb_divider_0:before,
+.et_pb_divider_0:after,
+.et_pb_divider_1:before,
+.et_pb_divider_1:after,
+.et_pb_divider_2:before,
+.et_pb_divider_2:after,
+.et_pb_divider_3:before,
+.et_pb_divider_3:after {
+  display: none !important;
+  content: none !important;
+}
 
+.et_pb_divider {
+  border: none !important;
+  background: none !important;
+  height: auto !important;
+  margin: 0 auto !important;
+}
 
+.et_pb_divider_internal,
+.dh-news-divider,
+.dottedDivider,
+.dottedDividerDark {
+  border-top: 3px dotted #DAB49D !important;
+  width: 60px !important;
+  background: #f7f3ed !important;
+}
 
+.dh-news-img-wrap img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+  transition: transform 0.3s ease !important;
+}
 
+.dh-news-card:hover .dh-news-img-wrap img {
+  transform: scale(1.04) !important;
+}
 
+.dh-news-body {
+  padding: 22px 20px 24px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  flex: 1 1 auto !important;
+}
+
+.dh-news-card-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 19px !important;
+  font-weight: 700 !important;
+  line-height: 1.35 !important;
+  margin: 0 0 8px 0 !important;
+}
+
+.dh-news-card-title a {
+  color: #000000 !important;
+  text-decoration: none !important;
+  transition: color 0.2s ease !important;
+}
+
+.dh-news-card-title a:hover {
+  color: #C08552 !important;
+}
+
+.dh-news-meta {
+  font-family: 'DM Sans', Arial, sans-serif !important;
+  font-size: 13px !important;
+  color: #C08552 !important;
+  margin: 0 0 14px 0 !important;
+  font-weight: 500 !important;
+}
+
+.dh-news-tag {
+  color: #C08552 !important;
+  text-decoration: none !important;
+}
+
+.dh-news-excerpt {
+  font-family: 'DM Sans', Arial, sans-serif !important;
+  font-size: 13.5px !important;
+  line-height: 1.65 !important;
+  color: #444444 !important;
+  margin: 0 !important;
+}
+
+@media (max-width: 900px) {
+  .dh-news-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+  .dh-news-img-wrap {
+    height: 240px !important;
+  }
+}
+
+/* ====================================================
+   Global 25px Rounded Edges (Buttons, Fields, Boxes)
+   ==================================================== */
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+.et_pb_button,
+.et_pb_more_button,
+.button,
+.diviBtn,
+.diviBtnDark,
+.diviBtnBrown,
+.outlineBtn,
+.dh-page-btn,
+.mphb-book-button,
+.mphb-confirm-reservation,
+.mphb-reserve-btn,
+.mphb_sc_search-submit-button,
+.horizontal-search-form .mphb_sc_search-wrapper .button,
+.horizontal-search-form .mphb_sc_search-form input[type="submit"],
+.et_pb_newsletter_button,
+body #page-container .et_pb_section .et_pb_slider_0.et_pb_slider .et_pb_more_button.et_pb_button,
+body #page-container .et_pb_section .et_pb_slider_1.et_pb_slider .et_pb_more_button.et_pb_button,
+body #page-container .et_pb_section .et_pb_button_0,
+body #page-container .et_pb_section .et_pb_button_1,
+body #page-container .et_pb_section .et_pb_button_0_tb_footer {
+  border-radius: 25px !important;
+  border: none !important;
+  outline: none !important;
+  transition: all 0.3s ease !important;
+  cursor: pointer !important;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+.et_pb_button:hover,
+.et_pb_more_button:hover,
+.button:hover,
+.diviBtn:hover,
+.diviBtnDark:hover,
+.diviBtnBrown:hover,
+.outlineBtn:hover,
+.dh-page-btn:hover,
+.mphb-book-button:hover,
+.mphb-confirm-reservation:hover,
+.mphb-reserve-btn:hover,
+.mphb_sc_search-submit-button:hover,
+.horizontal-search-form .mphb_sc_search-wrapper .button:hover,
+.horizontal-search-form .mphb_sc_search-form input[type="submit"]:hover,
+.et_pb_newsletter_button:hover,
+body #page-container .et_pb_section .et_pb_slider_0.et_pb_slider .et_pb_more_button.et_pb_button:hover,
+body #page-container .et_pb_section .et_pb_slider_1.et_pb_slider .et_pb_more_button.et_pb_button:hover,
+body #page-container .et_pb_section .et_pb_button_0:hover,
+body #page-container .et_pb_section .et_pb_button_1:hover,
+body #page-container .et_pb_section .et_pb_button_0_tb_footer:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 22px rgba(94, 48, 35, 0.32) !important;
+  filter: brightness(1.1) !important;
+}
+
+/* All inputs, textboxes, selects, datepickers, textareas */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="url"],
+input[type="date"],
+input[type="number"],
+select,
+textarea,
+.input,
+.mphb-datepick,
+.et_pb_newsletter_form .input,
+.horizontal-search-form .mphb_sc_search-form input[type="text"],
+.horizontal-search-form .mphb_sc_search-form select {
+  border-radius: 25px !important;
+}
+
+/* All cards, boxes, wrappers, search forms, containers */
+.horizontal-search-form .mphb_sc_search-wrapper.horizontal-center,
+.horizontal-search-form .mphb_sc_search-wrapper,
+.mphb-divi-availability-search_0,
+.bookingWrap,
+.roomCard,
+.service,
+.dh-custom-single-acc,
+.dh-news-card,
+.dh-gallery-item,
+.dh-gallery-item img,
+.dh-custom-single-acc .mphb-loop-room-thumbnail,
+.dh-custom-single-acc .mphb-loop-room-thumbnail img,
+.dh-custom-price-acc .mphb-regular-price,
+.et_pb_team_member,
+.et_pb_team_member_0.et_pb_team_member,
+.et_pb_team_member_1.et_pb_team_member,
+.et_pb_team_member_2.et_pb_team_member,
+.et_pb_team_member_3.et_pb_team_member,
+.et_pb_column_10,
+.et_pb_column_11,
+.et_pb_column_12,
+.et_pb_column_14,
+.et_pb_column_15,
+.et_pb_column_17,
+.mphb-service,
+.mphb_sc_services-wrapper,
+.mphb-loop-service-thumbnail,
+.mphb-loop-service-thumbnail img,
+.et_pb_blog_0 .et_pb_blog_grid .et_pb_post,
+.news article,
+.dropdown,
+.sub-menu {
+  border-radius: 25px !important;
+}
+
+/* Fix overlapping dotted divider lines site-wide */
+.et_pb_divider:before,
+.et_pb_divider:after,
+.et_pb_divider_0:before,
+.et_pb_divider_0:after,
+.et_pb_divider_1:before,
+.et_pb_divider_1:after,
+.et_pb_divider_2:before,
+.et_pb_divider_2:after,
+.et_pb_divider_3:before,
+.et_pb_divider_3:after {
+  display: none !important;
+  content: none !important;
+}
+
+.et_pb_divider {
+  border: none !important;
+  background: none !important;
+  height: auto !important;
+  margin: 0 auto !important;
+}
+
+.et_pb_divider_internal,
+.dh-news-divider,
+.dottedDivider,
+.dottedDividerDark {
+  border-top: 3px dotted #DAB49D !important;
+  width: 60px !important;
+  max-width: 60px !important;
+  margin: 10px auto 25px !important;
+  height: 0 !important;
+  display: block !important;
+}
+
+.dh-service-card:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 8px 20px rgba(94, 48, 35, 0.08) !important;
+  background: #FFF !important;
+  border-color: rgba(218, 180, 157, 0.6) !important;
+}
+
+/* Tighten footer spacing and line-heights */
+.et_pb_section_0_tb_footer .et_pb_text_1_tb_footer p,
+.et_pb_section_0_tb_footer .et_pb_text_9_tb_footer p {
+  line-height: 1.35 !important;
+}
+
+.et_pb_section_0_tb_footer .et_pb_text_1_tb_footer .et_pb_text_inner p:not(:first-child),
+.et_pb_section_0_tb_footer .et_pb_text_9_tb_footer .et_pb_text_inner p:not(:first-child) {
+  margin-bottom: 5px !important;
+  padding-bottom: 0 !important;
+}
+
+.et_pb_row_0_tb_footer.et_pb_row,
+.et_pb_row_1_tb_footer.et_pb_row {
+  padding-bottom: 5px !important;
+  padding-top: 5px !important;
+}

@@ -1,594 +1,111 @@
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { Facebook, Instagram, Youtube, Menu, X } from 'lucide-react';
+
 export default function Header() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   return (
     <>
-      <header className={"et-l et-l--header"}>
-        {"\n\t\t\t"}
-        <div className={"et_builder_inner_content et_pb_gutters3"}>
-          {"\n\t\t"}
-          <div
-            className={
-              "et_pb_section et_pb_section_0_tb_header et_pb_with_background et_section_regular"
-            }
-          >
-            {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
-            <div className={"et_pb_row et_pb_row_0_tb_header et_pb_equal_columns et_pb_gutters2"}>
-              {"\n\t\t\t\t"}
-              <div
-                className={
-                  "et_pb_column et_pb_column_1_5 et_pb_column_0_tb_header  et_pb_css_mix_blend_mode_passthrough"
-                }
-              >
-                {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
-                <ul
-                  className={
-                    "et_pb_module et_pb_social_media_follow et_pb_social_media_follow_0_tb_header clearfix  et_pb_text_align_center et_pb_bg_layout_light"
-                  }
-                >
-                  {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
-                  <li
-                    className={
-                      "et_pb_with_border et_pb_social_media_follow_network_0_tb_header et_pb_social_icon et_pb_social_network_link  et-social-facebook"
-                    }
-                  >
-                    <a
-                      href={"#"}
-                      className={"icon et_pb_with_border"}
-                      title={"Follow on Facebook"}
-                      target={"_blank"}
-                    >
-                      <span
-                        className={"et_pb_social_media_follow_network_name"}
-                        aria-hidden={"true"}
-                      >
-                        {"Follow"}
-                      </span>
-                    </a>
-                  </li>
-                  <li
-                    className={
-                      "et_pb_with_border et_pb_social_media_follow_network_1_tb_header et_pb_social_icon et_pb_social_network_link  et-social-instagram"
-                    }
-                  >
-                    <a
-                      href={"#"}
-                      className={"icon et_pb_with_border"}
-                      title={"Follow on Instagram"}
-                      target={"_blank"}
-                    >
-                      <span
-                        className={"et_pb_social_media_follow_network_name"}
-                        aria-hidden={"true"}
-                      >
-                        {"Follow"}
-                      </span>
-                    </a>
-                  </li>
-                  <li
-                    className={
-                      "et_pb_with_border et_pb_social_media_follow_network_2_tb_header et_pb_social_icon et_pb_social_network_link  et-social-youtube"
-                    }
-                  >
-                    <a
-                      href={"#"}
-                      className={"icon et_pb_with_border"}
-                      title={"Follow on Youtube"}
-                      target={"_blank"}
-                    >
-                      <span
-                        className={"et_pb_social_media_follow_network_name"}
-                        aria-hidden={"true"}
-                      >
-                        {"Follow"}
-                      </span>
-                    </a>
-                  </li>
-                  {"\n\t\t\t"}
-                </ul>
-                {"\n\t\t\t"}
-              </div>
-              <div
-                className={
-                  "et_pb_column et_pb_column_1_5 et_pb_column_1_tb_header  et_pb_css_mix_blend_mode_passthrough et_pb_column_empty"
-                }
-              >
-                {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t"}
-              </div>
-              <div
-                className={
-                  "et_pb_column et_pb_column_1_5 et_pb_column_2_tb_header  et_pb_css_mix_blend_mode_passthrough et_pb_column_empty"
-                }
-              >
-                {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t"}
-              </div>
-              <div
-                className={
-                  "et_pb_column et_pb_column_1_5 et_pb_column_3_tb_header  et_pb_css_mix_blend_mode_passthrough"
-                }
-              >
-                {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
-                <div
-                  className={
-                    "et_pb_module et_pb_text et_pb_text_0_tb_header  et_pb_text_align_left et_pb_bg_layout_light"
-                  }
-                >
-                  {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
-                  <div className={"et_pb_text_inner"}>
-                    <p>{"Tel: +1 5432167890"}</p>
-                  </div>
-                  {"\n\t\t\t"}
-                </div>
-                {"\n\t\t\t"}
-              </div>
-              <div
-                className={
-                  "et_pb_column et_pb_column_1_5 et_pb_column_4_tb_header  et_pb_css_mix_blend_mode_passthrough et-last-child"
-                }
-              >
-                {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
-                <div
-                  className={
-                    "et_pb_module et_pb_text et_pb_text_1_tb_header  et_pb_text_align_left et_pb_bg_layout_light"
-                  }
-                >
-                  {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
-                  <div className={"et_pb_text_inner"}>
-                    <p>{"mail: info@chidiyaghar.com"}</p>
-                  </div>
-                  {"\n\t\t\t"}
-                </div>
-                {"\n\t\t\t"}
-              </div>
-              {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t"}
-            </div>
-            {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t"}
-          </div>
-          <div
-            className={
-              "et_pb_section et_pb_section_1_tb_header et_pb_sticky_module et_pb_with_background et_section_regular et_pb_section--with-menu"
-            }
-          >
-            {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
-            <div
-              className={
-                "et_pb_row et_pb_row_1_tb_header et_pb_equal_columns et_pb_gutters1 et_pb_row--with-menu"
-              }
-            >
-              {"\n\t\t\t\t"}
-              <div
-                className={
-                  "et_pb_column et_pb_column_1_5 et_pb_column_5_tb_header  et_pb_css_mix_blend_mode_passthrough"
-                }
-              >
-                {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
-                <div className={"et_pb_module et_pb_image et_pb_image_0_tb_header"}>
-                  {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
-                  <span className={"et_pb_image_wrap "}>
-                    <img
-                      fetchpriority={"high"}
-                      decoding={"async"}
-                      width={"400"}
-                      height={"135"}
-                      
-                      src={"image/Group 1171275756.png"}
-                      alt={""}
-                      title={""}
-                      className={"wp-image-1517"}
-                      style={{ maxWidth: "140px", height: "auto" }}
-                    />
-                  </span>
-                  {"\n"}
-                  <img
-                    src={"image/NESTING PROFESSIONALS.svg"}
-                    style={{
-                      width: "100%",
-                      maxWidth: "120px",
-                      marginTop: "2px",
-                      display: "block",
-                      marginLeft: "-50px",
-                      marginRight: "auto",
-                    }}
-                    alt={"Nesting Professionals"}
-                  />
-                  {"\n\t\t\t"}
-                </div>
-                {"\n\t\t\t"}
-              </div>
-              <div
-                className={
-                  "et_pb_column et_pb_column_3_5 et_pb_column_6_tb_header  et_pb_css_mix_blend_mode_passthrough et_pb_column--with-menu"
-                }
-              >
-                {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
-                <div
-                  className={
-                    "et_pb_module et_pb_menu et_pb_menu_0_tb_header et_pb_bg_layout_light  et_pb_text_align_center et_dropdown_animation_fade et_pb_menu--without-logo et_pb_menu--style-left_aligned"
-                  }
-                >
-                  {"\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t"}
-                  <div className={"et_pb_menu_inner_container clearfix"}>
-                    {"\n\t\t\t\t\t\t\n\t\t\t\t\t\t"}
-                    <div className={"et_pb_menu__wrap"}>
-                      {"\n\t\t\t\t\t\t\t"}
-                      <div className={"et_pb_menu__menu"}>
-                        {"\n\t\t\t\t\t\t\t\t"}
-                        <nav className={"et-menu-nav"}>
-                          <ul id={"menu-main-menu"} className={"et-menu nav"}>
-                            <li
-                              className={
-                                "et_pb_menu_page_id-1908 menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-1908"
-                              }
-                            >
-                              <a href={"#"}>{"Home"}</a>
-                              {"\n"}
-                              <ul className={"sub-menu"}>
-                                {"\n\t"}
-                                <li
-                                  className={
-                                    "et_pb_menu_page_id-home menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-18 current_page_item menu-item-78"
-                                  }
-                                >
-                                  <a href={"index.html"} aria-current={"page"}>
-                                    {"Home 1"}
-                                  </a>
-                                </li>
-                                {"\n\t"}
-                                <li
-                                  className={
-                                    "et_pb_menu_page_id-1687 menu-item menu-item-type-post_type menu-item-object-page menu-item-1903"
-                                  }
-                                >
-                                  <a href={"home-2/index.html"}>{"Home 2"}</a>
-                                </li>
-                                {"\n"}
-                              </ul>
-                              {"\n"}
-                            </li>
-                            {"\n"}
-                            <li
-                              className={
-                                "et_pb_menu_page_id-68 menu-item menu-item-type-post_type menu-item-object-page menu-item-79"
-                              }
-                            >
-                              <a href={"accommodations/index.html"}>{"Accommodations"}</a>
-                            </li>
-                            {"\n"}
-                            <li
-                              className={
-                                "et_pb_menu_page_id-1909 menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1909"
-                              }
-                            >
-                              <a href={"#"}>{"Pages"}</a>
-                              {"\n"}
-                              <ul className={"sub-menu"}>
-                                {"\n\t"}
-                                <li
-                                  className={
-                                    "et_pb_menu_page_id-1558 menu-item menu-item-type-post_type menu-item-object-page menu-item-1631"
-                                  }
-                                >
-                                  <a href={"about-us/index.html"}>{"About us"}</a>
-                                </li>
-                                {"\n\t"}
-                                <li
-                                  className={
-                                    "et_pb_menu_page_id-2292 menu-item menu-item-type-post_type menu-item-object-page menu-item-2302"
-                                  }
-                                >
-                                  <a href={"blog/index.html"}>{"Blog"}</a>
-                                </li>
-                                {"\n\t"}
-                                <li
-                                  className={
-                                    "et_pb_menu_page_id-1575 menu-item menu-item-type-post_type menu-item-object-page menu-item-1630"
-                                  }
-                                >
-                                  <a href={"contact-us/index.html"}>{"Contact Us"}</a>
-                                </li>
-                                {"\n\t"}
-                                <li
-                                  className={
-                                    "et_pb_menu_page_id-70 menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"
-                                  }
-                                >
-                                  <a href={"search-results/index.html"}>{"Search Results"}</a>
-                                </li>
-                                {"\n\t"}
-                                <li
-                                  className={
-                                    "et_pb_menu_page_id-2303 menu-item menu-item-type-custom menu-item-object-custom menu-item-2303"
-                                  }
-                                >
-                                  <a href={"page-not-found.html"}>{"404 Page"}</a>
-                                </li>
-                                {"\n"}
-                              </ul>
-                              {"\n"}
-                            </li>
-                            {"\n"}
-                            <li
-                              className={
-                                "et_pb_menu_page_id-1654 menu-item menu-item-type-post_type menu-item-object-page menu-item-1905"
-                              }
-                            >
-                              <a href={"our-services/index.html"}>{"Our Services"}</a>
-                            </li>
-                            {"\n"}
-                            <li
-                              className={
-                                "et_pb_menu_page_id-77 menu-item menu-item-type-post_type menu-item-object-page menu-item-1906"
-                              }
-                            >
-                              <a href={"my-account/index.html"}>{"My Account"}</a>
-                            </li>
-                            {"\n"}
-                          </ul>
-                        </nav>
-                        {"\n\t\t\t\t\t\t\t"}
-                      </div>
-                      {"\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t"}
-                      <div className={"et_mobile_nav_menu"}>
-                        {"\n\t\t\t\t"}
-                        <div className={"mobile_nav closed"}>
-                          {"\n\t\t\t\t\t"}
-                          <span className={"mobile_menu_bar"}></span>
-                          {"\n\t\t\t\t"}
-                        </div>
-                        {"\n\t\t\t"}
-                      </div>
-                      {"\n\t\t\t\t\t\t"}
-                    </div>
-                    {"\n\t\t\t\t\t\t\n\t\t\t\t\t"}
-                  </div>
-                  {"\n\t\t\t\t"}
-                </div>
-                {"\n\t\t\t"}
-              </div>
-              <div
-                className={
-                  "et_pb_column et_pb_column_1_5 et_pb_column_7_tb_header  et_pb_css_mix_blend_mode_passthrough et-last-child"
-                }
-              >
-                {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
-                <div className={"et_pb_module et_pb_icon et_pb_icon_0_tb_header"}>
-                  {"\n\t\t\t\t"}
-                  <a href={"my-account/index.html"}>
-                    <span className={"et_pb_icon_wrap "}>
-                      <span className={"et-pb-icon"}>{""}</span>
-                    </span>
-                  </a>
-                  {"\n\t\t\t"}
-                </div>
-                {"\n\t\t\t"}
-              </div>
-              {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t"}
-            </div>
-            {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t"}
-          </div>
-          <div
-            className={
-              "et_pb_section et_pb_section_2_tb_header et_pb_sticky_module et_pb_with_background et_section_regular et_pb_section--with-menu"
-            }
-          >
-            {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
-            <div
-              className={
-                "et_pb_row et_pb_row_2_tb_header et_pb_equal_columns et_pb_gutters1 et_pb_row--with-menu"
-              }
-            >
-              {"\n\t\t\t\t"}
-              <div
-                className={
-                  "et_pb_column et_pb_column_1_3 et_pb_column_8_tb_header  et_pb_css_mix_blend_mode_passthrough"
-                }
-              >
-                {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
-                <div className={"et_pb_module et_pb_image et_pb_image_1_tb_header"}>
-                  {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
-                  <span className={"et_pb_image_wrap "}>
-                    <img
-                      fetchpriority={"high"}
-                      decoding={"async"}
-                      width={"400"}
-                      height={"135"}
-                      src={"image/Group 1171275756.png"}
-                      alt={""}
-                      title={""}
-                      className={"wp-image-1517"}
-                      style={{ maxWidth: "140px", height: "auto" }}
-                    />
-                  </span>
-                  {"\n"}
-                  <img
-                    src={"image/NESTING PROFESSIONALS.svg"}
-                    style={{
-                      width: "100%",
-                      maxWidth: "120px",
-                      marginTop: "2px",
-                      display: "block",
-                      marginLeft: "auto",
-                      marginRight: "auto",
-                    }}
-                    alt={"Nesting Professionals"}
-                  />
-                  {"\n\t\t\t"}
-                </div>
-                {"\n\t\t\t"}
-              </div>
-              <div
-                className={
-                  "et_pb_column et_pb_column_1_3 et_pb_column_9_tb_header  et_pb_css_mix_blend_mode_passthrough"
-                }
-              >
-                {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
-                <div className={"et_pb_module et_pb_icon et_pb_icon_1_tb_header"}>
-                  {"\n\t\t\t\t"}
-                  <a href={"my-account/index.html"}>
-                    <span className={"et_pb_icon_wrap "}>
-                      <span className={"et-pb-icon"}>{""}</span>
-                    </span>
-                  </a>
-                  {"\n\t\t\t"}
-                </div>
-                {"\n\t\t\t"}
-              </div>
-              <div
-                className={
-                  "et_pb_column et_pb_column_1_3 et_pb_column_10_tb_header  et_pb_css_mix_blend_mode_passthrough et-last-child et_pb_column--with-menu"
-                }
-              >
-                {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
-                <div
-                  className={
-                    "et_pb_module et_pb_menu et_pb_menu_1_tb_header et_pb_bg_layout_light  et_pb_text_align_center et_dropdown_animation_fade et_pb_menu--without-logo et_pb_menu--style-left_aligned"
-                  }
-                >
-                  {"\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t"}
-                  <div className={"et_pb_menu_inner_container clearfix"}>
-                    {"\n\t\t\t\t\t\t\n\t\t\t\t\t\t"}
-                    <div className={"et_pb_menu__wrap"}>
-                      {"\n\t\t\t\t\t\t\t"}
-                      <div className={"et_pb_menu__menu"}>
-                        {"\n\t\t\t\t\t\t\t\t"}
-                        <nav className={"et-menu-nav"}>
-                          <ul id={"menu-main-menu-1"} className={"et-menu nav"}>
-                            <li
-                              className={
-                                "et_pb_menu_page_id-1908 menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-1908"
-                              }
-                            >
-                              <a href={"#"}>{"Home"}</a>
-                              {"\n"}
-                              <ul className={"sub-menu"}>
-                                {"\n\t"}
-                                <li
-                                  className={
-                                    "et_pb_menu_page_id-home menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-18 current_page_item menu-item-78"
-                                  }
-                                >
-                                  <a href={"index.html"} aria-current={"page"}>
-                                    {"Home 1"}
-                                  </a>
-                                </li>
-                                {"\n\t"}
-                                <li
-                                  className={
-                                    "et_pb_menu_page_id-1687 menu-item menu-item-type-post_type menu-item-object-page menu-item-1903"
-                                  }
-                                >
-                                  <a href={"home-2/index.html"}>{"Home 2"}</a>
-                                </li>
-                                {"\n"}
-                              </ul>
-                              {"\n"}
-                            </li>
-                            {"\n"}
-                            <li
-                              className={
-                                "et_pb_menu_page_id-68 menu-item menu-item-type-post_type menu-item-object-page menu-item-79"
-                              }
-                            >
-                              <a href={"accommodations/index.html"}>{"Accommodations"}</a>
-                            </li>
-                            {"\n"}
-                            <li
-                              className={
-                                "et_pb_menu_page_id-1909 menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1909"
-                              }
-                            >
-                              <a href={"#"}>{"Pages"}</a>
-                              {"\n"}
-                              <ul className={"sub-menu"}>
-                                {"\n\t"}
-                                <li
-                                  className={
-                                    "et_pb_menu_page_id-1558 menu-item menu-item-type-post_type menu-item-object-page menu-item-1631"
-                                  }
-                                >
-                                  <a href={"about-us/index.html"}>{"About us"}</a>
-                                </li>
-                                {"\n\t"}
-                                <li
-                                  className={
-                                    "et_pb_menu_page_id-2292 menu-item menu-item-type-post_type menu-item-object-page menu-item-2302"
-                                  }
-                                >
-                                  <a href={"blog/index.html"}>{"Blog"}</a>
-                                </li>
-                                {"\n\t"}
-                                <li
-                                  className={
-                                    "et_pb_menu_page_id-1575 menu-item menu-item-type-post_type menu-item-object-page menu-item-1630"
-                                  }
-                                >
-                                  <a href={"contact-us/index.html"}>{"Contact Us"}</a>
-                                </li>
-                                {"\n\t"}
-                                <li
-                                  className={
-                                    "et_pb_menu_page_id-70 menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"
-                                  }
-                                >
-                                  <a href={"search-results/index.html"}>{"Search Results"}</a>
-                                </li>
-                                {"\n\t"}
-                                <li
-                                  className={
-                                    "et_pb_menu_page_id-2303 menu-item menu-item-type-custom menu-item-object-custom menu-item-2303"
-                                  }
-                                >
-                                  <a href={"page-not-found.html"}>{"404 Page"}</a>
-                                </li>
-                                {"\n"}
-                              </ul>
-                              {"\n"}
-                            </li>
-                            {"\n"}
-                            <li
-                              className={
-                                "et_pb_menu_page_id-1654 menu-item menu-item-type-post_type menu-item-object-page menu-item-1905"
-                              }
-                            >
-                              <a href={"our-services/index.html"}>{"Our Services"}</a>
-                            </li>
-                            {"\n"}
-                            <li
-                              className={
-                                "et_pb_menu_page_id-77 menu-item menu-item-type-post_type menu-item-object-page menu-item-1906"
-                              }
-                            >
-                              <a href={"my-account/index.html"}>{"My Account"}</a>
-                            </li>
-                            {"\n"}
-                          </ul>
-                        </nav>
-                        {"\n\t\t\t\t\t\t\t"}
-                      </div>
-                      {"\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t"}
-                      <div className={"et_mobile_nav_menu"}>
-                        {"\n\t\t\t\t"}
-                        <div className={"mobile_nav closed"}>
-                          {"\n\t\t\t\t\t"}
-                          <span className={"mobile_menu_bar"}></span>
-                          {"\n\t\t\t\t"}
-                        </div>
-                        {"\n\t\t\t"}
-                      </div>
-                      {"\n\t\t\t\t\t\t"}
-                    </div>
-                    {"\n\t\t\t\t\t\t\n\t\t\t\t\t"}
-                  </div>
-                  {"\n\t\t\t\t"}
-                </div>
-                {"\n\t\t\t"}
-              </div>
-              {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t"}
-            </div>
-            {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t"}
-          </div>
-          {"\t\t"}
+      <div className="topbar">
+        <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><Facebook size={16} /></a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><Instagram size={16} /></a>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="Youtube"><Youtube size={16} /></a>
         </div>
-        {"\n\t"}
+        <div style={{ display: 'flex', gap: '30px' }}>
+          <span style={{ fontSize: '13px' }}>Tel: +1 5432167890</span>
+          <span style={{ fontSize: '13px' }}>mail: info@chidiyaghar.com</span>
+        </div>
+      </div>
+
+      <header className="header">
+        {/* Logo — tightly stacked, no gap */}
+        <Link to="/" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textDecoration: 'none', lineHeight: 1 }}>
+          <img
+            src="/image/Group 1171275756.png"
+            alt="Chidiya Ghar"
+            style={{ maxWidth: '110px', height: 'auto', display: 'block' }}
+          />
+          <img
+            src="/image/NESTING PROFESSIONALS.svg"
+            alt="Nesting Professionals"
+            style={{ maxWidth: '92px', width: '100%', display: 'block', marginTop: '3px' }}
+          />
+        </Link>
+
+        {/* Nav links */}
+        <nav className="nav" style={{ marginLeft: 'auto', marginRight: '18px' }}>
+          <div className="navDrop">
+            <button>Home <span style={{ fontSize: '10px', opacity: 0.7 }}>▼</span></button>
+            <div className="dropdown">
+              <Link to="/">Home 1</Link>
+            </div>
+          </div>
+          <Link to="/accommodations">Accommodations</Link>
+          <div className="navDrop">
+            <button>Pages <span style={{ fontSize: '10px', opacity: 0.7 }}>▼</span></button>
+            <div className="dropdown">
+              <Link to="/about-us">About us</Link>
+              <Link to="/blog">Blog</Link>
+              <Link to="/contact-us">Contact Us</Link>
+              <Link to="/search-results">Search Results</Link>
+            </div>
+          </div>
+          <Link to="/our-services">Our Services</Link>
+          <Link to="/my-account">My Account</Link>
+        </nav>
+
+        {/* Actions */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
+          {/* Circular profile icon */}
+          <Link
+            to="/my-account"
+            title="My Account"
+            style={{
+              width: '34px',
+              height: '34px',
+              borderRadius: '50%',
+              background: 'var(--brown)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              color: '#fff',
+              flexShrink: 0,
+              transition: 'background 250ms ease',
+            }}
+            onMouseEnter={e => e.currentTarget.style.background = 'var(--dark-brown)'}
+            onMouseLeave={e => e.currentTarget.style.background = 'var(--brown)'}
+          >
+            {/* SVG person icon */}
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <circle cx="12" cy="8" r="4" />
+              <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" />
+            </svg>
+          </Link>
+
+          <button
+            className="menuBtn"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            style={{ display: 'none' }}
+          >
+            {isMobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
+          </button>
+        </div>
       </header>
+
+      {/* Mobile Menu */}
+      {isMobileMenuOpen && (
+        <div style={{ background: 'var(--cream)', padding: '18px', borderTop: '1px solid rgba(0,0,0,0.05)', position: 'absolute', width: '100%', zIndex: 19 }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+            <Link to="/" style={{ fontSize: '15px', color: 'var(--ink)' }} onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
+            <Link to="/accommodations" style={{ fontSize: '15px', color: 'var(--ink)' }} onClick={() => setIsMobileMenuOpen(false)}>Accommodations</Link>
+            <Link to="/about-us" style={{ fontSize: '15px', color: 'var(--ink)' }} onClick={() => setIsMobileMenuOpen(false)}>Pages</Link>
+            <Link to="/our-services" style={{ fontSize: '15px', color: 'var(--ink)' }} onClick={() => setIsMobileMenuOpen(false)}>Our Services</Link>
+            <Link to="/my-account" style={{ fontSize: '15px', color: 'var(--ink)' }} onClick={() => setIsMobileMenuOpen(false)}>My Account</Link>
+          </div>
+        </div>
+      )}
     </>
   );
 }

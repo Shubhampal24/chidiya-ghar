@@ -4,9 +4,9 @@ const TESTIMONIALS = [
   {
     avatar: "image/testimonial-1.jpg",
     quote:
-      "Your content goes here. Edit or remove this text inline or in the module Content settings. You can also style every aspect of this content in the module Design settings and even apply custom CSS to this text in the module Advanced settings.",
-    name: "Name Goes Here",
-    role: "Tourist",
+      "Chidiya Ghar feels like a home away from home. The warmth of the place, the thoughtful details and the calming atmosphere made our stay truly memorable. We'll be back without a doubt.",
+    name: "Priya Mehta",
+    role: "Resident",
   },
   {
     avatar: "image/testimonial-2.jpg",

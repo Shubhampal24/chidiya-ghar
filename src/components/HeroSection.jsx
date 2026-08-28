@@ -84,12 +84,12 @@ export default function HeroSection() {
                       <div className={"et_pb_slide_description"}>
                         {"\n\t\t\t\t\t\t\t"}
                         <h2 className={"et_pb_slide_title"}>
-                          {"#1 Best chidiya ghar Theme in the Marketplace"}
+                          {"A PLACE THAT FEELS LIKE HOME."}
                         </h2>
                         <div className={"et_pb_slide_content"}>
                           <p>
                             {
-                              "Your content goes here. You can also style every aspect of this content in the module Design settings."
+                              "Thoughtfully designed spaces where comfort, character and everyday living come together."
                             }
                           </p>
                         </div>
@@ -122,12 +122,12 @@ export default function HeroSection() {
                       <div className={"et_pb_slide_description"}>
                         {"\n\t\t\t\t\t\t\t"}
                         <h2 className={"et_pb_slide_title"}>
-                          {"#2 Best chidiya ghar Theme in the Marketplace"}
+                          {"Est. — A Home With Character"}
                         </h2>
                         <div className={"et_pb_slide_content"}>
                           <p>
                             {
-                              "Edit or remove this text inline or in the module Content settings. You can also style every aspect of this content in the module Design settings."
+                              "Experience a space that breathes—alive with natural light, botanical details, and quiet warmth."
                             }
                           </p>
                         </div>

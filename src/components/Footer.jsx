@@ -31,7 +31,7 @@ export default function Footer() {
                       alt={""}
                       title={""}
                       className={"wp-image-1488"}
-                      style={{ maxWidth: "180px", height: "auto" }}
+                      style={{ maxWidth: "180px", height: "auto", display: "block", margin: "0 auto" }}
                     />
                   </span>
                   {"\n"}
@@ -70,7 +70,7 @@ export default function Footer() {
                   <div className={"et_pb_text_inner"}>
                     <p>
                       {
-                        "Your content goes here. Edit or remove this text inline or in the module Content settings. You can also style every aspect of this content in the module Design settings."
+                        "A home where birds, nature, art and belonging come together. Warm. Artistic. Botanical. Indian. Premium."
                       }
                     </p>
                   </div>
@@ -84,7 +84,7 @@ export default function Footer() {
               {"\n\t\t\t\t"}
               <div
                 className={
-                  "et_pb_column et_pb_column_1_4 et_pb_column_2_tb_footer  et_pb_css_mix_blend_mode_passthrough"
+                  "et_pb_column et_pb_column_1_3 et_pb_column_2_tb_footer  et_pb_css_mix_blend_mode_passthrough"
                 }
               >
                 {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
@@ -92,51 +92,20 @@ export default function Footer() {
                   className={
                     "et_pb_module et_pb_text et_pb_text_1_tb_footer  et_pb_text_align_left et_pb_text_align_center-phone et_pb_bg_layout_light"
                   }
+                  style={{ marginBottom: "15px" }}
                 >
-                  {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
                   <div className={"et_pb_text_inner"}>
-                    <p>{"Accomodation"}</p>
-                  </div>
-                  {"\n\t\t\t"}
-                </div>
-                <div
-                  className={
-                    "et_pb_module et_pb_text et_pb_text_2_tb_footer  et_pb_text_align_left et_pb_text_align_center-phone et_pb_bg_layout_light"
-                  }
-                >
-                  {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
-                  <div className={"et_pb_text_inner"}>
-                    <p>
+                    <p style={{ fontWeight: 700, fontSize: "17px", marginBottom: "10px", color: "#000" }}>{"Accomodation"}</p>
+                    <p style={{ margin: "0 0 4px 0", lineHeight: "1.3" }}>
                       <a href={"#"}>{"Rooms"}</a>
                     </p>
-                  </div>
-                  {"\n\t\t\t"}
-                </div>
-                <div
-                  className={
-                    "et_pb_module et_pb_text et_pb_text_3_tb_footer  et_pb_text_align_left et_pb_text_align_center-phone et_pb_bg_layout_light"
-                  }
-                >
-                  {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
-                  <div className={"et_pb_text_inner"}>
-                    <p>
+                    <p style={{ margin: "0 0 4px 0", lineHeight: "1.3" }}>
                       <a href={"#"}>{"Villas"}</a>
                     </p>
-                  </div>
-                  {"\n\t\t\t"}
-                </div>
-                <div
-                  className={
-                    "et_pb_module et_pb_text et_pb_text_4_tb_footer  et_pb_text_align_left et_pb_text_align_center-phone et_pb_bg_layout_light"
-                  }
-                >
-                  {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
-                  <div className={"et_pb_text_inner"}>
-                    <p>
+                    <p style={{ margin: "0 0 16px 0", lineHeight: "1.3" }}>
                       <a href={"#"}>{"Suites"}</a>
                     </p>
                   </div>
-                  {"\n\t\t\t"}
                 </div>
                 <div
                   className={
@@ -155,67 +124,10 @@ export default function Footer() {
                 </div>
                 {"\n\t\t\t"}
               </div>
+
               <div
                 className={
-                  "et_pb_column et_pb_column_1_4 et_pb_column_3_tb_footer  et_pb_css_mix_blend_mode_passthrough"
-                }
-              >
-                {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
-                <div
-                  className={
-                    "et_pb_module et_pb_text et_pb_text_5_tb_footer  et_pb_text_align_left et_pb_text_align_center-phone et_pb_bg_layout_light"
-                  }
-                >
-                  {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
-                  <div className={"et_pb_text_inner"}>
-                    <p>{"Spa & Wellness"}</p>
-                  </div>
-                  {"\n\t\t\t"}
-                </div>
-                <div
-                  className={
-                    "et_pb_module et_pb_text et_pb_text_6_tb_footer  et_pb_text_align_left et_pb_text_align_center-phone et_pb_bg_layout_light"
-                  }
-                >
-                  {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
-                  <div className={"et_pb_text_inner"}>
-                    <p>
-                      <a href={"#"}>{"Spa Area"}</a>
-                    </p>
-                  </div>
-                  {"\n\t\t\t"}
-                </div>
-                <div
-                  className={
-                    "et_pb_module et_pb_text et_pb_text_7_tb_footer  et_pb_text_align_left et_pb_text_align_center-phone et_pb_bg_layout_light"
-                  }
-                >
-                  {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
-                  <div className={"et_pb_text_inner"}>
-                    <p>
-                      <a href={"#"}>{"Zym"}</a>
-                    </p>
-                  </div>
-                  {"\n\t\t\t"}
-                </div>
-                <div
-                  className={
-                    "et_pb_module et_pb_text et_pb_text_8_tb_footer  et_pb_text_align_left et_pb_text_align_center-phone et_pb_bg_layout_light"
-                  }
-                >
-                  {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
-                  <div className={"et_pb_text_inner"}>
-                    <p>
-                      <a href={"#"}>{"Massage"}</a>
-                    </p>
-                  </div>
-                  {"\n\t\t\t"}
-                </div>
-                {"\n\t\t\t"}
-              </div>
-              <div
-                className={
-                  "et_pb_column et_pb_column_1_4 et_pb_column_4_tb_footer  et_pb_css_mix_blend_mode_passthrough"
+                  "et_pb_column et_pb_column_1_3 et_pb_column_4_tb_footer  et_pb_css_mix_blend_mode_passthrough"
                 }
               >
                 {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
@@ -223,70 +135,29 @@ export default function Footer() {
                   className={
                     "et_pb_module et_pb_text et_pb_text_9_tb_footer  et_pb_text_align_left et_pb_text_align_center-phone et_pb_bg_layout_light"
                   }
+                  style={{ marginBottom: "15px" }}
                 >
-                  {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
                   <div className={"et_pb_text_inner"}>
-                    <p>{"Quick Access"}</p>
-                  </div>
-                  {"\n\t\t\t"}
-                </div>
-                <div
-                  className={
-                    "et_pb_module et_pb_text et_pb_text_10_tb_footer  et_pb_text_align_left et_pb_text_align_center-phone et_pb_bg_layout_light"
-                  }
-                >
-                  {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
-                  <div className={"et_pb_text_inner"}>
-                    <p>
+                    <p style={{ fontWeight: 700, fontSize: "17px", marginBottom: "10px", color: "#000" }}>{"Quick Access"}</p>
+                    <p style={{ margin: "0 0 4px 0", lineHeight: "1.3" }}>
                       <a href={"#"}>{"Home"}</a>
                     </p>
-                  </div>
-                  {"\n\t\t\t"}
-                </div>
-                <div
-                  className={
-                    "et_pb_module et_pb_text et_pb_text_11_tb_footer  et_pb_text_align_left et_pb_text_align_center-phone et_pb_bg_layout_light"
-                  }
-                >
-                  {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
-                  <div className={"et_pb_text_inner"}>
-                    <p>
+                    <p style={{ margin: "0 0 4px 0", lineHeight: "1.3" }}>
                       <a href={"#"}>{"About us"}</a>
                     </p>
-                  </div>
-                  {"\n\t\t\t"}
-                </div>
-                <div
-                  className={
-                    "et_pb_module et_pb_text et_pb_text_12_tb_footer  et_pb_text_align_left et_pb_text_align_center-phone et_pb_bg_layout_light"
-                  }
-                >
-                  {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
-                  <div className={"et_pb_text_inner"}>
-                    <p>
+                    <p style={{ margin: "0 0 4px 0", lineHeight: "1.3" }}>
                       <a href={"#"}>{"Services"}</a>
                     </p>
-                  </div>
-                  {"\n\t\t\t"}
-                </div>
-                <div
-                  className={
-                    "et_pb_module et_pb_text et_pb_text_13_tb_footer  et_pb_text_align_left et_pb_text_align_center-phone et_pb_bg_layout_light"
-                  }
-                >
-                  {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
-                  <div className={"et_pb_text_inner"}>
-                    <p>
+                    <p style={{ margin: "0 0 4px 0", lineHeight: "1.3" }}>
                       <a href={"#"}>{"Contact us"}</a>
                     </p>
                   </div>
-                  {"\n\t\t\t"}
                 </div>
                 {"\n\t\t\t"}
               </div>
               <div
                 className={
-                  "et_pb_column et_pb_column_1_4 et_pb_column_5_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child"
+                  "et_pb_column et_pb_column_1_3 et_pb_column_5_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child"
                 }
               >
                 {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
@@ -519,7 +390,7 @@ export default function Footer() {
                 >
                   {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
                   <div className={"et_pb_text_inner"}>
-                    {"Copyright © 2026 chidiya ghar. All rights reserved."}
+                    {"© CHIDIYA GHAR. ALL RIGHTS RESERVED."}
                   </div>
                   {"\n\t\t\t"}
                 </div>

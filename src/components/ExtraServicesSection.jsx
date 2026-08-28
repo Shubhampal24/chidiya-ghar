@@ -36,7 +36,7 @@ export default function ExtraServicesSection() {
                 <p>
                   <span>
                     {
-                      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text."
+                      "Enhance your stay with our carefully curated extra services designed to add comfort and convenience to your everyday living at Chidiya Ghar."
                     }
                   </span>
                 </p>
@@ -64,6 +64,7 @@ export default function ExtraServicesSection() {
             className={
               "et_pb_with_border et_pb_column_1_3 et_pb_column et_pb_column_14  et_pb_css_mix_blend_mode_passthrough"
             }
+            style={{ borderRadius: "25px", overflow: "hidden" }}
           >
             {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
             <div className={"et_pb_module mphb-divi-services mphb-divi-services_0"}>
@@ -75,9 +76,10 @@ export default function ExtraServicesSection() {
                     className={
                       "mphb-service post-129 mphb_room_service type-mphb_room_service status-publish has-post-thumbnail mphb-service-pay-per-night"
                     }
+                    style={{ borderRadius: "25px" }}
                   >
                     {"\n\n\t\n\n\t"}
-                    <p className={"mphb-loop-service-thumbnail"}>
+                    <p className={"mphb-loop-service-thumbnail"} style={{ borderRadius: "25px 25px 0 0", overflow: "hidden", margin: 0 }}>
                       {"\n\t"}
                       <img
                         loading={"lazy"}
@@ -86,13 +88,8 @@ export default function ExtraServicesSection() {
                         height={"728"}
                         src={"wp-content/uploads/2022/08/breakfast.jpg"}
                         className={"attachment-post-thumbnail size-post-thumbnail wp-post-image"}
-                        alt={""}
-                        srcSet={
-                          "https://hotel.divicollection.com/wp-content/uploads/2022/08/breakfast.jpg 1200w, https://hotel.divicollection.com/wp-content/uploads/2022/08/breakfast-980x595.jpg 980w, https://hotel.divicollection.com/wp-content/uploads/2022/08/breakfast-480x291.jpg 480w"
-                        }
-                        sizes={
-                          "(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1200px, 100vw"
-                        }
+                        alt={"Breakfast"}
+                        style={{ borderRadius: "25px 25px 0 0" }}
                       />
                       {"\n\t"}
                     </p>
@@ -105,7 +102,7 @@ export default function ExtraServicesSection() {
                     {"\n\n"}
                     <p>
                       {
-                        "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle […]"
+                        "Start your day with a delicious and wholesome breakfast prepared fresh every morning, featuring a blend of local flavors and continental classics."
                       }
                     </p>
                     {"\n\n\n"}
@@ -132,6 +129,7 @@ export default function ExtraServicesSection() {
             className={
               "et_pb_with_border et_pb_column_1_3 et_pb_column et_pb_column_15  et_pb_css_mix_blend_mode_passthrough et-last-child"
             }
+            style={{ borderRadius: "25px", overflow: "hidden" }}
           >
             {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
             <div className={"et_pb_module mphb-divi-services mphb-divi-services_1"}>
@@ -143,37 +141,33 @@ export default function ExtraServicesSection() {
                     className={
                       "mphb-service post-125 mphb_room_service type-mphb_room_service status-publish has-post-thumbnail"
                     }
+                    style={{ borderRadius: "25px" }}
                   >
                     {"\n\n\t\n\n\t"}
-                    <p className={"mphb-loop-service-thumbnail"}>
+                    <p className={"mphb-loop-service-thumbnail"} style={{ borderRadius: "25px 25px 0 0", overflow: "hidden", margin: 0 }}>
                       {"\n\t"}
                       <img
                         loading={"lazy"}
                         decoding={"async"}
                         width={"1200"}
                         height={"728"}
-                        src={"wp-content/uploads/2022/08/Spa-Treatment.jpg"}
+                        src={"image/free-parking.jpg"}
                         className={"attachment-post-thumbnail size-post-thumbnail wp-post-image"}
-                        alt={""}
-                        srcSet={
-                          "https://hotel.divicollection.com/wp-content/uploads/2022/08/Spa-Treatment.jpg 1200w, https://hotel.divicollection.com/wp-content/uploads/2022/08/Spa-Treatment-980x595.jpg 980w, https://hotel.divicollection.com/wp-content/uploads/2022/08/Spa-Treatment-480x291.jpg 480w"
-                        }
-                        sizes={
-                          "(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1200px, 100vw"
-                        }
+                        alt={"Free Parking"}
+                        style={{ borderRadius: "25px 25px 0 0", width: "100%", height: "auto", objectFit: "cover" }}
                       />
                       {"\n\t"}
                     </p>
                     {"\n\t\n"}
                     <h2 className={"mphb-service-title"}>
                       {"\n"}
-                      <a href={"services/spa-treatment/index.html"}>{"Spa Treatment"}</a>
+                      <a href={"#"}>{"Free Parking"}</a>
                       {"\n"}
                     </h2>
                     {"\n\n"}
                     <p>
                       {
-                        "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many […]"
+                        "Enjoy convenient, secure, and hassle-free complimentary on-site parking available 24/7 for all our registered guests throughout the duration of your stay."
                       }
                     </p>
                     {"\n\n\n"}
@@ -181,10 +175,9 @@ export default function ExtraServicesSection() {
                       <strong>{"Price:"}</strong>
                       {"\n"}
                       <span className={"mphb-price"}>
-                        <span className={"mphb-currency"}>{"$"}</span>
-                        {"80"}
+                        {"Free"}
                       </span>
-                      {" / Once / Per Accommodation\n"}
+                      {" / Included / Per Stay\n"}
                     </p>
                     {"\n"}
                   </div>
