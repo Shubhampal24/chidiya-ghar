@@ -8,12 +8,12 @@ export default function Header() {
   return (
     <>
       <div className="topbar">
-        <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
+        <div className="topbarSocial" style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><Facebook size={16} /></a>
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><Instagram size={16} /></a>
           <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="Youtube"><Youtube size={16} /></a>
         </div>
-        <div style={{ display: 'flex', gap: '30px' }}>
+        <div className="topbarContact" style={{ display: 'flex', gap: '24px' }}>
           <span style={{ fontSize: '13px' }}>Tel: +1 5432167890</span>
           <span style={{ fontSize: '13px' }}>mail: info@chidiyaghar.com</span>
         </div>
@@ -57,7 +57,7 @@ export default function Header() {
         </nav>
 
         {/* Actions */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginLeft: 'auto', flexShrink: 0 }}>
           {/* Circular profile icon */}
           <Link
             to="/my-account"
@@ -87,9 +87,10 @@ export default function Header() {
           <button
             className="menuBtn"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            style={{ display: 'none' }}
+            aria-label="Toggle mobile navigation"
+            style={{ background: 'transparent', border: 'none', cursor: 'pointer', color: 'var(--ink)', padding: 0 }}
           >
-            {isMobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
+            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
       </header>
