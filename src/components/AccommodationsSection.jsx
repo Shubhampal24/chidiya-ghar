@@ -51,7 +51,7 @@ export default function AccommodationsSection() {
                           decoding={"async"}
                           width={"1200"}
                           height={"728"}
-                          src={"image/acc-1.png"}
+                          src={"/image/acc-1.png"}
                           className={"attachment-post-thumbnail size-post-thumbnail wp-post-image"}
                           alt={"Accommodation I"}
                         />
@@ -148,7 +148,7 @@ export default function AccommodationsSection() {
                           decoding={"async"}
                           width={"1200"}
                           height={"728"}
-                          src={"image/acc-2.png"}
+                          src={"/image/acc-2.png"}
                           className={"attachment-post-thumbnail size-post-thumbnail wp-post-image"}
                           alt={"Accommodation II"}
                         />
@@ -245,7 +245,7 @@ export default function AccommodationsSection() {
                           decoding={"async"}
                           width={"1200"}
                           height={"728"}
-                          src={"image/acc-3.png"}
+                          src={"/image/acc-3.png"}
                           className={"attachment-post-thumbnail size-post-thumbnail wp-post-image"}
                           alt={"Accommodation III"}
                         />
@@ -342,7 +342,7 @@ export default function AccommodationsSection() {
                           decoding={"async"}
                           width={"1200"}
                           height={"728"}
-                          src={"image/acc-4.png"}
+                          src={"/image/acc-4.png"}
                           className={"attachment-post-thumbnail size-post-thumbnail wp-post-image"}
                           alt={"Accommodation IV"}
                         />

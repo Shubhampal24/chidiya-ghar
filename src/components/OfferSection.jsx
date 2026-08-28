@@ -10,7 +10,7 @@ export default function OfferSection() {
         <span className={"et_parallax_bg_wrap"}>
           <span
             className={"et_parallax_bg et_pb_parallax_css"}
-            style={{ backgroundImage: "url(wp-content/uploads/2022/10/divi-hotel-7.jpg)" }}
+            style={{ backgroundImage: "url(/wp-content/uploads/2022/10/divi-hotel-7.jpg)" }}
           ></span>
         </span>
         {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}

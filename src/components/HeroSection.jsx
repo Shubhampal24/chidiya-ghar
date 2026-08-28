@@ -10,7 +10,7 @@ export default function HeroSection() {
         <span className={"et_parallax_bg_wrap"}>
           <span
             className={"et_parallax_bg et_pb_parallax_css et_parallax_bg_phone"}
-            style={{ backgroundImage: "url(image/hero-image.png)" }}
+            style={{ backgroundImage: "url(/image/hero-image.png)" }}
           ></span>
           <span
             className={"et_parallax_gradient et_pb_parallax_css et_parallax_gradient_phone"}
@@ -25,7 +25,7 @@ export default function HeroSection() {
             className={
               "et_parallax_bg_phone_exist et_parallax_bg et_pb_parallax_css et_parallax_bg_tablet"
             }
-            style={{ backgroundImage: "url(image/hero-image.png)" }}
+            style={{ backgroundImage: "url(/image/hero-image.png)" }}
           ></span>
           <span
             className={
@@ -42,7 +42,7 @@ export default function HeroSection() {
             className={
               "et_parallax_bg_phone_exist et_parallax_bg_tablet_exist et_parallax_bg et_pb_parallax_css"
             }
-            style={{ backgroundImage: "url(image/hero-image.png)" }}
+            style={{ backgroundImage: "url(/image/hero-image.png)" }}
           ></span>
           <span
             className={

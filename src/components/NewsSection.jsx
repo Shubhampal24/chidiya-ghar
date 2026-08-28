@@ -19,7 +19,7 @@ export default function NewsSection() {
             <div className={"dh-news-img-wrap"}>
               {"\n\t\t\t\t\t"}
               <img
-                src={"image/free_parking.jpg"}
+                src={"/image/free_parking.jpg"}
                 alt={"Complimentary Parking"}
               />
               {"\n\t\t\t\t"}
@@ -50,7 +50,7 @@ export default function NewsSection() {
             {"\n\t\t\t\t"}
             <div className={"dh-news-img-wrap"}>
               {"\n\t\t\t\t\t"}
-              <img src={"image/news-2.jpg"} alt={"Lush Green Surroundings"} />
+              <img src={"/image/news-2.jpg"} alt={"Lush Green Surroundings"} />
               {"\n\t\t\t\t"}
             </div>
             {"\n\t\t\t\t"}
@@ -80,7 +80,7 @@ export default function NewsSection() {
             <div className={"dh-news-img-wrap"}>
               {"\n\t\t\t\t\t"}
               <img
-                src={"wp-content/uploads/2022/08/House-with-Swimming-Pool-4.jpg"}
+                src={"/wp-content/uploads/2022/08/House-with-Swimming-Pool-4.jpg"}
                 alt={"Artistic & Warm"}
               />
               {"\n\t\t\t\t"}

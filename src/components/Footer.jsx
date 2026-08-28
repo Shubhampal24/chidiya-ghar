@@ -27,7 +27,7 @@ export default function Footer() {
                       decoding={"async"}
                       width={"400"}
                       height={"205"}
-                      src={"image/Group 1171275756.png"}
+                      src={"/image/Group 1171275756.png"}
                       alt={""}
                       title={""}
                       className={"wp-image-1488"}
@@ -36,7 +36,7 @@ export default function Footer() {
                   </span>
                   {"\n"}
                   <img
-                    src={"image/NESTING PROFESSIONALS.svg"}
+                    src={"/image/NESTING PROFESSIONALS.svg"}
                     style={{
                       width: "100%",
                       maxWidth: "150px",

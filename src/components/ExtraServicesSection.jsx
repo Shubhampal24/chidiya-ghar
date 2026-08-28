@@ -86,7 +86,7 @@ export default function ExtraServicesSection() {
                         decoding={"async"}
                         width={"1200"}
                         height={"728"}
-                        src={"wp-content/uploads/2022/08/breakfast.jpg"}
+                        src={"/wp-content/uploads/2022/08/breakfast.jpg"}
                         className={"attachment-post-thumbnail size-post-thumbnail wp-post-image"}
                         alt={"Breakfast"}
                         style={{ borderRadius: "25px 25px 0 0" }}
@@ -151,7 +151,7 @@ export default function ExtraServicesSection() {
                         decoding={"async"}
                         width={"1200"}
                         height={"728"}
-                        src={"image/free-parking.jpg"}
+                        src={"/image/free-parking.jpg"}
                         className={"attachment-post-thumbnail size-post-thumbnail wp-post-image"}
                         alt={"Free Parking"}
                         style={{ borderRadius: "25px 25px 0 0", width: "100%", height: "auto", objectFit: "cover" }}

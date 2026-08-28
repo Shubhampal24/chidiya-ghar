@@ -4,7 +4,7 @@ export default function WhoWeAreSection() {
       <div
         className={"et_pb_section et_pb_section_1 et_section_regular"}
         style={{
-          background: "linear-gradient(rgba(253, 251, 248, 0.94), rgba(253, 251, 248, 0.94)), url('image/acc-2.png') center/cover no-repeat",
+          background: "linear-gradient(rgba(253, 251, 248, 0.94), rgba(253, 251, 248, 0.94)), url('/image/acc-2.png') center/cover no-repeat",
         }}
       >
         {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
@@ -24,7 +24,7 @@ export default function WhoWeAreSection() {
                   decoding={"async"}
                   width={"700"}
                   height={"700"}
-                  src={"image/rrr.png"}
+                  src={"/image/rrr.png"}
                   alt={""}
                   title={""}
                   className={"wp-image-520"}

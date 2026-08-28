@@ -25,46 +25,8 @@ import {
 
 function HomePage() {
   useEffect(() => {
-    const root = document.getElementById("root");
-    if (!root) return;
-
-    const scripts = Array.from(root.querySelectorAll("script"));
-
-    const loadScript = (script) =>
-      new Promise((resolve) => {
-        const newScript = document.createElement("script");
-        Array.from(script.attributes).forEach((attr) =>
-          newScript.setAttribute(attr.name, attr.value)
-        );
-
-        if (script.src) {
-          newScript.onload = resolve;
-          newScript.onerror = resolve;
-        } else {
-          newScript.innerHTML = script.innerHTML;
-        }
-
-        script.parentNode.replaceChild(newScript, script);
-
-        if (!script.src) {
-          resolve();
-        }
-      });
-
-    const runScriptsSequentially = async () => {
-      for (const script of scripts) {
-        if (!script.dataset.executed) {
-          script.dataset.executed = "true";
-          try {
-            await loadScript(script);
-          } catch (e) {
-            console.error("Error executing script", script, e);
-          }
-        }
-      }
-    };
-
-    runScriptsSequentially();
+    // Scripts and plugins are handled natively by React now.
+    // Removed legacy script injection to prevent UI blocking and 404 errors on live.
   }, []);
 
   return (

@@ -1,10 +1,10 @@
 import { useState } from "react";
 
 const GALLERY_PAGES = [
-  ["image/acc-1.png", "image/acc-2.png", "image/gal-1.png"],
-  ["image/gal-2.png", "image/gal-3.png", "image/gal-4.png"],
-  ["image/gal-5.png", "image/acc-3.png", "image/acc-4.png"],
-  ["image/acc-5.png", "image/acc-1.png", "image/gal-1.png"],
+  ["/image/acc-1.png", "/image/acc-2.png", "/image/gal-1.png"],
+  ["/image/gal-2.png", "/image/gal-3.png", "/image/gal-4.png"],
+  ["/image/gal-5.png", "/image/acc-3.png", "/image/acc-4.png"],
+  ["/image/acc-5.png", "/image/acc-1.png", "/image/gal-1.png"],
 ];
 
 export default function GallerySection() {
