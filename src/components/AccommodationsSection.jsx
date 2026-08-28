@@ -273,34 +273,16 @@ export default function AccommodationsSection() {
                         </span>
                         <span className={"mphb-attribute-value"}>
                           {" "}
-                          <span className={"facility-air-conditioning"}>
-                            <a href={"accommodation-facility/air-conditioning/index.html"}>
-                              {"Air Conditioning"}
-                            </a>
+                          <span className={"facility-item"}>
+                            <a href={"#"}>{"Private Lounge"}</a>
                           </span>
                           {", "}
-                          <span className={"facility-free-parking"}>
-                            <a href={"accommodation-facility/free-parking/index.html"}>
-                              {"Free Parking"}
-                            </a>
+                          <span className={"facility-item"}>
+                            <a href={"#"}>{"King Bed"}</a>
                           </span>
                           {", "}
-                          <span className={"facility-free-wifi"}>
-                            <a href={"accommodation-facility/free-wifi/index.html"}>
-                              {"Free Wifi"}
-                            </a>
-                          </span>
-                          {", "}
-                          <span className={"facility-no-smoking"}>
-                            <a href={"accommodation-facility/no-smoking/index.html"}>
-                              {"No Smoking"}
-                            </a>
-                          </span>
-                          {", "}
-                          <span className={"facility-television"}>
-                            <a href={"accommodation-facility/television/index.html"}>
-                              {"Television"}
-                            </a>
+                          <span className={"facility-item"}>
+                            <a href={"#"}>{"Dedicated Workspace"}</a>
                           </span>
                         </span>
                       </li>
@@ -375,7 +357,7 @@ export default function AccommodationsSection() {
                         className={"mphb-room-type-title"}
                         href={"accommodation/accommodation-iii/index.html"}
                       >
-                        {"Cozy Room"}
+                        {"Studio Haven"}
                       </a>
                       {"\n\t\t\t\t\t\t\t\t\t"}
                     </h2>
@@ -389,15 +371,15 @@ export default function AccommodationsSection() {
                         <span className={"mphb-attribute-value"}>
                           {" "}
                           <span className={"facility-item"}>
-                            <a href={"#"}>{"Attached Bath"}</a>
+                            <a href={"#"}>{"Custom Storage"}</a>
                           </span>
                           {", "}
                           <span className={"facility-item"}>
-                            <a href={"#"}>{"Study Nook"}</a>
+                            <a href={"#"}>{"Smart TV"}</a>
                           </span>
                           {", "}
                           <span className={"facility-item"}>
-                            <a href={"#"}>{"Natural Ventilation"}</a>
+                            <a href={"#"}>{"Work Desk"}</a>
                           </span>
                         </span>
                       </li>
@@ -407,12 +389,12 @@ export default function AccommodationsSection() {
                     <p className={"mphb-regular-price"}>
                       <strong>{"Size:"}</strong>{" "}
                       <span className={"mphb-price"}>
-                        {"280–320"}
+                        {"460–520"}
                       </span>{" "}
                       <span className={"mphb-price-period"}>{"sq ft"}</span>
                     </p>
                     <p style={{ fontSize: "14px", marginTop: "10px", lineHeight: "1.4" }}>
-                      {"Designed for comfortable everyday living with warm natural light and thoughtful storage."}
+                      {"An open-layout haven designed for quiet focus, relaxed evenings and effortless living."}
                     </p>
                     {"\n\t\t\t\t\t\t\t\t\t"}
                     <div className={"mphb-to-book-btn-wrapper"}>
