@@ -356,12 +356,21 @@ html, body, #root, #page-container, body #page-container, #et-boc, #et-main-area
 .dropdown a { display: block; padding: 15px 20px; font-size: 15px; border-bottom: 1px solid rgba(0,0,0,0.05); color: var(--ink); }
 .dropdown a:hover { background: rgba(0,0,0,0.02); color: var(--terracotta); }
 
-/* Buttons */
 /* ====================================================
-   Section Buttons (Below Hero) - Crisp Border & Visible Hover
+   Section Buttons — Contextual Glass
+   
+   Hero bg is DARK IMAGE → white glass (rgba white + white inset ring)
+   Section bg is LIGHT CREAM → warm glass (warm tint + brown inset ring)
+   
+   Principle: glass tint must have contrast against its background.
+   On cream/beige sections, a slight warm-brown tinted frosted glass
+   with a visible brown inset ring creates the same visual language
+   as the hero's white glass on dark — just adapted to the context.
    ==================================================== */
+body #page-container .et_pb_section .et_pb_button_0,
+body #page-container .et_pb_section .et_pb_button_1,
+body #page-container .et_pb_section .et_pb_more_button.et_pb_button,
 .diviBtn,
-.diviBtnDark,
 .diviBtnBrown,
 .outlineBtn,
 .button,
@@ -370,28 +379,36 @@ html, body, #root, #page-container, body #page-container, #et-boc, #et-main-area
 .et_pb_button_0,
 .et_pb_button_1,
 .et_pb_button_0_tb_footer,
-.et_pb_newsletter_button,
 .dh-custom-single-acc .mphb-book-button {
-  border: 1.5px solid #895737 !important;
+  /* Warm-tinted frosted glass — readable on cream/beige light sections */
+  background: rgba(137, 87, 55, 0.08) !important;
+  backdrop-filter: blur(3px) !important;
+  -webkit-backdrop-filter: blur(3px) !important;
+  /* Brown inset ring — same technique as hero white inset ring */
+  box-shadow: inset 0 0 0 1.5px rgba(137, 87, 55, 0.50) !important;
+  border: none !important;
   color: #5E3023 !important;
   border-radius: 9999px !important;
-  letter-spacing: 0.12em !important;
+  padding: 9px 26px !important;
+  letter-spacing: 0.08em !important;
   text-transform: uppercase !important;
   font-weight: 700 !important;
-  background: transparent !important;
+  font-size: 13px !important;
   outline: none !important;
-  transition: all 250ms ease !important;
+  transition: all 200ms ease !important;
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
   cursor: pointer !important;
   text-decoration: none !important;
   position: relative !important;
-  box-shadow: 0 2px 6px rgba(137, 87, 55, 0.1) !important;
+  white-space: nowrap !important;
 }
 
+body #page-container .et_pb_section .et_pb_button_0:hover,
+body #page-container .et_pb_section .et_pb_button_1:hover,
+body #page-container .et_pb_section .et_pb_more_button.et_pb_button:hover,
 .diviBtn:hover,
-.diviBtnDark:hover,
 .diviBtnBrown:hover,
 .outlineBtn:hover,
 .button:hover,
@@ -400,13 +417,41 @@ html, body, #root, #page-container, body #page-container, #et-boc, #et-main-area
 .et_pb_button_0:hover,
 .et_pb_button_1:hover,
 .et_pb_button_0_tb_footer:hover,
-.et_pb_newsletter_button:hover,
 .dh-custom-single-acc .mphb-book-button:hover {
-  background: #C08552 !important;
-  border-color: #C08552 !important;
+  /* On hover: ring brightens + subtle depth — mirrors hero hover pattern */
+  background: rgba(137, 87, 55, 0.16) !important;
+  box-shadow: inset 0 0 0 1.5px rgba(94, 48, 35, 0.80), 0 4px 16px rgba(137, 87, 55, 0.18) !important;
+  color: #5E3023 !important;
+  transform: translateY(-1px) !important;
+}
+
+/* Solid Dark Glass Buttons (Create Account, Search Submit) */
+.diviBtnDark {
+  background: rgba(94, 48, 35, 0.88) !important;
+  backdrop-filter: blur(6px) !important;
+  -webkit-backdrop-filter: blur(6px) !important;
+  box-shadow: inset 0 0 0 1.5px rgba(243, 233, 220, 0.35), 0 4px 14px rgba(94, 48, 35, 0.2) !important;
+  border: none !important;
+  color: #F3E9DC !important;
+  border-radius: 9999px !important;
+  letter-spacing: 0.08em !important;
+  font-weight: 700 !important;
+  outline: none !important;
+  transition: all 200ms ease !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  text-decoration: none !important;
+  position: relative !important;
+  white-space: nowrap !important;
+}
+
+.diviBtnDark:hover {
+  background: rgba(94, 48, 35, 0.98) !important;
+  box-shadow: inset 0 0 0 1.5px rgba(243, 233, 220, 0.85), 0 6px 20px rgba(94, 48, 35, 0.35) !important;
   color: #FFFFFF !important;
-  box-shadow: 0 6px 20px rgba(192, 133, 82, 0.35) !important;
-  transform: translateY(-2px) !important;
+  transform: translateY(-1px) !important;
 }
 
 .et_pb_button_0 {
@@ -1303,30 +1348,34 @@ footer { background: var(--cream); color: var(--ink); padding: 80px 0 0; }
 }
 
 /* ====================================================
-   Newsletter Subscribe Button Visibility
+   Newsletter Subscribe Button - Glassmorphism Style
    ==================================================== */
 body #page-container .et_pb_section .et_pb_signup_0_tb_footer.et_pb_subscribe .et_pb_newsletter_button.et_pb_button,
 .et_pb_signup_0_tb_footer .et_pb_newsletter_button,
 .et_pb_newsletter_button .et_pb_newsletter_button_text {
   color: #FFFFFF !important;
-  background-color: #5E3023 !important;
-  border-color: #5E3023 !important;
+  background: rgba(94, 48, 35, 0.88) !important;
+  backdrop-filter: blur(6px) !important;
+  -webkit-backdrop-filter: blur(6px) !important;
+  box-shadow: inset 0 0 0 1.5px rgba(255, 255, 255, 0.35), 0 4px 14px rgba(94, 48, 35, 0.2) !important;
+  border: none !important;
+  border-radius: 9999px !important;
   font-family: 'Delight', 'DM Sans', sans-serif !important;
   font-size: 14px !important;
   font-weight: 700 !important;
-  letter-spacing: 1px !important;
+  letter-spacing: 0.08em !important;
   text-transform: uppercase !important;
   opacity: 1 !important;
   visibility: visible !important;
+  transition: all 200ms ease !important;
 }
 
 body #page-container .et_pb_section .et_pb_signup_0_tb_footer.et_pb_subscribe .et_pb_newsletter_button.et_pb_button:hover,
 .et_pb_signup_0_tb_footer .et_pb_newsletter_button:hover {
-  background-color: #C08552 !important;
-  border-color: #C08552 !important;
+  background: rgba(94, 48, 35, 0.98) !important;
+  box-shadow: inset 0 0 0 1.5px rgba(255, 255, 255, 0.75), 0 6px 20px rgba(94, 48, 35, 0.35) !important;
   color: #FFFFFF !important;
-  box-shadow: 0 6px 18px rgba(192, 133, 82, 0.35) !important;
-  transform: translateY(-2px) !important;
+  transform: translateY(-1px) !important;
 }
 
 /* ====================================================
@@ -1423,11 +1472,13 @@ p.mphb-required-fields-tip,
   line-height: 48px !important;
   padding: 0 20px !important;
   margin: 0 !important;
-  background-color: #5E3023 !important;
+  background: rgba(94, 48, 35, 0.88) !important;
+  backdrop-filter: blur(6px) !important;
+  -webkit-backdrop-filter: blur(6px) !important;
+  box-shadow: inset 0 0 0 1.5px rgba(243, 233, 220, 0.35), 0 4px 14px rgba(94, 48, 35, 0.2) !important;
   color: #F3E9DC !important;
   border: none !important;
-  box-shadow: none !important;
-  border-radius: 25px !important;
+  border-radius: 9999px !important;
   font-family: 'Grift', sans-serif !important;
   font-size: 18px !important;
   font-weight: 500 !important;
@@ -1438,15 +1489,16 @@ p.mphb-required-fields-tip,
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
-  transition: all 0.2s ease !important;
+  transition: all 200ms ease !important;
 }
 
 .horizontal-search-form .mphb_sc_search-wrapper .button:hover,
 .horizontal-search-form .mphb_sc_search-form input[type="submit"]:hover {
-  background-color: #C08552 !important;
-  border: none !important;
-  box-shadow: none !important;
+  background: rgba(94, 48, 35, 0.98) !important;
+  box-shadow: inset 0 0 0 1.5px rgba(243, 233, 220, 0.75), 0 6px 20px rgba(94, 48, 35, 0.35) !important;
   color: #FFFFFF !important;
+  border: none !important;
+  transform: translateY(-1px) !important;
 }
 
 @media (max-width: 768px) {
@@ -2182,21 +2234,23 @@ textarea,
 }
 
 .dh-custom-offer-card {
-  background: #F3E9DC;
-  border: 1px solid #DAB49D;
-  border-radius: 24px;
-  padding: 40px 60px;
+  background: rgba(243, 233, 220, 0.78) !important;
+  backdrop-filter: blur(0.5px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  box-shadow: inset 0 0 0 1.5px rgba(255, 255, 255, 0.75), 0 12px 36px rgba(94, 48, 35, 0.16) !important;
+  border: none !important;
+  border-radius: 20px !important;
+  padding: 32px 36px !important;
   max-width: 480px;
   width: 100%;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-  transform: scale(0.85);
+  transform: scale(0.88);
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
   text-align: center;
 }
 
 .dh-custom-offer-card:hover {
   transform: scale(1);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+  box-shadow: inset 0 0 0 1.5px rgba(255, 255, 255, 0.90), 0 18px 48px rgba(94, 48, 35, 0.24) !important;
 }
 
 /* ====================================================
@@ -2283,4 +2337,285 @@ textarea,
 .mphb-loop-service-thumbnail,
 .mphb-loop-service-thumbnail img {
   border-radius: 12px !important;
+}
+
+/* Remove default Divi beige background color for Accommodations section */
+.et_pb_section_3.et_pb_section,
+.et_pb_section_3 {
+  background-color: transparent !important;
+}
+
+/* Ensure button wrapper in WhoWeAreSection has no extra top margin to preserve equal 16px gap */
+.et_pb_section_1 .et_pb_button_0_wrapper,
+.et_pb_button_0_wrapper {
+  margin-top: 0 !important;
+}
+
+/* ====================================================
+   Premium Footer Redesign — Warm Earthy Cream Palette
+   Matches Website: #F3E9DC background, Grift headings, Delight content
+   ==================================================== */
+.dh-footer {
+  background: #F3E9DC;
+  color: #5E3023;
+  font-family: 'Delight', sans-serif;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  border-top: 1px solid rgba(137, 87, 55, 0.15);
+}
+
+.dh-footer-body {
+  max-width: 1440px;
+  width: 92%;
+  margin: 0 auto;
+  padding: 64px 20px 0;
+}
+
+/* ── 4-column grid ── */
+.dh-footer-inner {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr 1.6fr;
+  gap: 40px clamp(32px, 5vw, 84px);
+  padding-bottom: 48px;
+}
+
+/* ── Brand column ── */
+.dh-footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.dh-footer-logo-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.dh-footer-logo-img {
+  width: 140px;
+  height: auto;
+  display: block;
+}
+
+.dh-footer-nesting-img {
+  width: 115px;
+  height: auto;
+  display: block;
+  opacity: 0.9;
+}
+
+.dh-footer-tagline {
+  font-family: 'Delight', sans-serif;
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: #5E3023;
+  margin: 0;
+  max-width: 380px;
+  letter-spacing: 0.02em;
+}
+
+.dh-footer-tagline em {
+  font-style: italic;
+  color: #895737;
+  display: inline-block;
+  margin-top: 4px;
+}
+
+/* ── Social pill icons ── */
+.dh-footer-socials {
+  display: flex;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.dh-social-pill {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(137, 87, 55, 0.08);
+  box-shadow: inset 0 0 0 1px rgba(137, 87, 55, 0.28);
+  color: #5E3023;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 200ms ease;
+}
+
+.dh-social-pill:hover {
+  background: rgba(137, 87, 55, 0.18);
+  box-shadow: inset 0 0 0 1.5px rgba(94, 48, 35, 0.65);
+  color: #5E3023;
+  transform: translateY(-2px);
+}
+
+/* ── Column headings ── */
+.dh-footer-col-title {
+  font-family: 'Grift', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #5E3023;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0 0 18px 0;
+  padding-bottom: 10px;
+  border-bottom: 1.5px solid rgba(137, 87, 55, 0.22);
+}
+
+/* ── Nav links ── */
+.dh-footer-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dh-footer-links li a {
+  font-family: 'Delight', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #5E3023;
+  text-decoration: none;
+  transition: color 180ms ease, padding-left 180ms ease;
+  display: inline-block;
+  letter-spacing: 0.03em;
+}
+
+.dh-footer-links li a:hover {
+  color: #C08552;
+  padding-left: 4px;
+}
+
+/* ── Contact list ── */
+.dh-footer-contact-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.dh-footer-contact-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-family: 'Delight', sans-serif;
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: #5E3023;
+  letter-spacing: 0.02em;
+}
+
+.dh-contact-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #895737;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.dh-footer-contact-list a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 180ms ease;
+}
+
+.dh-footer-contact-list a:hover {
+  color: #C08552;
+}
+
+/* ── Horizontal rule ── */
+.dh-footer-hr {
+  height: 1px;
+  background: rgba(137, 87, 55, 0.20);
+  margin: 0;
+}
+
+/* ── Bottom bar ── */
+.dh-footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 22px 0 26px;
+}
+
+.dh-footer-copy,
+.dh-footer-credit {
+  font-family: 'Delight', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: rgba(94, 48, 35, 0.75);
+  margin: 0;
+  letter-spacing: 0.04em;
+}
+
+.dh-footer-legal {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.dh-footer-legal a {
+  font-family: 'Delight', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #895737;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  transition: color 180ms ease;
+}
+
+.dh-footer-legal a:hover {
+  color: #5E3023;
+}
+
+.dh-footer-dot {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: rgba(137, 87, 55, 0.35);
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+/* ── Responsive ── */
+@media (max-width: 980px) {
+  .dh-footer-inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 36px 32px;
+  }
+
+  .dh-footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .dh-footer-logo-img { width: 120px; }
+  .dh-footer-nesting-img { width: 100px; }
+}
+
+@media (max-width: 600px) {
+  .dh-footer-body {
+    padding: 44px 20px 0;
+  }
+
+  .dh-footer-inner {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .dh-footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
 }

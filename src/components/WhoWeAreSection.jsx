@@ -41,7 +41,7 @@ export default function WhoWeAreSection() {
             className={
               "et_pb_column et_pb_column_1_2 et_pb_column_3  et_pb_css_mix_blend_mode_passthrough et-last-child"
             }
-            style={{ display: "flex", flexDirection: "column", justifyContent: "space-between", padding: "16px 0 16px 24px", boxSizing: "border-box" }}
+            style={{ display: "flex", flexDirection: "column", justifyContent: "flex-start", padding: "16px 0 16px 24px", boxSizing: "border-box" }}
           >
             {/* 1. Black Guide: Logo in Brown Color (Large & Exact Centered) */}
             <div className={"dh-whoweare-logo"} style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", width: "250px" }}>
@@ -63,13 +63,13 @@ export default function WhoWeAreSection() {
               />
             </div>
 
-            {/* 2 & 3. Red Guide (Heading) + Blue Guide (Content) */}
-            <div style={{ margin: "20px 0" }}>
+            {/* 2, 3 & 4. Red Guide (Heading) + Blue Guide (Content) + Orange Guide (Button) */}
+            <div style={{ display: "flex", flexDirection: "column", marginTop: "50px" }}>
               <div
                 className={
                   "et_pb_module et_pb_text et_pb_text_1  et_pb_text_align_left et_pb_bg_layout_light"
                 }
-                style={{ marginBottom: "16px" }}
+                style={{ marginBottom: "20px" }}
               >
                 <div className={"et_pb_text_inner"}>
                   <h2 className={"dh-whoweare-title"} style={{ fontFamily: "'Grift', sans-serif", fontSize: "38px", fontWeight: 700, color: "#5E3023", margin: 0, lineHeight: 1.28 }}>
@@ -82,6 +82,7 @@ export default function WhoWeAreSection() {
                 className={
                   "et_pb_module et_pb_text et_pb_text_desc et_pb_text_align_left et_pb_bg_layout_light"
                 }
+                style={{ marginBottom: "35px" }}
               >
                 <div className={"et_pb_text_inner"}>
                   <p style={{
@@ -91,36 +92,37 @@ export default function WhoWeAreSection() {
                     lineHeight: "1.75",
                     color: "#5E3023",
                     margin: 0,
-                    maxWidth: "540px",
+                    maxWidth: "585px",
                     letterSpacing: "0.05em",
                   }}>
                     {"Chidiya Ghar is thoughtfully designed to bring together comfort, character and a sense of belonging. Every space is created to feel warm, welcoming and effortlessly livable. Named after the Hindi word for \"Bird House,\" Chidiya Ghar is a home that breathes — alive with natural light, botanical details and the quiet warmth of a place designed with love."}
                   </p>
                 </div>
               </div>
-            </div>
 
-            {/* 4. Orange Guide: CTA Button with Delight Extra bold font */}
-            <div
-              className={
-                "et_pb_button_module_wrapper et_pb_button_0_wrapper et_pb_button_alignment_left et_pb_module"
-              }
-            >
-              <a
-                className={"et_pb_button et_pb_button_0 et_pb_bg_layout_light"}
-                href={"#"}
-                data-icon={""}
-                style={{
-                  fontFamily: "'Delight', sans-serif !important",
-                  fontWeight: "800 !important",
-                  letterSpacing: "0.12em",
-                  textTransform: "uppercase",
-                  padding: "13px 36px",
-                  fontSize: "15px",
-                }}
+              {/* 4. Orange Guide: CTA Button with Delight Extra bold font */}
+              <div
+                className={
+                  "et_pb_button_module_wrapper et_pb_button_0_wrapper et_pb_button_alignment_left et_pb_module"
+                }
+                style={{ marginTop: 0, marginBottom: 0 }}
               >
-                {"Discover Our Spaces"}
-              </a>
+                <a
+                  className={"et_pb_button et_pb_button_0 et_pb_bg_layout_light"}
+                  href={"#"}
+                  data-icon={""}
+                  style={{
+                    fontFamily: "'Delight', sans-serif !important",
+                    fontWeight: "800 !important",
+                    letterSpacing: "0.12em",
+                    textTransform: "uppercase",
+                    padding: "13px 36px",
+                    fontSize: "15px",
+                  }}
+                >
+                  {"Discover Our Spaces"}
+                </a>
+              </div>
             </div>
           </div>
           {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t"}

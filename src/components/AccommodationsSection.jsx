@@ -1,15 +1,16 @@
-import sectionBg from "../../image/cc27aca2dd7cd259fda0242a3e8fe8ae 4.png";
+import sectionBg from "../../image/ChatGPT Image Aug 31, 2026, 05_20_00 PM.png";
 
 export default function AccommodationsSection() {
   return (
     <>
       <div
-        className={"et_pb_section et_pb_section_3 et_pb_with_background et_section_regular"}
+        className={"et_pb_section et_pb_section_3 et_section_regular"}
         style={{
           backgroundImage: `url("${sectionBg}")`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
+          backgroundColor: "transparent",
         }}
       >
         {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}

@@ -1,411 +1,103 @@
 export default function Footer() {
   return (
-    <>
-      <footer id="site-footer" style={{ background: 'transparent', padding: 0 }} className={"et-l et-l--footer"}>
-        {"\n\t\t\t"}
-        <div className={"et_builder_inner_content et_pb_gutters3"}>
-          {"\n\t\t"}
-          <div
-            className={
-              "et_pb_section et_pb_section_0_tb_footer et_pb_with_background et_section_regular"
-            }
-            style={{ paddingTop: "52px", paddingBottom: "10px" }}
-          >
-            <div className={"et_pb_row et_pb_row_0_tb_footer et_pb_gutters2"} style={{ marginBottom: "8px" }}>
-              <div
-                className={
-                  "et_pb_column et_pb_column_4_4 et_pb_column_0_tb_footer et_pb_css_mix_blend_mode_passthrough et-last-child"
-                }
-              >
-                <div className={"et_pb_module et_pb_image et_pb_image_0_tb_footer"}>
-                  <span className={"et_pb_image_wrap "}>
-                    <img
-                      loading={"lazy"}
-                      decoding={"async"}
-                      width={"400"}
-                      height={"205"}
-                      src={"/image/Group 1171275756.png"}
-                      alt={"Chidiya Ghar"}
-                      title={"Chidiya Ghar"}
-                      className={"wp-image-1488"}
-                      style={{ maxWidth: "175px", height: "auto", display: "block", margin: "0 auto" }}
-                    />
-                  </span>
-                  <img
-                    src={"/image/NESTING PROFESSIONALS.svg"}
-                    style={{
-                      width: "100%",
-                      maxWidth: "145px",
-                      marginTop: "5px",
-                      display: "block",
-                      marginLeft: "auto",
-                      marginRight: "auto",
-                    }}
-                    alt={"Nesting Professionals"}
-                  />
-                </div>
-              </div>
+    <footer id="site-footer" className="dh-footer">
+      <div className="dh-footer-body">
+        <div className="dh-footer-inner">
+
+          {/* Column 1 — Brand */}
+          <div className="dh-footer-col dh-footer-brand">
+            <div className="dh-footer-logo-wrap">
+              <img src="/image/Group 1171275756.png" alt="Chidiya Ghar" className="dh-footer-logo-img" />
+              <img src="/image/NESTING PROFESSIONALS.svg" alt="Nesting Professionals" className="dh-footer-nesting-img" />
             </div>
-
-            <div className={"et_pb_row et_pb_row_1_tb_footer et_pb_gutters2"} style={{ marginBottom: "24px" }}>
-              <div
-                className={
-                  "et_pb_column et_pb_column_4_4 et_pb_column_1_tb_footer et_pb_css_mix_blend_mode_passthrough et-last-child"
-                }
-              >
-                <div
-                  className={
-                    "et_pb_module et_pb_text et_pb_text_0_tb_footer et_pb_text_align_center et_pb_bg_layout_light"
-                  }
-                >
-                  <div className={"et_pb_text_inner"}>
-                    <p style={{ margin: "0 auto", maxWidth: "680px", fontSize: "14px", lineHeight: "1.5", color: "#5E3023" }}>
-                      {
-                        "A home where birds, nature, art and belonging come together. Warm. Artistic. Botanical. Indian. Premium."
-                      }
-                    </p>
-                  </div>
-                </div>
-              </div>
+            <p className="dh-footer-tagline">
+              A home where birds, nature, art and belonging come together.
+              <br />
+              <em>Warm. Artistic. Botanical. Indian. Premium.</em>
+            </p>
+            <div className="dh-footer-socials">
+              <a href="#" className="dh-social-pill" title="Facebook" aria-label="Facebook">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+              </a>
+              <a href="#" className="dh-social-pill" title="Instagram" aria-label="Instagram">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </a>
+              <a href="#" className="dh-social-pill" title="YouTube" aria-label="YouTube">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg>
+              </a>
             </div>
-
-            <div className={"et_pb_with_border et_pb_row et_pb_row_2_tb_footer et_pb_gutters2"} style={{ maxWidth: "1050px", margin: "0 auto", paddingBottom: "22px" }}>
-              <div
-                className={
-                  "et_pb_column et_pb_column_1_3 et_pb_column_2_tb_footer et_pb_css_mix_blend_mode_passthrough"
-                }
-              >
-                <div
-                  className={
-                    "et_pb_module et_pb_text et_pb_text_1_tb_footer et_pb_text_align_left et_pb_text_align_center-phone et_pb_bg_layout_light"
-                  }
-                  style={{ marginBottom: "10px" }}
-                >
-                  <div className={"et_pb_text_inner"}>
-                    <p style={{ fontFamily: "'Grift', sans-serif", fontWeight: 700, fontSize: "16px", marginBottom: "8px", color: "#000" }}>{"Accomodation"}</p>
-                    <p style={{ margin: "0 0 4px 0", lineHeight: "1.3" }}>
-                      <a href={"#"}>{"Rooms"}</a>
-                    </p>
-                    <p style={{ margin: "0 0 4px 0", lineHeight: "1.3" }}>
-                      <a href={"#"}>{"Villas"}</a>
-                    </p>
-                    <p style={{ margin: "0 0 4px 0", lineHeight: "1.3" }}>
-                      <a href={"#"}>{"Suites"}</a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                className={
-                  "et_pb_column et_pb_column_1_3 et_pb_column_4_tb_footer et_pb_css_mix_blend_mode_passthrough"
-                }
-              >
-                <div
-                  className={
-                    "et_pb_module et_pb_text et_pb_text_9_tb_footer et_pb_text_align_left et_pb_text_align_center-phone et_pb_bg_layout_light"
-                  }
-                  style={{ marginBottom: "10px" }}
-                >
-                  <div className={"et_pb_text_inner"}>
-                    <p style={{ fontFamily: "'Grift', sans-serif", fontWeight: 700, fontSize: "16px", marginBottom: "8px", color: "#000" }}>{"Quick Access"}</p>
-                    <p style={{ margin: "0 0 4px 0", lineHeight: "1.3" }}>
-                      <a href={"#"}>{"Home"}</a>
-                    </p>
-                    <p style={{ margin: "0 0 4px 0", lineHeight: "1.3" }}>
-                      <a href={"#"}>{"About us"}</a>
-                    </p>
-                    <p style={{ margin: "0 0 4px 0", lineHeight: "1.3" }}>
-                      <a href={"#"}>{"Services"}</a>
-                    </p>
-                    <p style={{ margin: "0 0 4px 0", lineHeight: "1.3" }}>
-                      <a href={"#"}>{"Contact us"}</a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                className={
-                  "et_pb_column et_pb_column_1_3 et_pb_column_5_tb_footer et_pb_css_mix_blend_mode_passthrough et-last-child"
-                }
-              >
-                <div
-                  className={
-                    "et_pb_with_border et_pb_module et_pb_signup_0_tb_footer et_pb_newsletter_layout_left_right et_pb_newsletter et_pb_subscribe clearfix et_pb_text_align_left et_pb_bg_layout_dark et_pb_newsletter_description_no_content"
-                  }
-                >
-                  <div className={"et_pb_newsletter_description"}>
-                    <h2 className={"et_pb_module_header"}>{"Subscribe to our Newsletter"}</h2>
-                  </div>
-                  <div className={"et_pb_newsletter_form"}>
-                    <form method={"post"}>
-                      <div className={"et_pb_newsletter_result et_pb_newsletter_error"}></div>
-                      <div className={"et_pb_newsletter_result et_pb_newsletter_success"}>
-                        <h2>{"Success!"}</h2>
-                      </div>
-                      <div className={"et_pb_newsletter_fields"}>
-                        <p
-                          className={
-                            "et_pb_newsletter_field et_pb_contact_field_last et_pb_contact_field_last_tablet et_pb_contact_field_last_phone"
-                          }
-                        >
-                          <label
-                            className={"et_pb_contact_form_label"}
-                            htmlFor={"et_pb_signup_firstname"}
-                            style={{ display: "none" }}
-                          >
-                            {"Name"}
-                          </label>
-                          <input
-                            id={"et_pb_signup_firstname"}
-                            className={"input"}
-                            type={"text"}
-                            placeholder={"Name"}
-                            name={"et_pb_signup_firstname"}
-                          />
-                        </p>
-                        <p
-                          className={
-                            "et_pb_newsletter_field et_pb_contact_field_last et_pb_contact_field_last_tablet et_pb_contact_field_last_phone"
-                          }
-                        >
-                          <label
-                            className={"et_pb_contact_form_label"}
-                            htmlFor={"et_pb_signup_email"}
-                            style={{ display: "none" }}
-                          >
-                            {"Email"}
-                          </label>
-                          <input
-                            id={"et_pb_signup_email"}
-                            className={"input"}
-                            type={"text"}
-                            placeholder={"Email"}
-                            name={"et_pb_signup_email"}
-                          />
-                        </p>
-                        <p className={"et_pb_newsletter_button_wrap"} style={{ marginTop: "6px" }}>
-                          <a
-                            className={"et_pb_newsletter_button et_pb_button"}
-                            href={"#"}
-                            data-icon={""}
-                            style={{
-                              background: "#5E3023",
-                              color: "#FFFFFF",
-                              border: "1.5px solid #5E3023",
-                              borderRadius: "9999px",
-                              display: "flex",
-                              alignItems: "center",
-                              justifyContent: "center",
-                              padding: "10px 24px",
-                              fontSize: "14px",
-                              fontWeight: 700,
-                              letterSpacing: "1px",
-                              textDecoration: "none",
-                              width: "100%",
-                              cursor: "pointer",
-                              boxShadow: "0 3px 10px rgba(94, 48, 35, 0.25)",
-                            }}
-                          >
-                            <span className={"et_subscribe_loader"}></span>
-                            <span className={"et_pb_newsletter_button_text"} style={{ color: "#FFFFFF", fontSize: "14px", fontWeight: 700 }}>
-                              {"Subscribe"}
-                            </span>
-                          </a>
-                        </p>
-                      </div>
-                      <input type={"hidden"} value={"mailchimp"} name={"et_pb_signup_provider"} />
-                      <input type={"hidden"} value={"2ad76a9785"} name={"et_pb_signup_list_id"} />
-                      <input
-                        type={"hidden"}
-                        value={"TechTech"}
-                        name={"et_pb_signup_account_name"}
-                      />
-                      <input type={"hidden"} value={"true"} name={"et_pb_signup_ip_address"} />
-                      <input
-                        type={"hidden"}
-                        value={"91a0c26e5ff93418df71839bb342a95e"}
-                        name={"et_pb_signup_checksum"}
-                      />
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className={"et_pb_with_border et_pb_row et_pb_row_3_tb_footer et_pb_gutters2"} style={{ maxWidth: "1050px", margin: "0 auto", padding: "16px 0 12px" }}>
-              <div
-                className={
-                  "et_pb_column et_pb_column_4_4 et_pb_column_6_tb_footer et_pb_css_mix_blend_mode_passthrough et-last-child"
-                }
-              >
-                {/* Contact Address */}
-                <div style={{ textAlign: "center", marginBottom: "12px" }}>
-                  <p style={{ margin: 0, fontSize: "13.5px", lineHeight: "1.5" }}>
-                    <span style={{ color: "#895737", fontWeight: 700 }}>{"Contact Us: "}</span>
-                    <a
-                      href={"https://maps.app.goo.gl/tBjRrGUtpsLffTFr5"}
-                      target={"_blank"}
-                      rel={"noopener noreferrer"}
-                      style={{
-                        color: "inherit",
-                        textDecoration: "underline",
-                        textUnderlineOffset: "3px",
-                      }}
-                    >
-                      {"Flat - 202, Floor - 2nd, Society- Anjaneya Apartments, Land Mark - in front of ASIA House, Near Mamta Chowk Balewadi High Street. Pune 411045"}
-                    </a>
-                  </p>
-                </div>
-
-                {/* Both Inline in Respective Sides: Left = Phones & Email, Right = Privacy & Terms */}
-                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "12px", borderTop: "1px solid rgba(192, 133, 82, 0.2)", paddingTop: "12px" }}>
-                  <div style={{ fontSize: "13.5px", color: "#5E3023" }}>
-                    <strong><span style={{ color: "#895737" }}>{"Tel: "}</span></strong>{"+1 5432167890"}
-                    <span style={{ color: "rgba(192, 133, 82, 0.4)", margin: "0 8px" }}>{"|"}</span>
-                    <strong><span style={{ color: "#895737" }}>{"Tel: "}</span></strong>{"+1 6789054321"}
-                    <span style={{ color: "rgba(192, 133, 82, 0.4)", margin: "0 8px" }}>{"|"}</span>
-                    <span style={{ color: "#895737" }}><strong>{"Email: "}</strong></span>{"info@yourdomain.com"}
-                  </div>
-
-                  <div style={{ fontSize: "13.5px" }}>
-                    <a href={"#"} style={{ color: "#895737", textDecoration: "none" }}>{"Privacy Policy"}</a>
-                    <span style={{ color: "rgba(0, 0, 0, 0.3)", margin: "0 8px" }}>{"|"}</span>
-                    <a href={"#"} style={{ color: "#895737", textDecoration: "none" }}>{"Terms of services"}</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t"}
           </div>
-          <div
-            className={
-              "et_pb_section et_pb_section_1_tb_footer et_pb_with_background et_section_regular"
-            }
-            style={{ paddingTop: "12px", paddingBottom: "12px" }}
-          >
-            <div className={"et_pb_row et_pb_row_4_tb_footer et_pb_equal_columns et_pb_gutters2"} style={{ maxWidth: "1050px", margin: "0 auto", padding: "0 15px" }}>
-              {"\n\t\t\t\t"}
-              <div
-                className={
-                  "et_pb_column et_pb_column_1_3 et_pb_column_7_tb_footer  et_pb_css_mix_blend_mode_passthrough"
-                }
-              >
-                {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
-                <div
-                  className={
-                    "et_pb_module et_pb_text et_pb_text_17_tb_footer  et_pb_text_align_left et_pb_text_align_center-tablet et_pb_bg_layout_light"
-                  }
-                >
-                  {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
-                  <div className={"et_pb_text_inner"}>
-                    {"© CHIDIYA GHAR. ALL RIGHTS RESERVED."}
-                  </div>
-                  {"\n\t\t\t"}
-                </div>
-                {"\n\t\t\t"}
-              </div>
-              <div
-                className={
-                  "et_pb_column et_pb_column_1_3 et_pb_column_8_tb_footer  et_pb_css_mix_blend_mode_passthrough"
-                }
-              >
-                {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
-                <ul
-                  className={
-                    "et_pb_module et_pb_social_media_follow et_pb_social_media_follow_0_tb_footer clearfix  et_pb_text_align_center et_pb_bg_layout_light"
-                  }
-                >
-                  {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
-                  <li
-                    className={
-                      "et_pb_social_media_follow_network_0_tb_footer et_pb_social_icon et_pb_social_network_link  et-social-facebook"
-                    }
-                  >
-                    <a
-                      href={"#"}
-                      className={"icon et_pb_with_border"}
-                      title={"Follow on Facebook"}
-                      target={"_blank"}
-                    >
-                      <span
-                        className={"et_pb_social_media_follow_network_name"}
-                        aria-hidden={"true"}
-                      >
-                        {"Follow"}
-                      </span>
-                    </a>
-                  </li>
-                  <li
-                    className={
-                      "et_pb_social_media_follow_network_1_tb_footer et_pb_social_icon et_pb_social_network_link  et-social-youtube"
-                    }
-                  >
-                    <a
-                      href={"#"}
-                      className={"icon et_pb_with_border"}
-                      title={"Follow on Youtube"}
-                      target={"_blank"}
-                    >
-                      <span
-                        className={"et_pb_social_media_follow_network_name"}
-                        aria-hidden={"true"}
-                      >
-                        {"Follow"}
-                      </span>
-                    </a>
-                  </li>
-                  <li
-                    className={
-                      "et_pb_social_media_follow_network_2_tb_footer et_pb_social_icon et_pb_social_network_link  et-social-instagram"
-                    }
-                  >
-                    <a
-                      href={"#"}
-                      className={"icon et_pb_with_border"}
-                      title={"Follow on Instagram"}
-                      target={"_blank"}
-                    >
-                      <span
-                        className={"et_pb_social_media_follow_network_name"}
-                        aria-hidden={"true"}
-                      >
-                        {"Follow"}
-                      </span>
-                    </a>
-                  </li>
-                  {"\n\t\t\t"}
-                </ul>
-                {"\n\t\t\t"}
-              </div>
-              <div
-                className={
-                  "et_pb_column et_pb_column_1_3 et_pb_column_9_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child"
-                }
-              >
-                {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
-                <div
-                  className={
-                    "et_pb_module et_pb_text et_pb_text_18_tb_footer  et_pb_text_align_right et_pb_text_align_center-tablet et_pb_bg_layout_light"
-                  }
-                >
-                  {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
-                  <div className={"et_pb_text_inner"}>
-                    <p>{"Designed by TechTech"}</p>
-                  </div>
-                  {"\n\t\t\t"}
-                </div>
-                {"\n\t\t\t"}
-              </div>
-              {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t"}
-            </div>
-            {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t"}
+
+          {/* Column 2 — Accommodation */}
+          <div className="dh-footer-col">
+            <h4 className="dh-footer-col-title">Accommodation</h4>
+            <ul className="dh-footer-links">
+              <li><a href="#">Rooms</a></li>
+              <li><a href="#">Villas</a></li>
+              <li><a href="#">Suites</a></li>
+            </ul>
           </div>
-          {"\t\t"}
+
+          {/* Column 3 — Quick Access */}
+          <div className="dh-footer-col">
+            <h4 className="dh-footer-col-title">Quick Access</h4>
+            <ul className="dh-footer-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+
+          {/* Column 4 — Contact */}
+          <div className="dh-footer-col">
+            <h4 className="dh-footer-col-title">Get In Touch</h4>
+            <ul className="dh-footer-contact-list">
+              <li>
+                <span className="dh-contact-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                </span>
+                <a href="https://maps.app.goo.gl/tBjRrGUtpsLffTFr5" target="_blank" rel="noopener noreferrer">
+                  Flat 202, Anjaneya Apartments, Near Mamta Chowk, Balewadi High Street, Pune 411045
+                </a>
+              </li>
+              <li>
+                <span className="dh-contact-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                  </svg>
+                </span>
+                <span>+1 5432167890 &middot; +1 6789054321</span>
+              </li>
+              <li>
+                <span className="dh-contact-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <rect x="2" y="4" width="20" height="16" rx="2" />
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                  </svg>
+                </span>
+                <a href="mailto:info@yourdomain.com">info@yourdomain.com</a>
+              </li>
+            </ul>
+          </div>
+
         </div>
-        {"\n\t"}
-      </footer>
-    </>
+
+        <div className="dh-footer-hr" />
+
+        <div className="dh-footer-bottom">
+          <p className="dh-footer-copy">&copy; Chidiya Ghar. All Rights Reserved.</p>
+          <div className="dh-footer-legal">
+            <a href="#">Privacy Policy</a>
+            <span className="dh-footer-dot" />
+            <a href="#">Terms of Service</a>
+          </div>
+          <p className="dh-footer-credit">Designed by TechTech</p>
+        </div>
+      </div>
+    </footer>
   );
 }
