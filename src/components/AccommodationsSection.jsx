@@ -1,7 +1,17 @@
+import sectionBg from "../../image/cc27aca2dd7cd259fda0242a3e8fe8ae 4.png";
+
 export default function AccommodationsSection() {
   return (
     <>
-      <div className={"et_pb_section et_pb_section_3 et_pb_with_background et_section_regular"}>
+      <div
+        className={"et_pb_section et_pb_section_3 et_pb_with_background et_section_regular"}
+        style={{
+          backgroundImage: `url("${sectionBg}")`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
         {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
         <div className={"et_pb_row et_pb_row_5 et_pb_gutters2"}>
           {"\n\t\t\t\t"}

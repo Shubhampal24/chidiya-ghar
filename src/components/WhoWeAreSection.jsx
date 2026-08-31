@@ -72,7 +72,7 @@ export default function WhoWeAreSection() {
                 style={{ marginBottom: "16px" }}
               >
                 <div className={"et_pb_text_inner"}>
-                  <h2 style={{ fontFamily: "'Grift', sans-serif", fontSize: "38px", fontWeight: 700, color: "#5E3023", margin: 0, lineHeight: 1.28 }}>
+                  <h2 className={"dh-whoweare-title"} style={{ fontFamily: "'Grift', sans-serif", fontSize: "38px", fontWeight: 700, color: "#5E3023", margin: 0, lineHeight: 1.28 }}>
                     {"A Home With Character"}
                   </h2>
                 </div>

@@ -856,7 +856,7 @@ footer { background: var(--cream); color: var(--ink); padding: 80px 0 0; }
   display: flex !important;
   flex-direction: column !important;
   transition: transform 0.25s ease, box-shadow 0.25s ease !important;
-  border-radius: 25px !important;
+  border-radius: 20px !important;
 }
 
 .dh-custom-single-acc:hover {
@@ -870,11 +870,13 @@ footer { background: var(--cream); color: var(--ink); padding: 80px 0 0; }
   position: relative !important;
   margin: 0 0 8px 0 !important;
   overflow: hidden !important;
-  border-radius: 0px !important;
+  border-radius: 12px !important;
 }
 
 .dh-custom-single-acc .mphb-loop-room-thumbnail a {
   display: block !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
 }
 
 .dh-custom-single-acc .mphb-loop-room-thumbnail img {
@@ -883,11 +885,114 @@ footer { background: var(--cream); color: var(--ink); padding: 80px 0 0; }
   object-fit: cover !important;
   display: block !important;
   transition: transform 0.35s ease !important;
-  border-radius: 25px !important;
+  border-radius: 12px !important;
 }
 
 .dh-custom-single-acc:hover .mphb-loop-room-thumbnail img {
   transform: scale(1.04) !important;
+}
+
+/* ====================================================
+   Extra Services Cards (Styled like Accommodation Cards)
+   ==================================================== */
+.dh-extra-service-card,
+.et_pb_column_14.et_pb_column,
+.et_pb_column_15.et_pb_column {
+  background: #FDFBF8 !important;
+  border: 1px solid #DAB49D !important;
+  border-radius: 20px !important;
+  padding: 12px !important;
+  box-sizing: border-box !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease !important;
+  box-shadow: 0 4px 15px rgba(94, 48, 35, 0.06) !important;
+  overflow: hidden !important;
+}
+
+.dh-extra-service-card:hover,
+.et_pb_column_14.et_pb_column:hover,
+.et_pb_column_15.et_pb_column:hover {
+  transform: translateY(-5px) scale(1.02) !important;
+  box-shadow: 0 15px 35px rgba(94, 48, 35, 0.15) !important;
+}
+
+.dh-extra-service-card .mphb-loop-service-thumbnail,
+.et_pb_column_14 .mphb-loop-service-thumbnail,
+.et_pb_column_15 .mphb-loop-service-thumbnail {
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  margin: 0 0 14px 0 !important;
+}
+
+.dh-extra-service-card .mphb-loop-service-thumbnail img,
+.et_pb_column_14 .mphb-loop-service-thumbnail img,
+.et_pb_column_15 .mphb-loop-service-thumbnail img {
+  border-radius: 12px !important;
+  width: 100% !important;
+  height: 180px !important;
+  object-fit: cover !important;
+  display: block !important;
+  transition: transform 0.35s ease !important;
+}
+
+.dh-extra-service-card:hover .mphb-loop-service-thumbnail img,
+.et_pb_column_14:hover .mphb-loop-service-thumbnail img,
+.et_pb_column_15:hover .mphb-loop-service-thumbnail img {
+  transform: scale(1.04) !important;
+}
+
+.dh-extra-service-card .mphb-service-title,
+.dh-extra-service-card .mphb-service-title a,
+.et_pb_column_14 .mphb-service-title a,
+.et_pb_column_15 .mphb-service-title a {
+  font-family: 'Grift', sans-serif !important;
+  font-size: 21px !important;
+  font-weight: 700 !important;
+  color: #5E3023 !important;
+  margin: 0 0 8px 0 !important;
+  text-decoration: none !important;
+  display: block !important;
+}
+
+.dh-extra-service-card p,
+.et_pb_column_14 .mphb-service p,
+.et_pb_column_15 .mphb-service p {
+  font-family: 'Delight', sans-serif !important;
+  font-size: 13.5px !important;
+  font-weight: 400 !important;
+  line-height: 1.55 !important;
+  color: #5E3023 !important;
+  letter-spacing: 0.05em !important;
+  margin: 0 0 12px 0 !important;
+}
+
+.dh-extra-service-card .mphb-price-wrapper,
+.et_pb_column_14 .mphb-price-wrapper,
+.et_pb_column_15 .mphb-price-wrapper {
+  font-family: 'Delight', sans-serif !important;
+  color: #5E3023 !important;
+  font-size: 13.5px !important;
+  margin-top: 8px !important;
+}
+
+.dh-extra-service-card .mphb-price-wrapper strong,
+.et_pb_column_14 .mphb-price-wrapper strong,
+.et_pb_column_15 .mphb-price-wrapper strong {
+  font-weight: 700 !important;
+  color: #5E3023 !important;
+}
+
+.dh-extra-service-card .mphb-price,
+.et_pb_column_14 .mphb-price,
+.et_pb_column_15 .mphb-price {
+  font-weight: 700 !important;
+  color: #5E3023 !important;
+}
+
+/* Ensure 'A Home With Character' is brown */
+.dh-whoweare-title,
+.et_pb_section_1 .et_pb_text_1 h2,
+.et_pb_section_1 h2 {
+  color: #5E3023 !important;
 }
 
 /* Floating Book Button (Top-Right of card/image) */
@@ -1672,12 +1777,9 @@ textarea,
 .bookingWrap,
 .roomCard,
 .service,
-.dh-custom-single-acc,
 .dh-news-card,
 .dh-gallery-item,
 .dh-gallery-item img,
-.dh-custom-single-acc .mphb-loop-room-thumbnail,
-.dh-custom-single-acc .mphb-loop-room-thumbnail img,
 .dh-custom-price-acc .mphb-regular-price,
 .et_pb_team_member,
 .et_pb_team_member_0.et_pb_team_member,
@@ -1687,13 +1789,8 @@ textarea,
 .et_pb_column_10,
 .et_pb_column_11,
 .et_pb_column_12,
-.et_pb_column_14,
-.et_pb_column_15,
 .et_pb_column_17,
-.mphb-service,
 .mphb_sc_services-wrapper,
-.mphb-loop-service-thumbnail,
-.mphb-loop-service-thumbnail img,
 .et_pb_blog_0 .et_pb_blog_grid .et_pb_post,
 .news article,
 .dropdown,
@@ -1889,12 +1986,9 @@ textarea,
 .bookingWrap,
 .roomCard,
 .service,
-.dh-custom-single-acc,
 .dh-news-card,
 .dh-gallery-item,
 .dh-gallery-item img,
-.dh-custom-single-acc .mphb-loop-room-thumbnail,
-.dh-custom-single-acc .mphb-loop-room-thumbnail img,
 .dh-custom-price-acc .mphb-regular-price,
 .et_pb_team_member,
 .et_pb_team_member_0.et_pb_team_member,
@@ -1904,13 +1998,8 @@ textarea,
 .et_pb_column_10,
 .et_pb_column_11,
 .et_pb_column_12,
-.et_pb_column_14,
-.et_pb_column_15,
 .et_pb_column_17,
-.mphb-service,
 .mphb_sc_services-wrapper,
-.mphb-loop-service-thumbnail,
-.mphb-loop-service-thumbnail img,
 .et_pb_blog_0 .et_pb_blog_grid .et_pb_post,
 .news article,
 .dropdown,
@@ -2010,7 +2099,7 @@ textarea,
 }
 
 .dh-custom-single-acc .mphb-loop-room-thumbnail img {
-  border-radius: 16px !important;
+  border-radius: 12px !important;
   width: 100% !important;
   margin-bottom: 0 !important;
   display: block !important;
@@ -2163,4 +2252,35 @@ textarea,
   .et_pb_signup_0_tb_footer {
     width: 100% !important;
   }
+}
+
+/* ==========================================================================
+   ACCOMMODATION & EXTRA SERVICE CARDS - MASTER SPECIFICITY
+   Card Border: 20px | Image Edge: 12px
+   ========================================================================== */
+.dh-custom-single-acc,
+.dh-extra-service-card,
+.et_pb_column_14,
+.et_pb_column_15,
+.et_pb_column_14.et_pb_column,
+.et_pb_column_15.et_pb_column,
+.mphb-service {
+  border-radius: 20px !important;
+}
+
+.dh-custom-single-acc .mphb-loop-room-thumbnail,
+.dh-custom-single-acc .mphb-loop-room-thumbnail a,
+.dh-custom-single-acc .mphb-loop-room-thumbnail img,
+.dh-custom-single-acc .post-thumbnail,
+.dh-custom-single-acc .post-thumbnail img,
+.dh-extra-service-card .mphb-loop-service-thumbnail,
+.dh-extra-service-card .mphb-loop-service-thumbnail a,
+.dh-extra-service-card .mphb-loop-service-thumbnail img,
+.et_pb_column_14 .mphb-loop-service-thumbnail,
+.et_pb_column_14 .mphb-loop-service-thumbnail img,
+.et_pb_column_15 .mphb-loop-service-thumbnail,
+.et_pb_column_15 .mphb-loop-service-thumbnail img,
+.mphb-loop-service-thumbnail,
+.mphb-loop-service-thumbnail img {
+  border-radius: 12px !important;
 }

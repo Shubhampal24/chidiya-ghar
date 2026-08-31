@@ -62,9 +62,9 @@ export default function ExtraServicesSection() {
           </div>
           <div
             className={
-              "et_pb_with_border et_pb_column_1_3 et_pb_column et_pb_column_14  et_pb_css_mix_blend_mode_passthrough"
+              "et_pb_with_border et_pb_column_1_3 et_pb_column et_pb_column_14  et_pb_css_mix_blend_mode_passthrough dh-extra-service-card"
             }
-            style={{ borderRadius: "25px", overflow: "hidden" }}
+            style={{ borderRadius: "20px", background: "#FDFBF8", border: "1px solid #DAB49D", padding: "10px", boxSizing: "border-box" }}
           >
             {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
             <div className={"et_pb_module mphb-divi-services mphb-divi-services_0"}>
@@ -76,10 +76,10 @@ export default function ExtraServicesSection() {
                     className={
                       "mphb-service post-129 mphb_room_service type-mphb_room_service status-publish has-post-thumbnail mphb-service-pay-per-night"
                     }
-                    style={{ borderRadius: "25px" }}
+                    style={{ borderRadius: "20px" }}
                   >
                     {"\n\n\t\n\n\t"}
-                    <p className={"mphb-loop-service-thumbnail"} style={{ borderRadius: "25px 25px 0 0", overflow: "hidden", margin: 0 }}>
+                    <p className={"mphb-loop-service-thumbnail"} style={{ borderRadius: "12px", overflow: "hidden", margin: "0 0 12px 0" }}>
                       {"\n\t"}
                       <img
                         loading={"lazy"}
@@ -89,27 +89,27 @@ export default function ExtraServicesSection() {
                         src={"/wp-content/uploads/2022/08/breakfast.jpg"}
                         className={"attachment-post-thumbnail size-post-thumbnail wp-post-image"}
                         alt={"Breakfast"}
-                        style={{ borderRadius: "25px 25px 0 0" }}
+                        style={{ borderRadius: "12px", width: "100%", height: "170px", objectFit: "cover", display: "block" }}
                       />
                       {"\n\t"}
                     </p>
                     {"\n\t\n"}
-                    <h2 className={"mphb-service-title"}>
+                    <h2 className={"mphb-service-title"} style={{ margin: "0 0 6px 0" }}>
                       {"\n"}
-                      <a href={"services/breakfast/index.html"}>{"Breakfast"}</a>
+                      <a href={"services/breakfast/index.html"} style={{ fontFamily: "'Grift', sans-serif", fontSize: "20px", fontWeight: 700, color: "#5E3023", textDecoration: "none" }}>{"Breakfast"}</a>
                       {"\n"}
                     </h2>
                     {"\n\n"}
-                    <p>
+                    <p style={{ fontFamily: "'Delight', sans-serif", fontSize: "13.5px", color: "#5E3023", lineHeight: 1.55, margin: "0 0 12px 0", letterSpacing: "0.05em" }}>
                       {
                         "Start your day with a delicious and wholesome breakfast prepared fresh every morning, featuring a blend of local flavors and continental classics."
                       }
                     </p>
                     {"\n\n\n"}
-                    <p className={"mphb-price-wrapper"}>
-                      <strong>{"Price:"}</strong>
+                    <p className={"mphb-price-wrapper"} style={{ fontFamily: "'Delight', sans-serif", fontSize: "13.5px", color: "#5E3023", margin: 0 }}>
+                      <strong style={{ color: "#5E3023" }}>{"Price:"}</strong>
                       {"\n"}
-                      <span className={"mphb-price"}>
+                      <span className={"mphb-price"} style={{ fontWeight: 700, color: "#5E3023" }}>
                         <span className={"mphb-currency"}>{"$"}</span>
                         {"70"}
                       </span>
@@ -127,9 +127,9 @@ export default function ExtraServicesSection() {
           </div>
           <div
             className={
-              "et_pb_with_border et_pb_column_1_3 et_pb_column et_pb_column_15  et_pb_css_mix_blend_mode_passthrough et-last-child"
+              "et_pb_with_border et_pb_column_1_3 et_pb_column et_pb_column_15  et_pb_css_mix_blend_mode_passthrough et-last-child dh-extra-service-card"
             }
-            style={{ borderRadius: "25px", overflow: "hidden" }}
+            style={{ borderRadius: "20px", background: "#FDFBF8", border: "1px solid #DAB49D", padding: "10px", boxSizing: "border-box" }}
           >
             {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
             <div className={"et_pb_module mphb-divi-services mphb-divi-services_1"}>
@@ -141,10 +141,10 @@ export default function ExtraServicesSection() {
                     className={
                       "mphb-service post-125 mphb_room_service type-mphb_room_service status-publish has-post-thumbnail"
                     }
-                    style={{ borderRadius: "25px" }}
+                    style={{ borderRadius: "20px" }}
                   >
                     {"\n\n\t\n\n\t"}
-                    <p className={"mphb-loop-service-thumbnail"} style={{ borderRadius: "25px 25px 0 0", overflow: "hidden", margin: 0 }}>
+                    <p className={"mphb-loop-service-thumbnail"} style={{ borderRadius: "12px", overflow: "hidden", margin: "0 0 12px 0" }}>
                       {"\n\t"}
                       <img
                         loading={"lazy"}
@@ -154,27 +154,27 @@ export default function ExtraServicesSection() {
                         src={"/image/free-parking.jpg"}
                         className={"attachment-post-thumbnail size-post-thumbnail wp-post-image"}
                         alt={"Free Parking"}
-                        style={{ borderRadius: "25px 25px 0 0", width: "100%", height: "auto", objectFit: "cover" }}
+                        style={{ borderRadius: "12px", width: "100%", height: "170px", objectFit: "cover", display: "block" }}
                       />
                       {"\n\t"}
                     </p>
                     {"\n\t\n"}
-                    <h2 className={"mphb-service-title"}>
+                    <h2 className={"mphb-service-title"} style={{ margin: "0 0 6px 0" }}>
                       {"\n"}
-                      <a href={"#"}>{"Free Parking"}</a>
+                      <a href={"#"} style={{ fontFamily: "'Grift', sans-serif", fontSize: "20px", fontWeight: 700, color: "#5E3023", textDecoration: "none" }}>{"Free Parking"}</a>
                       {"\n"}
                     </h2>
                     {"\n\n"}
-                    <p>
+                    <p style={{ fontFamily: "'Delight', sans-serif", fontSize: "13.5px", color: "#5E3023", lineHeight: 1.55, margin: "0 0 12px 0", letterSpacing: "0.05em" }}>
                       {
                         "Enjoy convenient, secure, and hassle-free complimentary on-site parking available 24/7 for all our registered guests throughout the duration of your stay."
                       }
                     </p>
                     {"\n\n\n"}
-                    <p className={"mphb-price-wrapper"}>
-                      <strong>{"Price:"}</strong>
+                    <p className={"mphb-price-wrapper"} style={{ fontFamily: "'Delight', sans-serif", fontSize: "13.5px", color: "#5E3023", margin: 0 }}>
+                      <strong style={{ color: "#5E3023" }}>{"Price:"}</strong>
                       {"\n"}
-                      <span className={"mphb-price"}>
+                      <span className={"mphb-price"} style={{ fontWeight: 700, color: "#5E3023" }}>
                         {"Free"}
                       </span>
                       {" / Included / Per Stay\n"}
