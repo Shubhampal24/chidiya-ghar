@@ -28,7 +28,7 @@ export default function GallerySection() {
 
   const cardWidth = isMobile ? 220 : isTablet ? 280 : 350;
   const cardHeight = isMobile ? 155 : isTablet ? 195 : 245;
-  const step = isMobile ? 160 : isTablet ? 230 : 310;
+  const step = isMobile ? 180 : isTablet ? 250 : 330;
 
   return (
     <div className={"et_pb_section et_pb_section_6 et_section_regular"} style={{ overflow: "hidden", padding: "40px 0 60px" }}>
@@ -89,25 +89,25 @@ export default function GallerySection() {
             let shadow = "0 10px 25px rgba(94, 48, 35, 0.1)";
 
             if (offset === 0) {
-              y = 12;
-              scale = 1.18;
+              y = 30; // Lowest point
+              scale = 1.35; // Much bigger center
               opacity = 1;
               zIndex = 20;
               shadow = "0 22px 45px rgba(94, 48, 35, 0.25)";
             } else if (absOffset === 1) {
-              y = 0;
-              scale = 0.9;
+              y = -5; // Middle point
+              scale = 0.82; // Noticeably smaller adjacent
               opacity = 0.85;
               zIndex = 10;
               shadow = "0 10px 25px rgba(94, 48, 35, 0.12)";
             } else if (absOffset === 2) {
-              y = -10;
-              scale = 0.76;
+              y = -35; // Highest point
+              scale = 0.65; // Much smaller outer
               opacity = 0.45;
               zIndex = 5;
             } else {
-              y = -18;
-              scale = 0.6;
+              y = -50;
+              scale = 0.5;
               opacity = 0;
               zIndex = 1;
             }

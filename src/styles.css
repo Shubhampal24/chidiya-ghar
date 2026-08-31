@@ -1051,11 +1051,19 @@ footer { background: var(--cream); color: var(--ink); padding: 80px 0 0; }
 }
 
 .et_pb_section_3 .et_pb_text_3 h2 {
-  font-family: 'Playfair Display', Georgia, serif !important;
-  font-size: 38px !important;
+  font-family: 'Grift', sans-serif !important;
+  font-size: 42px !important;
   font-weight: 700 !important;
-  color: #895737 !important;
+  color: #5E3023 !important;
   text-align: center !important;
+  margin: 0 0 12px 0 !important;
+}
+
+.et_pb_section_3 .et_pb_text_3 p {
+  font-family: 'Delight', sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  color: #5E3023 !important;
   margin: 0 !important;
 }
 
@@ -1103,7 +1111,7 @@ footer { background: var(--cream); color: var(--ink); padding: 80px 0 0; }
 }
 
 .dh-smile-card.is-center:hover {
-  transform: translate3d(0, 12px, 0) scale(1.2) !important;
+  transform: translate3d(0, 24px, 0) scale(1.38) !important;
   box-shadow: 0 26px 52px rgba(94, 48, 35, 0.28) !important;
 }
 
@@ -1901,6 +1909,10 @@ textarea,
   margin: 10px auto 25px !important;
   height: 0 !important;
   display: block !important;
+}
+
+.dh-service-card {
+  border-radius: 20px !important;
 }
 
 .dh-service-card:hover {
