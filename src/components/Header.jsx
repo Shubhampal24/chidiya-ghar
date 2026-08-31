@@ -7,7 +7,7 @@ export default function Header() {
 
   return (
     <>
-      <div className="topbar">
+      {/* <div className="topbar">
         <div className="topbarSocial" style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><Facebook size={16} /></a>
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><Instagram size={16} /></a>
@@ -17,7 +17,7 @@ export default function Header() {
           <span style={{ fontSize: '13px' }}>Tel: +1 5432167890</span>
           <span style={{ fontSize: '13px' }}>mail: info@chidiyaghar.com</span>
         </div>
-      </div>
+      </div> */}
 
       <header className="header">
         {/* Logo — tightly stacked, no gap */}
@@ -35,7 +35,7 @@ export default function Header() {
         </Link>
 
         {/* Nav links */}
-        <nav className="nav" style={{ marginLeft: 'auto', marginRight: '18px' }}>
+        <nav className="nav" style={{ flex: 1, display: 'flex', justifyContent: 'center' }}>
           <div className="navDrop">
             <button>Home <span style={{ fontSize: '10px', opacity: 0.7 }}>▼</span></button>
             <div className="dropdown">
@@ -53,13 +53,12 @@ export default function Header() {
             </div>
           </div>
           <Link to="/our-services">Our Services</Link>
-          <Link to="/my-account">My Account</Link>
+          {/* <Link to="/my-account">My Account</Link> */}
         </nav>
 
         {/* Actions */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexShrink: 0 }}>
-          {/* Circular profile icon */}
-          <Link
+          {/* <Link
             to="/my-account"
             title="My Account"
             style={{
@@ -77,12 +76,26 @@ export default function Header() {
             onMouseEnter={e => e.currentTarget.style.background = 'var(--dark-brown)'}
             onMouseLeave={e => e.currentTarget.style.background = 'var(--brown)'}
           >
-            {/* SVG person icon */}
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <circle cx="12" cy="8" r="4" />
               <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" />
             </svg>
-          </Link>
+          </Link> */}
+
+          <a href="#" style={{
+              background: 'var(--brown)',
+              color: 'var(--white)',
+              padding: '10px 24px',
+              borderRadius: '50px',
+              fontSize: '14px',
+              fontWeight: 600,
+              transition: 'background 250ms ease',
+            }}
+            onMouseEnter={e => e.currentTarget.style.background = 'var(--dark-brown)'}
+            onMouseLeave={e => e.currentTarget.style.background = 'var(--brown)'}
+          >
+            Book Now
+          </a>
 
           <button
             className="menuBtn"

@@ -13,16 +13,19 @@ export default function AccommodationsSection() {
             {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
             <div
               className={
-                "et_pb_module et_pb_text et_pb_text_3  et_pb_text_align_left et_pb_bg_layout_light"
+                "et_pb_module et_pb_text et_pb_text_3 et_pb_text_align_center et_pb_bg_layout_light"
               }
+              style={{ textAlign: "center", marginBottom: "40px" }}
             >
-              {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
               <div className={"et_pb_text_inner"}>
-                <h2>{"Our Featured Accommodations"}</h2>
+                <h2 style={{ fontFamily: "'Grift', sans-serif", fontSize: "42px", fontWeight: 700, color: "#5E3023", marginBottom: "12px" }}>
+                  {"Our Featured Accommodations"}
+                </h2>
+                <p style={{ fontFamily: "'Delight', sans-serif", fontSize: "16px", fontWeight: 400, color: "#5E3023", margin: 0 }}>
+                  {"Thoughtfully designed spaces where comfort, character and everyday living come together."}
+                </p>
               </div>
-              {"\n\t\t\t"}
             </div>
-            {"\n\t\t\t"}
           </div>
           {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t\t\t"}
         </div>
@@ -42,7 +45,7 @@ export default function AccommodationsSection() {
                   {"\n\t\t\t\t\t\t\t\t"}
                   <div className={"mphb-room-type post-2564 mphb_room_type"}>
                     {"\n\t\t\t\t\t\t\t\t\t"}
-                    <p className={"post-thumbnail mphb-loop-room-thumbnail"}>
+                    <p className={"post-thumbnail mphb-loop-room-thumbnail"} style={{ order: 1, margin: "0 0 14px 0" }}>
                       {"\n\t\t\t\t\t\t\t\t\t\t"}
                       <a href={"accommodation/accommodations-i/index.html"}>
                         {"\n\t\t\t\t\t\t\t\t\t\t\t"}
@@ -60,20 +63,22 @@ export default function AccommodationsSection() {
                       {"\n\t\t\t\t\t\t\t\t\t"}
                     </p>
                     {"\n\t\t\t\t\t\t\t\t\t"}
-                    <h2 className={"mphb-room-type-title entry-title"}>
-                      {"\n\t\t\t\t\t\t\t\t\t\t"}
+                    <h2 className={"mphb-room-type-title entry-title"} style={{ order: 2, margin: "0 0 3px 0" }}>
                       <a
                         className={"mphb-room-type-title"}
                         href={"accommodation/accommodations-i/index.html"}
+                        style={{ fontFamily: "'Grift', sans-serif", fontSize: "22px", fontWeight: 700, color: "#5E3023" }}
                       >
                         {"Cozy Room"}
                       </a>
-                      {"\n\t\t\t\t\t\t\t\t\t"}
                     </h2>
-                    {"\n\t\t\t\t\t\t\t\t\t"}
-                    <ul className={"mphb-loop-room-type-attributes"}>
-                      {"\n\t\t\t\t\t\t\t\t\t\t"}
-                      <li className={"mphb-room-type-facilities"}>
+
+                    <p className={"dh-room-desc"} style={{ order: 3, fontFamily: "'Delight', sans-serif", fontSize: "14px", fontWeight: 400, color: "#5E3023", marginTop: "0", marginBottom: "10px", lineHeight: "1.45" }}>
+                      {"Designed for comfortable everyday living with warm natural light and thoughtful storage."}
+                    </p>
+
+                    <ul className={"mphb-loop-room-type-attributes"} style={{ order: 4, margin: 0, padding: 0, border: "none" }}>
+                      <li className={"mphb-room-type-facilities"} style={{ border: "none" }}>
                         <span className={"mphb-attribute-title mphb-facilities-title"}>
                           {"Amenities:"}
                         </span>
@@ -92,57 +97,40 @@ export default function AccommodationsSection() {
                           </span>
                         </span>
                       </li>
-                      {"\n\t\t\t\t\t\t\t\t\t"}
                     </ul>
-                    {"\n\t\t\t\t\t\t\t\t\t"}
-                    <p className={"mphb-regular-price"}>
+
+                    <p className={"mphb-regular-price"} style={{ display: "none" }}>
                       <strong>{"Size:"}</strong>{" "}
                       <span className={"mphb-price"}>
                         {"280–320"}
                       </span>{" "}
                       <span className={"mphb-price-period"}>{"sq ft"}</span>
                     </p>
-                    <p style={{ fontSize: "14px", marginTop: "10px", lineHeight: "1.4" }}>
-                      {"Designed for comfortable everyday living with warm natural light and thoughtful storage."}
-                    </p>
-                    {"\n\t\t\t\t\t\t\t\t\t"}
-                    <div className={"mphb-to-book-btn-wrapper"}>
-                      {"\n\t\t\t\t\t\t\t\t\t\t"}
+
+                    <div className={"mphb-to-book-btn-wrapper"} style={{ display: "none" }}>
                       <form action={"#"}>
                         <button type={"button"} className={"button mphb-book-button"}>
                           {"Book"}
                         </button>
                       </form>
-                      {"\n\t\t\t\t\t\t\t\t\t"}
                     </div>
-                    {"\n\t\t\t\t\t\t\t\t"}
                   </div>
-                  {"\n\t\t\t\t\t\t\t"}
                 </div>
-                {"\n\t\t\t\t\t\t"}
               </div>
-              {"\n\t\t\t\t\t"}
             </div>
-            {"\n\t\t\t\t"}
           </div>
+
           <div className={"dh-acc-card-col dh-col-2"}>
-            {"\n\t\t\t\t\t"}
             <div
               className={
                 "et_pb_with_border et_pb_module mphb-divi-single-accommodation mphb-divi-single-accommodation_1 dh-custom-single-acc dh-custom-amenities dh-custom-price-acc"
               }
             >
-              {"\n\t\t\t\t\t\t"}
               <div className={"et_pb_module_inner"}>
-                {"\n\t\t\t\t\t\t\t"}
                 <div className={"mphb_sc_room-wrapper"}>
-                  {"\n\t\t\t\t\t\t\t\t"}
                   <div className={"mphb-room-type post-2605 mphb_room_type"}>
-                    {"\n\t\t\t\t\t\t\t\t\t"}
-                    <p className={"post-thumbnail mphb-loop-room-thumbnail"}>
-                      {"\n\t\t\t\t\t\t\t\t\t\t"}
+                    <p className={"post-thumbnail mphb-loop-room-thumbnail"} style={{ order: 1, margin: "0 0 14px 0" }}>
                       <a href={"accommodation/accommodation-ii/index.html"}>
-                        {"\n\t\t\t\t\t\t\t\t\t\t\t"}
                         <img
                           loading={"lazy"}
                           decoding={"async"}
@@ -152,25 +140,25 @@ export default function AccommodationsSection() {
                           className={"attachment-post-thumbnail size-post-thumbnail wp-post-image"}
                           alt={"Accommodation II"}
                         />
-                        {"\n\t\t\t\t\t\t\t\t\t\t"}
                       </a>
-                      {"\n\t\t\t\t\t\t\t\t\t"}
                     </p>
-                    {"\n\t\t\t\t\t\t\t\t\t"}
-                    <h2 className={"mphb-room-type-title entry-title"}>
-                      {"\n\t\t\t\t\t\t\t\t\t\t"}
+
+                    <h2 className={"mphb-room-type-title entry-title"} style={{ order: 2, margin: "0 0 3px 0" }}>
                       <a
                         className={"mphb-room-type-title"}
                         href={"accommodation/accommodation-ii/index.html"}
+                        style={{ fontFamily: "'Grift', sans-serif", fontSize: "22px", fontWeight: 700, color: "#5E3023" }}
                       >
                         {"Modern Space"}
                       </a>
-                      {"\n\t\t\t\t\t\t\t\t\t"}
                     </h2>
-                    {"\n\t\t\t\t\t\t\t\t\t"}
-                    <ul className={"mphb-loop-room-type-attributes"}>
-                      {"\n\t\t\t\t\t\t\t\t\t\t"}
-                      <li className={"mphb-room-type-facilities"}>
+
+                    <p className={"dh-room-desc"} style={{ order: 3, fontFamily: "'Delight', sans-serif", fontSize: "14px", fontWeight: 400, color: "#5E3023", marginTop: "0", marginBottom: "10px", lineHeight: "1.45" }}>
+                      {"Thoughtful design with everything you need — spacious, bright and ready to feel like yours."}
+                    </p>
+
+                    <ul className={"mphb-loop-room-type-attributes"} style={{ order: 4, margin: 0, padding: 0, border: "none" }}>
+                      <li className={"mphb-room-type-facilities"} style={{ border: "none" }}>
                         <span className={"mphb-attribute-title mphb-facilities-title"}>
                           {"Amenities:"}
                         </span>
@@ -189,57 +177,40 @@ export default function AccommodationsSection() {
                           </span>
                         </span>
                       </li>
-                      {"\n\t\t\t\t\t\t\t\t\t"}
                     </ul>
-                    {"\n\t\t\t\t\t\t\t\t\t"}
-                    <p className={"mphb-regular-price"}>
+
+                    <p className={"mphb-regular-price"} style={{ display: "none" }}>
                       <strong>{"Size:"}</strong>{" "}
                       <span className={"mphb-price"}>
                         {"380–440"}
                       </span>{" "}
                       <span className={"mphb-price-period"}>{"sq ft"}</span>
                     </p>
-                    <p style={{ fontSize: "14px", marginTop: "10px", lineHeight: "1.4" }}>
-                      {"Thoughtful design with everything you need — spacious, bright and ready to feel like yours."}
-                    </p>
-                    {"\n\t\t\t\t\t\t\t\t\t"}
-                    <div className={"mphb-to-book-btn-wrapper"}>
-                      {"\n\t\t\t\t\t\t\t\t\t\t"}
+
+                    <div className={"mphb-to-book-btn-wrapper"} style={{ display: "none" }}>
                       <form action={"#"}>
                         <button type={"button"} className={"button mphb-book-button"}>
                           {"Book"}
                         </button>
                       </form>
-                      {"\n\t\t\t\t\t\t\t\t\t"}
                     </div>
-                    {"\n\t\t\t\t\t\t\t\t"}
                   </div>
-                  {"\n\t\t\t\t\t\t\t"}
                 </div>
-                {"\n\t\t\t\t\t\t"}
               </div>
-              {"\n\t\t\t\t\t"}
             </div>
-            {"\n\t\t\t\t"}
           </div>
+
           <div className={"dh-acc-card-col dh-col-3"}>
-            {"\n\t\t\t\t\t"}
             <div
               className={
                 "et_pb_with_border et_pb_module mphb-divi-single-accommodation mphb-divi-single-accommodation_2 dh-custom-single-acc dh-custom-amenities dh-custom-price-acc"
               }
             >
-              {"\n\t\t\t\t\t\t"}
               <div className={"et_pb_module_inner"}>
-                {"\n\t\t\t\t\t\t\t"}
                 <div className={"mphb_sc_room-wrapper"}>
-                  {"\n\t\t\t\t\t\t\t\t"}
                   <div className={"mphb-room-type post-2621 mphb_room_type"}>
-                    {"\n\t\t\t\t\t\t\t\t\t"}
-                    <p className={"post-thumbnail mphb-loop-room-thumbnail"}>
-                      {"\n\t\t\t\t\t\t\t\t\t\t"}
+                    <p className={"post-thumbnail mphb-loop-room-thumbnail"} style={{ order: 1, margin: "0 0 14px 0" }}>
                       <a href={"accommodation/accommodation-iii/index.html"}>
-                        {"\n\t\t\t\t\t\t\t\t\t\t\t"}
                         <img
                           loading={"lazy"}
                           decoding={"async"}
@@ -249,25 +220,25 @@ export default function AccommodationsSection() {
                           className={"attachment-post-thumbnail size-post-thumbnail wp-post-image"}
                           alt={"Accommodation III"}
                         />
-                        {"\n\t\t\t\t\t\t\t\t\t\t"}
                       </a>
-                      {"\n\t\t\t\t\t\t\t\t\t"}
                     </p>
-                    {"\n\t\t\t\t\t\t\t\t\t"}
-                    <h2 className={"mphb-room-type-title entry-title"}>
-                      {"\n\t\t\t\t\t\t\t\t\t\t"}
+
+                    <h2 className={"mphb-room-type-title entry-title"} style={{ order: 2, margin: "0 0 3px 0" }}>
                       <a
                         className={"mphb-room-type-title"}
                         href={"accommodation/accommodation-iii/index.html"}
+                        style={{ fontFamily: "'Grift', sans-serif", fontSize: "22px", fontWeight: 700, color: "#5E3023" }}
                       >
                         {"Premium Suite"}
                       </a>
-                      {"\n\t\t\t\t\t\t\t\t\t"}
                     </h2>
-                    {"\n\t\t\t\t\t\t\t\t\t"}
-                    <ul className={"mphb-loop-room-type-attributes"}>
-                      {"\n\t\t\t\t\t\t\t\t\t\t"}
-                      <li className={"mphb-room-type-facilities"}>
+
+                    <p className={"dh-room-desc"} style={{ order: 3, fontFamily: "'Delight', sans-serif", fontSize: "14px", fontWeight: 400, color: "#5E3023", marginTop: "0", marginBottom: "10px", lineHeight: "1.45" }}>
+                      {"More room, more comfort, more character. For those who believe home deserves to be special."}
+                    </p>
+
+                    <ul className={"mphb-loop-room-type-attributes"} style={{ order: 4, margin: 0, padding: 0, border: "none" }}>
+                      <li className={"mphb-room-type-facilities"} style={{ border: "none" }}>
                         <span className={"mphb-attribute-title mphb-facilities-title"}>
                           {"Amenities:"}
                         </span>
@@ -286,57 +257,40 @@ export default function AccommodationsSection() {
                           </span>
                         </span>
                       </li>
-                      {"\n\t\t\t\t\t\t\t\t\t"}
                     </ul>
-                    {"\n\t\t\t\t\t\t\t\t\t"}
-                    <p className={"mphb-regular-price"}>
+
+                    <p className={"mphb-regular-price"} style={{ display: "none" }}>
                       <strong>{"Size:"}</strong>{" "}
                       <span className={"mphb-price"}>
                         {"520–600"}
                       </span>{" "}
                       <span className={"mphb-price-period"}>{"sq ft"}</span>
                     </p>
-                    <p style={{ fontSize: "14px", marginTop: "10px", lineHeight: "1.4" }}>
-                      {"More room, more comfort, more character. For those who believe home deserves to be special."}
-                    </p>
-                    {"\n\t\t\t\t\t\t\t\t\t"}
-                    <div className={"mphb-to-book-btn-wrapper"}>
-                      {"\n\t\t\t\t\t\t\t\t\t\t"}
+
+                    <div className={"mphb-to-book-btn-wrapper"} style={{ display: "none" }}>
                       <form action={"#"}>
                         <button type={"button"} className={"button mphb-book-button"}>
                           {"Book"}
                         </button>
                       </form>
-                      {"\n\t\t\t\t\t\t\t\t\t"}
                     </div>
-                    {"\n\t\t\t\t\t\t\t\t"}
                   </div>
-                  {"\n\t\t\t\t\t\t\t"}
                 </div>
-                {"\n\t\t\t\t\t\t"}
               </div>
-              {"\n\t\t\t\t\t"}
             </div>
-            {"\n\t\t\t\t"}
           </div>
+
           <div className={"dh-acc-card-col dh-col-4"}>
-            {"\n\t\t\t\t\t"}
             <div
               className={
                 "et_pb_with_border et_pb_module mphb-divi-single-accommodation mphb-divi-single-accommodation_3 dh-custom-single-acc dh-custom-amenities dh-custom-price-acc"
               }
             >
-              {"\n\t\t\t\t\t\t"}
               <div className={"et_pb_module_inner"}>
-                {"\n\t\t\t\t\t\t\t"}
                 <div className={"mphb_sc_room-wrapper"}>
-                  {"\n\t\t\t\t\t\t\t\t"}
                   <div className={"mphb-room-type post-2565 mphb_room_type"}>
-                    {"\n\t\t\t\t\t\t\t\t\t"}
-                    <p className={"post-thumbnail mphb-loop-room-thumbnail"}>
-                      {"\n\t\t\t\t\t\t\t\t\t\t"}
+                    <p className={"post-thumbnail mphb-loop-room-thumbnail"} style={{ order: 1, margin: "0 0 14px 0" }}>
                       <a href={"accommodation/accommodation-iii/index.html"}>
-                        {"\n\t\t\t\t\t\t\t\t\t\t\t"}
                         <img
                           loading={"lazy"}
                           decoding={"async"}
@@ -346,25 +300,25 @@ export default function AccommodationsSection() {
                           className={"attachment-post-thumbnail size-post-thumbnail wp-post-image"}
                           alt={"Accommodation IV"}
                         />
-                        {"\n\t\t\t\t\t\t\t\t\t\t"}
                       </a>
-                      {"\n\t\t\t\t\t\t\t\t\t"}
                     </p>
-                    {"\n\t\t\t\t\t\t\t\t\t"}
-                    <h2 className={"mphb-room-type-title entry-title"}>
-                      {"\n\t\t\t\t\t\t\t\t\t\t"}
+
+                    <h2 className={"mphb-room-type-title entry-title"} style={{ order: 2, margin: "0 0 3px 0" }}>
                       <a
                         className={"mphb-room-type-title"}
                         href={"accommodation/accommodation-iii/index.html"}
+                        style={{ fontFamily: "'Grift', sans-serif", fontSize: "22px", fontWeight: 700, color: "#5E3023" }}
                       >
                         {"Studio Haven"}
                       </a>
-                      {"\n\t\t\t\t\t\t\t\t\t"}
                     </h2>
-                    {"\n\t\t\t\t\t\t\t\t\t"}
-                    <ul className={"mphb-loop-room-type-attributes"}>
-                      {"\n\t\t\t\t\t\t\t\t\t\t"}
-                      <li className={"mphb-room-type-facilities"}>
+
+                    <p className={"dh-room-desc"} style={{ order: 3, fontFamily: "'Delight', sans-serif", fontSize: "14px", fontWeight: 400, color: "#5E3023", marginTop: "0", marginBottom: "10px", lineHeight: "1.45" }}>
+                      {"An open-layout haven designed for quiet focus, relaxed evenings and effortless living."}
+                    </p>
+
+                    <ul className={"mphb-loop-room-type-attributes"} style={{ order: 4, margin: 0, padding: 0, border: "none" }}>
+                      <li className={"mphb-room-type-facilities"} style={{ border: "none" }}>
                         <span className={"mphb-attribute-title mphb-facilities-title"}>
                           {"Amenities:"}
                         </span>
@@ -383,29 +337,23 @@ export default function AccommodationsSection() {
                           </span>
                         </span>
                       </li>
-                      {"\n\t\t\t\t\t\t\t\t\t"}
                     </ul>
-                    {"\n\t\t\t\t\t\t\t\t\t"}
-                    <p className={"mphb-regular-price"}>
+
+                    <p className={"mphb-regular-price"} style={{ display: "none" }}>
                       <strong>{"Size:"}</strong>{" "}
                       <span className={"mphb-price"}>
                         {"460–520"}
                       </span>{" "}
                       <span className={"mphb-price-period"}>{"sq ft"}</span>
                     </p>
-                    <p style={{ fontSize: "14px", marginTop: "10px", lineHeight: "1.4" }}>
-                      {"An open-layout haven designed for quiet focus, relaxed evenings and effortless living."}
-                    </p>
-                    {"\n\t\t\t\t\t\t\t\t\t"}
-                    <div className={"mphb-to-book-btn-wrapper"}>
-                      {"\n\t\t\t\t\t\t\t\t\t\t"}
+
+                    <div className={"mphb-to-book-btn-wrapper"} style={{ display: "none" }}>
                       <form action={"#"}>
                         <button type={"button"} className={"button mphb-book-button"}>
                           {"Book"}
                         </button>
                       </form>
-                      {"\n\t\t\t\t\t\t\t\t\t"}
-                    </div>
+                    </div>    
                     {"\n\t\t\t\t\t\t\t\t"}
                   </div>
                   {"\n\t\t\t\t\t\t\t"}

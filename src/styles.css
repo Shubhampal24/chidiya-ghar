@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700;900&display=swap');
+@import "tailwindcss";
 
 :root {
   --brown: #895737;
@@ -23,19 +24,222 @@ html {
 body {
   margin: 0 !important;
   padding: 0 !important;
-  font-family: "DM Sans", Arial, sans-serif;
-  font-weight: 300;
+  font-family: 'Delight', 'DM Sans', Arial, sans-serif;
+  font-weight: 400;
   color: var(--ink);
   background: var(--white);
   overflow-x: hidden !important;
   max-width: 100vw !important;
   width: 100% !important;
 }
+p {
+  font-family: 'Delight', 'DM Sans', Arial, sans-serif;
+  font-weight: 400 !important;
+}
+
+p.eyebrow, .eyebrow {
+  font-weight: 700 !important;
+}
+
 a { text-decoration: none; color: var(--brown); transition: color 300ms ease; }
 a:hover { color: var(--dark-brown); }
 button, input, select, textarea { font: inherit; }
 
 .container { width: min(1200px, calc(100% - 48px)); margin: auto; }
+
+/* ====================================================
+   Grift Geometric Font Family (Titles & Headings)
+   ==================================================== */
+@font-face {
+  font-family: 'Grift';
+  src: url('/fonts/grift/grift-regular.otf') format('opentype'),
+       url('/fonts/grift/grift-regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Grift';
+  src: url('/fonts/grift/grift-medium.otf') format('opentype'),
+       url('/fonts/grift/grift-medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Grift';
+  src: url('/fonts/grift/grift-semibold.otf') format('opentype'),
+       url('/fonts/grift/grift-semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Grift';
+  src: url('/fonts/grift/grift-bold.otf') format('opentype'),
+       url('/fonts/grift/grift-bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Grift';
+  src: url('/fonts/grift/grift-extrabold.otf') format('opentype'),
+       url('/fonts/grift/grift-extrabold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Grift';
+  src: url('/fonts/grift/grift-black.otf') format('opentype'),
+       url('/fonts/grift/grift-black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ====================================================
+   Delight Font Family (Sub-headings & Sub-content)
+   ==================================================== */
+@font-face {
+  font-family: 'Delight';
+  src: url('/fonts/delight/delight-vf.ttf') format('truetype-variations'),
+       url('/fonts/delight/delight-regular.otf') format('opentype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Delight';
+  src: url('/fonts/delight/delight-regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Delight';
+  src: url('/fonts/delight/delight-medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Delight';
+  src: url('/fonts/delight/delight-semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Delight';
+  src: url('/fonts/delight/delight-bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Delight';
+  src: url('/fonts/delight/delight-extrabold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Global Typography: Titles in Grift, Sub-content & Sub-headings in Delight */
+body,
+p,
+span,
+li,
+a,
+input,
+select,
+textarea,
+label,
+.dh-news-excerpt,
+.facility-item,
+.mphb-price-period,
+.subcontent {
+  font-family: 'Delight', 'DM Sans', Arial, sans-serif !important;
+}
+
+.eyebrow,
+.dh-news-meta,
+.subheading,
+.et_pb_text_inner > p:first-child,
+.mphb-attribute-title,
+.mphb-regular-price strong,
+.field label {
+  font-family: 'Delight', 'DM Sans', Arial, sans-serif !important;
+  font-weight: 600 !important;
+}
+
+h1,
+h2:not(.font-flix-normal),
+h3,
+h4,
+h5,
+h6,
+.sectionTitle h2,
+.heroContent h1,
+.dh-news-title,
+.dh-news-card-title,
+.mphb-room-type-title,
+.et_pb_module_header,
+.et_pb_text_inner h2:not(.font-flix-normal),
+.et_pb_text_inner h3,
+.et_pb_text_inner h4,
+.dh-service-card h4,
+.footerGrid h4 {
+  font-family: 'Grift', sans-serif !important;
+}
+
+h1,
+.sectionTitle h2,
+.et_pb_text_inner h2:not(.font-flix-normal),
+.dh-news-title {
+  font-family: 'Grift', sans-serif !important;
+  font-weight: 700 !important;
+}
+
+h3,
+.et_pb_text_inner h3 {
+  font-family: 'Grift', sans-serif !important;
+  font-weight: 700 !important;
+}
+
+h4,
+.dh-news-card-title,
+.mphb-room-type-title,
+.dh-service-card h4,
+.et_pb_module_header {
+  font-family: 'Grift', sans-serif !important;
+  font-weight: 600 !important;
+}
+
+/* Custom typography */
+.your-style,
+.font-flix-normal {
+  font-family: 'Flix Normal', 'Flix', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-silo-bold {
+  font-family: 'silo-Bold', 'Silo-Bold', 'Silo', sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
 
 html, body, #root, #page-container, body #page-container, #et-boc, #et-main-area, #main-content {
   margin: 0 !important;
@@ -85,14 +289,17 @@ html, body, #root, #page-container, body #page-container, #et-boc, #et-main-area
 /* Header */
 .header {
   min-height: 54px;
-  background: var(--cream);
+  background: transparent;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 4px max(24px, calc((100% - 1200px) / 2));
-  position: relative;
-  z-index: 20;
-  box-shadow: 0 2px 60px 0 rgba(0,0,0,0.09);
+  padding: 15px 45px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 50;
 }
 .logo { display: flex; align-items: center; }
 .logo img { height: 45px; }
@@ -116,35 +323,57 @@ html, body, #root, #page-container, body #page-container, #et-boc, #et-main-area
 .dropdown a:hover { background: rgba(0,0,0,0.02); color: var(--terracotta); }
 
 /* Buttons */
-.diviBtn {
-  border: 1px solid var(--dark-brown); background: var(--cream); color: var(--dark-brown);
-  font-family: 'Playfair Display', serif; font-weight: 600; font-size: 16px;
-  padding: 10px 30px; 
-  transition: all 300ms ease; display: inline-flex; cursor: pointer; border-radius: 25px;
+/* ====================================================
+   Section Buttons (Below Hero) - Crisp Border & Visible Hover
+   ==================================================== */
+.diviBtn,
+.diviBtnDark,
+.diviBtnBrown,
+.outlineBtn,
+.button,
+.et_pb_button,
+.et_pb_more_button,
+.et_pb_button_0,
+.et_pb_button_1,
+.et_pb_button_0_tb_footer,
+.et_pb_newsletter_button,
+.dh-custom-single-acc .mphb-book-button {
+  border: 1.5px solid #895737 !important;
+  color: #5E3023 !important;
+  border-radius: 9999px !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+  font-weight: 700 !important;
+  background: transparent !important;
+  outline: none !important;
+  transition: all 250ms ease !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  text-decoration: none !important;
+  position: relative !important;
+  box-shadow: 0 2px 6px rgba(137, 87, 55, 0.1) !important;
 }
-.diviBtn:hover { color: var(--dark-brown); opacity: 0.9; }
 
-.diviBtnDark {
-  border: 1px solid var(--cream); background: var(--dark-brown); color: var(--cream);
-  font-family: 'Playfair Display', serif; font-weight: 600; font-size: 16px;
-  padding: 10px 30px; 
-  transition: all 300ms ease; display: inline-flex; cursor: pointer; border-radius: 25px;
+.diviBtn:hover,
+.diviBtnDark:hover,
+.diviBtnBrown:hover,
+.outlineBtn:hover,
+.button:hover,
+.et_pb_button:hover,
+.et_pb_more_button:hover,
+.et_pb_button_0:hover,
+.et_pb_button_1:hover,
+.et_pb_button_0_tb_footer:hover,
+.et_pb_newsletter_button:hover,
+.dh-custom-single-acc .mphb-book-button:hover {
+  background: #C08552 !important;
+  border-color: #C08552 !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 6px 20px rgba(192, 133, 82, 0.35) !important;
+  transform: translateY(-2px) !important;
 }
-.diviBtnDark:hover { color: var(--cream); opacity: 0.9; }
-
-.diviBtnBrown {
-  border: 1px solid var(--cream); background: var(--brown); color: var(--cream);
-  font-family: 'Playfair Display', serif; font-weight: 600; font-size: 16px;
-  padding: 10px 30px; 
-  transition: all 300ms ease; display: inline-flex; cursor: pointer; border-radius: 25px;
-}
-.diviBtnBrown:hover { color: var(--cream); opacity: 0.9; }
-
-.outlineBtn {
-  background: transparent; border: 1px solid var(--brown); color: var(--brown);
-  padding: 10px 20px; display: inline-flex; cursor: pointer; transition: 0.3s; border-radius: 25px;
-}
-.outlineBtn:hover { background: var(--brown); color: var(--white); }
 
 /* Typography */
 .eyebrow {
@@ -152,7 +381,7 @@ html, body, #root, #page-container, body #page-container, #et-boc, #et-main-area
   font-weight: 700; color: var(--terracotta); margin-bottom: 10px; display: block;
 }
 .sectionTitle h2 {
-  font-family: "Playfair Display", serif; font-size: 35px; line-height: 1.3;
+  font-family: "Grift", sans-serif; font-size: 35px; line-height: 1.3;
   margin: 10px 0 20px; font-weight: 700; color: var(--ink);
 }
 .sectionTitle.light h2 { color: var(--white); }
@@ -170,8 +399,8 @@ html, body, #root, #page-container, body #page-container, #et-boc, #et-main-area
   background: linear-gradient(90deg, #5e3023 16vw, rgba(255,255,255,0) 80vw); z-index: 1;
 }
 .heroContent { position: relative; z-index: 2; max-width: 1200px; margin: auto; padding: 0 24px; width: 100%; }
-.heroContent h1 { font-family: "Playfair Display", serif; font-size: 60px; font-weight: 900; line-height: 1.2; max-width: 600px; margin: 15px 0 25px; }
-.heroContent p { font-size: 17px; line-height: 1.6; max-width: 500px; margin-bottom: 40px; font-weight: 300; }
+.heroContent h1 { font-family: "Grift", sans-serif; font-size: 60px; font-weight: 900; line-height: 1.2; max-width: 600px; margin: 15px 0 25px; }
+.heroContent p { font-family: "Delight", sans-serif; font-size: 17px; line-height: 1.6; max-width: 500px; margin-bottom: 40px; font-weight: 400; }
 
 /* Booking */
 .bookingWrap { background: var(--cream); padding: 30px 40px; box-shadow: 0 5px 30px rgba(0,0,0,0.15); max-width: 1050px; margin: auto; border-radius: 25px; }
@@ -635,24 +864,28 @@ footer { background: var(--cream); color: var(--ink); padding: 80px 0 0; }
 .dh-custom-single-acc .button {
   background: rgba(243, 233, 220, 0.95) !important;
   color: #5E3023 !important;
-  border: 1px solid #895737 !important;
-  padding: 3px 10px !important;
-  font-family: 'Playfair Display', Georgia, serif !important;
-  font-weight: 600 !important;
+  border: 1.5px solid #895737 !important;
+  padding: 4px 14px !important;
+  font-family: 'DM Sans', Arial, sans-serif !important;
+  font-weight: 700 !important;
   font-size: 11px !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
   cursor: pointer !important;
-  transition: all 0.2s ease !important;
+  transition: all 0.25s ease !important;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08) !important;
-  border-radius: 25px !important;
+  border-radius: 9999px !important;
   line-height: normal !important;
   display: inline-block !important;
 }
 
 .dh-custom-single-acc .mphb-book-button:hover,
 .dh-custom-single-acc .button:hover {
-  background: #5E3023 !important;
-  color: #FDFBF8 !important;
-  border-color: #5E3023 !important;
+  background: #C08552 !important;
+  color: #FFFFFF !important;
+  border-color: #C08552 !important;
+  box-shadow: 0 4px 14px rgba(192, 133, 82, 0.35) !important;
+  transform: translateY(-1px) !important;
 }
 
 /* Floating Price Tag (Bottom-Left of image) */
@@ -684,15 +917,17 @@ footer { background: var(--cream); color: var(--ink); padding: 80px 0 0; }
 }
 
 /* Card Title */
-.dh-custom-single-acc .mphb-room-type-title.entry-title {
-  margin: 6px 0 3px 0 !important;
+.dh-custom-single-acc .mphb-room-type-title.entry-title,
+.dh-custom-single-acc .mphb-room-type-title {
+  margin: 0 0 3px 0 !important;
+  order: 2 !important;
 }
 
 .dh-custom-single-acc .mphb-room-type-title a {
-  font-family: 'Playfair Display', Georgia, serif !important;
-  font-size: 15px !important;
-  font-weight: 600 !important;
-  color: #333333 !important;
+  font-family: 'Grift', sans-serif !important;
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  color: #5E3023 !important;
   text-decoration: none !important;
   transition: color 0.2s ease !important;
   white-space: nowrap !important;
@@ -825,93 +1060,121 @@ footer { background: var(--cream); color: var(--ink); padding: 80px 0 0; }
 }
 
 /* ====================================================
-   Gallery Section & Interactive Pagination
+   Smile Inline Gallery & Interactive Hover Dots
    ==================================================== */
-.dh-interactive-gallery {
-  max-width: 1200px !important;
+.dh-smile-gallery-wrapper {
+  max-width: 1300px !important;
   margin: 0 auto !important;
-  padding: 0 20px 40px !important;
+  padding: 10px 15px 30px !important;
   width: 100% !important;
-}
-
-.dh-gallery-grid {
-  display: grid !important;
-  grid-template-columns: repeat(3, 1fr) !important;
-  gap: 24px !important;
-  margin-bottom: 35px !important;
-}
-
-.dh-gallery-item {
-  overflow: hidden !important;
   position: relative !important;
-  background: #f0ebe4 !important;
-  border-radius: 0px !important;
-}
-
-.dh-gallery-item img {
-  width: 100% !important;
-  height: 270px !important;
-  object-fit: cover !important;
-  display: block !important;
-  transition: transform 0.35s ease, opacity 0.25s ease !important;
-  border-radius: 25px !important;
-}
-
-.dh-gallery-item:hover img {
-  transform: scale(1.03) !important;
-}
-
-.dh-gallery-pagination {
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-  gap: 8px !important;
-  margin-top: 25px !important;
-}
-
-.dh-page-btn {
-  background: #F3E9DC !important;
-  color: #C08552 !important;
-  border: none !important;
-  font-family: 'DM Sans', Arial, sans-serif !important;
-  font-size: 15px !important;
-  font-weight: 500 !important;
-  padding: 6px 15px !important;
-  cursor: pointer !important;
-  transition: all 0.2s ease !important;
-  border-radius: 0px !important;
-  min-width: 36px !important;
-  height: 36px !important;
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  outline: none !important;
-  text-decoration: none !important;
-  pointer-events: auto !important;
-  position: relative !important;
-  z-index: 10 !important;
   user-select: none !important;
 }
 
-.dh-page-btn:hover {
-  background: #C08552 !important;
-  color: #ffffff !important;
+.dh-smile-gallery-stage {
+  position: relative !important;
+  height: 380px !important;
+  width: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  perspective: 1200px !important;
+  overflow: visible !important;
 }
 
-.dh-page-btn.active {
+.dh-smile-card {
+  position: absolute !important;
+  border-radius: 24px !important;
+  overflow: hidden !important;
+  cursor: pointer !important;
+  transition: transform 0.45s cubic-bezier(0.25, 1, 0.5, 1),
+              opacity 0.45s cubic-bezier(0.25, 1, 0.5, 1),
+              box-shadow 0.45s cubic-bezier(0.25, 1, 0.5, 1),
+              filter 0.45s cubic-bezier(0.25, 1, 0.5, 1) !important;
+  will-change: transform, opacity !important;
+}
+
+.dh-smile-card img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+  border-radius: 24px !important;
+}
+
+.dh-smile-card.is-center:hover {
+  transform: translate3d(0, 12px, 0) scale(1.2) !important;
+  box-shadow: 0 26px 52px rgba(94, 48, 35, 0.28) !important;
+}
+
+.dh-gallery-dots {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 6px !important;
+  margin-top: 22px !important;
+  padding: 6px 0 !important;
+}
+
+.dh-gallery-dot {
+  width: 7px !important;
+  height: 7px !important;
+  border-radius: 50% !important;
+  background: #DAB49D !important;
+  border: none !important;
+  cursor: pointer !important;
+  padding: 0 !important;
+  transition: all 0.18s ease !important;
+  opacity: 0.55 !important;
+  outline: none !important;
+}
+
+.dh-gallery-dot:hover {
+  opacity: 1 !important;
   background: #C08552 !important;
-  color: #ffffff !important;
-  font-weight: 700 !important;
+  transform: scale(1.3) !important;
+}
+
+.dh-gallery-dot.active {
+  width: 18px !important;
+  height: 7px !important;
+  border-radius: 9999px !important;
+  background: #5E3023 !important;
+  opacity: 1 !important;
+  box-shadow: 0 2px 6px rgba(94, 48, 35, 0.35) !important;
 }
 
 @media (max-width: 768px) {
-  .dh-gallery-grid {
-    grid-template-columns: 1fr !important;
-    gap: 16px !important;
+  .dh-smile-gallery-stage {
+    height: 270px !important;
   }
-  .dh-gallery-item img {
-    height: 220px !important;
-  }
+}
+
+/* ====================================================
+   Newsletter Subscribe Button Visibility
+   ==================================================== */
+body #page-container .et_pb_section .et_pb_signup_0_tb_footer.et_pb_subscribe .et_pb_newsletter_button.et_pb_button,
+.et_pb_signup_0_tb_footer .et_pb_newsletter_button,
+.et_pb_newsletter_button .et_pb_newsletter_button_text {
+  color: #FFFFFF !important;
+  background-color: #5E3023 !important;
+  border-color: #5E3023 !important;
+  font-family: 'Delight', 'DM Sans', sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  letter-spacing: 1px !important;
+  text-transform: uppercase !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+body #page-container .et_pb_section .et_pb_signup_0_tb_footer.et_pb_subscribe .et_pb_newsletter_button.et_pb_button:hover,
+.et_pb_signup_0_tb_footer .et_pb_newsletter_button:hover {
+  background-color: #C08552 !important;
+  border-color: #C08552 !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 6px 18px rgba(192, 133, 82, 0.35) !important;
+  transform: translateY(-2px) !important;
 }
 
 /* ====================================================
@@ -1188,7 +1451,7 @@ p.mphb-required-fields-tip,
 }
 
 .dh-news-title {
-  font-family: 'Playfair Display', Georgia, serif !important;
+  font-family: 'Grift', sans-serif !important;
   font-size: 34px !important;
   font-weight: 700 !important;
   color: #000000 !important;
@@ -1250,9 +1513,9 @@ p.mphb-required-fields-tip,
 }
 
 .dh-news-card-title {
-  font-family: 'Playfair Display', Georgia, serif !important;
+  font-family: 'Grift', sans-serif !important;
   font-size: 19px !important;
-  font-weight: 700 !important;
+  font-weight: 600 !important;
   line-height: 1.35 !important;
   margin: 0 0 8px 0 !important;
 }
@@ -1268,11 +1531,11 @@ p.mphb-required-fields-tip,
 }
 
 .dh-news-meta {
-  font-family: 'DM Sans', Arial, sans-serif !important;
+  font-family: 'Delight', sans-serif !important;
   font-size: 13px !important;
   color: #C08552 !important;
   margin: 0 0 14px 0 !important;
-  font-weight: 500 !important;
+  font-weight: 600 !important;
 }
 
 .dh-news-tag {
@@ -1281,7 +1544,7 @@ p.mphb-required-fields-tip,
 }
 
 .dh-news-excerpt {
-  font-family: 'DM Sans', Arial, sans-serif !important;
+  font-family: 'Delight', sans-serif !important;
   font-size: 13.5px !important;
   line-height: 1.65 !important;
   color: #444444 !important;
@@ -1325,8 +1588,6 @@ body #page-container .et_pb_section .et_pb_slider_1.et_pb_slider .et_pb_more_but
 body #page-container .et_pb_section .et_pb_button_0,
 body #page-container .et_pb_section .et_pb_button_1 {
   border-radius: 25px !important;
-  box-shadow: none !important;
-  border: none !important;
   outline: none !important;
 }
 
@@ -1334,8 +1595,6 @@ body #page-container .et_pb_section .et_pb_slider_0.et_pb_slider .et_pb_more_but
 body #page-container .et_pb_section .et_pb_slider_1.et_pb_slider .et_pb_more_button.et_pb_button:hover,
 body #page-container .et_pb_section .et_pb_button_0:hover,
 body #page-container .et_pb_section .et_pb_button_1:hover {
-  box-shadow: none !important;
-  border: none !important;
   outline: none !important;
 }
 
@@ -1521,7 +1780,6 @@ body #page-container .et_pb_section .et_pb_button_0,
 body #page-container .et_pb_section .et_pb_button_1,
 body #page-container .et_pb_section .et_pb_button_0_tb_footer {
   border-radius: 25px !important;
-  border: none !important;
   outline: none !important;
   transition: all 0.3s ease !important;
   cursor: pointer !important;
@@ -1668,6 +1926,135 @@ textarea,
 .et_pb_row_1_tb_footer.et_pb_row {
   padding-bottom: 5px !important;
   padding-top: 5px !important;
+}
+
+/* ====================================================
+   Accommodation Cards Redesign
+   ==================================================== */
+.dh-custom-single-acc {
+  background: #ffffff !important;
+  border-radius: 24px !important;
+  padding: 16px !important;
+  box-shadow: 0 10px 30px rgba(94, 48, 35, 0.08) !important;
+  border: none !important;
+}
+
+.dh-custom-single-acc .et_pb_module_inner {
+  padding: 0 !important;
+}
+
+.dh-custom-single-acc .mphb_sc_room-wrapper,
+.dh-custom-single-acc .mphb-room-type {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+/* 1. Image Thumbnail at Top */
+.dh-custom-single-acc .mphb-loop-room-thumbnail,
+.dh-custom-single-acc .post-thumbnail {
+  order: 1 !important;
+  margin: 0 0 14px 0 !important;
+}
+
+.dh-custom-single-acc .mphb-loop-room-thumbnail img {
+  border-radius: 16px !important;
+  width: 100% !important;
+  margin-bottom: 0 !important;
+  display: block !important;
+}
+
+/* 2. Room Name First */
+.dh-custom-single-acc .mphb-room-type-title,
+.dh-custom-single-acc .mphb-room-type-title.entry-title {
+  order: 2 !important;
+  font-family: 'Grift', sans-serif !important;
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  color: #5E3023 !important;
+  margin-top: 0 !important;
+  margin-bottom: 3px !important;
+  text-align: left !important;
+}
+
+.dh-custom-single-acc .mphb-room-type-title a {
+  font-family: 'Grift', sans-serif !important;
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  color: #5E3023 !important;
+  text-decoration: none !important;
+}
+
+/* 3. Content of Room Second (less gap from title, more gap to amenities) */
+.dh-custom-single-acc .dh-room-desc,
+.dh-custom-single-acc p.dh-room-desc,
+.dh-custom-single-acc .mphb-room-type p:not(.post-thumbnail):not(.mphb-regular-price),
+.dh-custom-single-acc .mphb_sc_room-wrapper p:not(.post-thumbnail):not(.mphb-regular-price) {
+  order: 3 !important;
+  font-family: 'Delight', sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  color: #5E3023 !important;
+  line-height: 1.5 !important;
+  margin-top: 0 !important;
+  margin-bottom: 10px !important;
+  text-align: left !important;
+}
+
+/* 4. Amenities Third */
+.dh-custom-single-acc .mphb-loop-room-type-attributes {
+  order: 4 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+  text-align: left !important;
+}
+
+.dh-custom-single-acc .mphb-room-type-facilities {
+  font-family: 'Delight', sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 400 !important;
+  color: rgba(94, 48, 35, 0.75) !important;
+}
+
+.dh-custom-single-acc .mphb-room-type-facilities a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+.dh-custom-single-acc .mphb-regular-price,
+.dh-custom-single-acc .mphb-to-book-btn-wrapper {
+  display: none !important;
+}
+
+/* ====================================================
+   Offer Section Card Redesign
+   ==================================================== */
+.dh-custom-offer-wrapper {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+}
+
+.dh-custom-offer-card {
+  background: #F3E9DC;
+  border: 1px solid #DAB49D;
+  border-radius: 24px;
+  padding: 40px 60px;
+  max-width: 480px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  transform: scale(0.85);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+  text-align: center;
+}
+
+.dh-custom-offer-card:hover {
+  transform: scale(1);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
 }
 
 /* ====================================================

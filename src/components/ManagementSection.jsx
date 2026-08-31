@@ -22,7 +22,7 @@ export default function ManagementSection() {
                 <div style={{ textAlign: "center", marginBottom: "30px" }}>
                   <h2
                     style={{
-                      fontFamily: "'Playfair Display', serif",
+                      fontFamily: "'Grift', sans-serif",
                       fontSize: "38px",
                       color: "var(--ink)",
                       fontWeight: 700,
@@ -31,7 +31,7 @@ export default function ManagementSection() {
                   >
                     Register Account
                   </h2>
-                  <p style={{ color: "var(--terracotta)", fontSize: "15px", fontWeight: 600, margin: 0 }}>
+                  <p style={{ fontFamily: "'Delight', sans-serif", color: "var(--terracotta)", fontSize: "15px", fontWeight: 400, margin: 0 }}>
                     Join Chidiya Ghar for exclusive benefits and offers
                   </p>
                 </div>

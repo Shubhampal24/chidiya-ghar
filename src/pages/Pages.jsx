@@ -1,16 +1,15 @@
 import React from 'react';
-import Header from '../components/Header.jsx';
+import UnifiedHeaderHero from '../components/UnifiedHeaderHero.jsx';
 import Footer from '../components/Footer.jsx';
 
 function PageShell({ title, children }) {
   return (
     <div id="page-container">
       <div id="et-boc" className="et-boc">
-        <Header />
+        <UnifiedHeaderHero isHomePage={false} title={title} />
         <div id="et-main-area">
           <div id="main-content">
             <div style={{ minHeight: '60vh', padding: '80px max(24px, calc((100% - 1200px) / 2))' }}>
-              <h1 style={{ fontFamily: "'Playfair Display', serif", fontSize: '42px', color: 'var(--dark-brown)', marginBottom: '20px' }}>{title}</h1>
               {children}
             </div>
           </div>
