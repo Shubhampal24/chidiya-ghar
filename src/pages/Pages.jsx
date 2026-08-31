@@ -106,7 +106,7 @@ export function MyAccountPage() {
               border: mode === 'register' ? '2px solid #5E3023' : '1px solid #DAB49D',
               background: mode === 'register' ? '#5E3023' : '#FDFBF8',
               color: mode === 'register' ? '#F3E9DC' : '#5E3023',
-              fontFamily: "'Playfair Display', serif",
+              fontFamily: "'Grift', sans-serif",
               fontSize: '16px',
               fontWeight: 600,
               cursor: 'pointer',
@@ -124,7 +124,7 @@ export function MyAccountPage() {
               border: mode === 'login' ? '2px solid #5E3023' : '1px solid #DAB49D',
               background: mode === 'login' ? '#5E3023' : '#FDFBF8',
               color: mode === 'login' ? '#F3E9DC' : '#5E3023',
-              fontFamily: "'Playfair Display', serif",
+              fontFamily: "'Grift', sans-serif",
               fontSize: '16px',
               fontWeight: 600,
               cursor: 'pointer',
@@ -148,7 +148,7 @@ export function MyAccountPage() {
           {submitted ? (
             <div style={{ textAlign: 'center', padding: '30px 10px' }}>
               <div style={{ fontSize: '42px', marginBottom: '15px' }}>🌿</div>
-              <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: '26px', color: '#5E3023', marginBottom: '10px' }}>
+              <h3 style={{ fontFamily: "'Grift', sans-serif", fontSize: '26px', color: '#5E3023', marginBottom: '10px' }}>
                 Welcome to Chidiya Ghar, {formData.firstName || 'Guest'}!
               </h3>
               <p style={{ color: '#666', fontSize: '15px', lineHeight: 1.6, maxWidth: '480px', margin: '0 auto 20px' }}>
@@ -402,7 +402,7 @@ export function MyAccountPage() {
                   borderRadius: '25px',
                   fontSize: '17px',
                   fontWeight: 600,
-                  fontFamily: "'Playfair Display', serif",
+                  fontFamily: "'Grift', sans-serif",
                   cursor: 'pointer',
                   marginTop: '10px',
                   transition: 'all 0.3s ease',
@@ -468,7 +468,7 @@ export function MyAccountPage() {
                   borderRadius: '25px',
                   fontSize: '17px',
                   fontWeight: 600,
-                  fontFamily: "'Playfair Display', serif",
+                  fontFamily: "'Grift', sans-serif",
                   cursor: 'pointer',
                   marginTop: '10px',
                   transition: 'all 0.3s ease',

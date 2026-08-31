@@ -181,8 +181,42 @@ label,
 .mphb-regular-price strong,
 .field label {
   font-family: 'Delight', 'DM Sans', Arial, sans-serif !important;
-  font-weight: 600 !important;
 }
+
+/* ====================================================
+   5% Letter Spacing for Subheadings & Content Text
+   (0.05em = 5% tracking, strictly preserving all UI layouts)
+   ==================================================== */
+p,
+.subheading,
+.eyebrow,
+.subcontent,
+.dh-room-desc,
+.dh-news-excerpt,
+.dh-service-card p,
+.facility-item,
+.mphb-room-type-facilities,
+.mphb-loop-room-type-attributes li,
+.et_pb_text_inner > p {
+  letter-spacing: 0.05em;
+}
+
+/* Guard UI interactive components, buttons, and navigation from letter-spacing shifts */
+.nav,
+.header,
+.menu,
+.button,
+button,
+.et_pb_button,
+.mphb-book-button,
+.et_pb_newsletter_button,
+.horizontal-search-form input,
+.horizontal-search-form select,
+.horizontal-search-form button,
+.dh-gallery-dots {
+  letter-spacing: normal;
+}
+
 
 h1,
 h2:not(.font-flix-normal),
@@ -433,7 +467,7 @@ html, body, #root, #page-container, body #page-container, #et-boc, #et-main-area
 .facilities { background: var(--white); padding: 90px 0; }
 .facilityGrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; text-align: center; }
 .facility img { width: 100px; margin: 0 auto 20px; display: block; }
-.facility h3 { font-family: "Playfair Display", serif; font-size: 24px; color: var(--dark-brown); margin: 0 0 15px; }
+.facility h3 { font-family: 'Grift', sans-serif; font-size: 24px; color: var(--dark-brown); margin: 0 0 15px; }
 .facility p { font-size: 15px; line-height: 1.6; color: var(--ink); }
 
 /* Room Section */
@@ -443,7 +477,7 @@ html, body, #root, #page-container, body #page-container, #et-boc, #et-main-area
 .roomCard { border: 1px solid var(--brown); background: var(--white); text-align: center; border-radius: 25px; }
 .roomCard > img { width: 100%; height: 280px; object-fit: cover; border-radius: 25px; }
 .roomBody { padding: 30px; }
-.roomBody h3 { font-family: "Playfair Display", serif; font-size: 26px; color: var(--ink); margin: 0 0 20px; }
+.roomBody h3 { font-family: 'Grift', sans-serif; font-size: 26px; color: var(--ink); margin: 0 0 20px; }
 .roomBody .diviBtnDark { margin-top: 20px; }
 
 /* Services */
@@ -452,7 +486,7 @@ html, body, #root, #page-container, body #page-container, #et-boc, #et-main-area
 .service { border: 1px solid var(--cream); background: var(--white); text-align: center; border-radius: 25px; }
 .service img { width: 100%; height: 220px; object-fit: cover; border-radius: 25px; }
 .service > div { padding: 25px; }
-.service h3 { font-family: "Playfair Display", serif; font-size: 22px; color: var(--brown); margin: 0 0 10px; }
+.service h3 { font-family: 'Grift', sans-serif; font-size: 22px; color: var(--brown); margin: 0 0 10px; }
 
 /* Offer */
 .offer {
@@ -463,8 +497,8 @@ html, body, #root, #page-container, body #page-container, #et-boc, #et-main-area
   background: var(--cream); border: 1px solid var(--brown); box-shadow: 0px 0px 0px 20px var(--cream);
   padding: 50px; max-width: 600px; text-align: left; position: relative; z-index: 2; margin-left: auto; margin-right: auto; border-radius: 25px;
 }
-.offerInner h2 { font-family: "Playfair Display", serif; font-size: 50px; color: var(--brown); margin: 0 0 10px; font-weight: 900; }
-.offerInner h3 { font-family: "Playfair Display", serif; font-size: 30px; color: var(--ink); margin: 0 0 20px; }
+.offerInner h2 { font-family: 'Grift', sans-serif; font-size: 50px; color: var(--brown); margin: 0 0 10px; font-weight: 900; }
+.offerInner h3 { font-family: 'Grift', sans-serif; font-size: 30px; color: var(--ink); margin: 0 0 20px; }
 
 /* Gallery */
 .gallery { padding: 100px 0; background: var(--white); text-align: center; }
@@ -478,7 +512,7 @@ html, body, #root, #page-container, body #page-container, #et-boc, #et-main-area
 .team .sectionTitle { display: flex; flex-direction: column; align-items: center; text-align: center; margin-bottom: 50px; }
 .teamGrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; text-align: center; }
 .person img { width: 180px; height: 180px; border-radius: 50%; object-fit: cover; border: 2px solid var(--tan); padding: 5px; margin-bottom: 20px; }
-.person h3 { font-family: "Playfair Display", serif; font-size: 22px; color: var(--ink); margin: 0 0 5px; }
+.person h3 { font-family: 'Grift', sans-serif; font-size: 22px; color: var(--ink); margin: 0 0 5px; }
 .person span { font-size: 14px; color: var(--terracotta); font-weight: 600; display: block; margin-bottom: 15px; }
 
 /* Testimonials */
@@ -487,7 +521,7 @@ html, body, #root, #page-container, body #page-container, #et-boc, #et-main-area
 .testGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
 .testimonial { padding: 30px; text-align: center; }
 .testimonial img { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; }
-.testimonial h3 { font-family: "Playfair Display", serif; font-size: 22px; color: var(--ink); margin: 0 0 5px; }
+.testimonial h3 { font-family: 'Grift', sans-serif; font-size: 22px; color: var(--ink); margin: 0 0 5px; }
 .testimonial span { font-size: 13px; color: var(--terracotta); text-transform: uppercase; letter-spacing: 1px; font-weight: 700; }
 .testimonial p { font-size: 15px; color: var(--ink); line-height: 1.8; margin-top: 20px; font-style: italic; }
 
@@ -497,13 +531,13 @@ html, body, #root, #page-container, body #page-container, #et-boc, #et-main-area
 .newsGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
 .news article { border: 1px solid var(--cream); background: var(--white); padding: 25px; text-align: left; border-radius: 25px; }
 .date { font-size: 13px; color: var(--terracotta); font-weight: 700; margin-bottom: 15px; }
-.news h3 { font-family: "Playfair Display", serif; font-size: 24px; color: var(--ink); margin: 0 0 15px; }
+.news h3 { font-family: 'Grift', sans-serif; font-size: 24px; color: var(--ink); margin: 0 0 15px; }
 .news p { font-size: 15px; line-height: 1.6; color: var(--ink); margin-bottom: 20px; }
 
 /* Footer */
 footer { background: var(--cream); color: var(--ink); padding: 80px 0 0; }
 .footerGrid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr 1.5fr; gap: 40px; padding-bottom: 60px; }
-.footerGrid h4 { font-family: "Playfair Display", serif; font-size: 20px; color: var(--ink); margin: 0 0 20px; font-weight: 700; }
+.footerGrid h4 { font-family: 'Grift', sans-serif; font-size: 20px; color: var(--ink); margin: 0 0 20px; font-weight: 700; }
 .footerGrid p, .footerGrid a { font-size: 15px; line-height: 1.8; color: var(--ink); display: block; margin-bottom: 10px; }
 .footerGrid a:hover { color: var(--brown); }
 .social { display: flex; gap: 15px; margin-top: 20px; }
@@ -517,7 +551,7 @@ footer { background: var(--cream); color: var(--ink); padding: 80px 0 0; }
 .pageHero {
   height: 40vh; background-color: var(--cream); display: flex; align-items: center; justify-content: center; text-align: center;
 }
-.pageHero h1 { font-family: "Playfair Display", serif; font-size: 45px; color: var(--ink); margin: 0; }
+.pageHero h1 { font-family: 'Grift', sans-serif; font-size: 45px; color: var(--ink); margin: 0; }
 .pageMain { padding: 80px 0; background: var(--white); }
 
 /* Responsive */
@@ -1284,7 +1318,7 @@ p.mphb-required-fields-tip,
   border: none !important;
   box-shadow: none !important;
   border-radius: 25px !important;
-  font-family: 'Playfair Display', Georgia, serif !important;
+  font-family: 'Grift', sans-serif !important;
   font-size: 18px !important;
   font-weight: 500 !important;
   letter-spacing: 0.5px !important;
@@ -1379,8 +1413,9 @@ p.mphb-required-fields-tip,
 }
 
 .dh-testi-quote {
-  font-family: 'DM Sans', Arial, sans-serif !important;
+  font-family: 'Delight', sans-serif !important;
   font-size: 15px !important;
+  font-weight: 400 !important;
   line-height: 1.8 !important;
   color: #333333 !important;
   max-width: 640px !important;
@@ -1395,7 +1430,7 @@ p.mphb-required-fields-tip,
 }
 
 .dh-testi-name {
-  font-family: 'Playfair Display', Georgia, serif !important;
+  font-family: 'Grift', sans-serif !important;
   font-size: 22px !important;
   font-weight: 700 !important;
   color: #000000 !important;
@@ -1404,7 +1439,7 @@ p.mphb-required-fields-tip,
 }
 
 .dh-testi-role {
-  font-family: 'DM Sans', Arial, sans-serif !important;
+  font-family: 'Delight', sans-serif !important;
   font-size: 14px !important;
   font-weight: 500 !important;
   color: #C08552 !important;
@@ -1712,7 +1747,7 @@ textarea,
 }
 
 .dh-news-card-title {
-  font-family: 'Playfair Display', Georgia, serif !important;
+  font-family: 'Grift', sans-serif !important;
   font-size: 19px !important;
   font-weight: 700 !important;
   line-height: 1.35 !important;
@@ -1730,11 +1765,11 @@ textarea,
 }
 
 .dh-news-meta {
-  font-family: 'DM Sans', Arial, sans-serif !important;
+  font-family: 'Delight', sans-serif !important;
   font-size: 13px !important;
   color: #C08552 !important;
   margin: 0 0 14px 0 !important;
-  font-weight: 500 !important;
+  font-weight: 600 !important;
 }
 
 .dh-news-tag {
@@ -1743,8 +1778,9 @@ textarea,
 }
 
 .dh-news-excerpt {
-  font-family: 'DM Sans', Arial, sans-serif !important;
+  font-family: 'Delight', sans-serif !important;
   font-size: 13.5px !important;
+  font-weight: 400 !important;
   line-height: 1.65 !important;
   color: #444444 !important;
   margin: 0 !important;

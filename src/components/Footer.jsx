@@ -82,7 +82,7 @@ export default function Footer() {
                   style={{ marginBottom: "10px" }}
                 >
                   <div className={"et_pb_text_inner"}>
-                    <p style={{ fontWeight: 700, fontSize: "16px", marginBottom: "8px", color: "#000" }}>{"Accomodation"}</p>
+                    <p style={{ fontFamily: "'Grift', sans-serif", fontWeight: 700, fontSize: "16px", marginBottom: "8px", color: "#000" }}>{"Accomodation"}</p>
                     <p style={{ margin: "0 0 4px 0", lineHeight: "1.3" }}>
                       <a href={"#"}>{"Rooms"}</a>
                     </p>
@@ -108,7 +108,7 @@ export default function Footer() {
                   style={{ marginBottom: "10px" }}
                 >
                   <div className={"et_pb_text_inner"}>
-                    <p style={{ fontWeight: 700, fontSize: "16px", marginBottom: "8px", color: "#000" }}>{"Quick Access"}</p>
+                    <p style={{ fontFamily: "'Grift', sans-serif", fontWeight: 700, fontSize: "16px", marginBottom: "8px", color: "#000" }}>{"Quick Access"}</p>
                     <p style={{ margin: "0 0 4px 0", lineHeight: "1.3" }}>
                       <a href={"#"}>{"Home"}</a>
                     </p>

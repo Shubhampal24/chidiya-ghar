@@ -55,7 +55,7 @@ export default function TestimonialsSection() {
             <div className={"et_pb_text_inner"}>
               <h3
                 style={{
-                  fontFamily: "'Playfair Display', Georgia, serif",
+                  fontFamily: "'Grift', sans-serif",
                   fontSize: "34px",
                   fontWeight: "700",
                   color: "#000000",
