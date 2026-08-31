@@ -5,6 +5,7 @@ export default function WhoWeAreSection() {
         className={"et_pb_section et_pb_section_1 et_section_regular"}
         style={{
           background: "linear-gradient(rgba(253, 251, 248, 0.94), rgba(253, 251, 248, 0.94)), url('/image/acc-2.png') center/cover no-repeat",
+          padding: "58px 0",
         }}
       >
         {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
@@ -14,10 +15,10 @@ export default function WhoWeAreSection() {
             className={
               "et_pb_column et_pb_column_1_2 et_pb_column_2  et_pb_css_mix_blend_mode_passthrough"
             }
-            style={{ display: "flex", alignItems: "center" }}
+            style={{ display: "flex", alignItems: "center", justifyContent: "center" }}
           >
             {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
-            <div className={"et_pb_module et_pb_image et_pb_image_0"} style={{ width: "100%" }}>
+            <div className={"et_pb_module et_pb_image et_pb_image_0"} style={{ width: "100%", maxWidth: "500px" }}>
               {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
               <span className={"et_pb_image_wrap "}>
                 <img
@@ -29,7 +30,7 @@ export default function WhoWeAreSection() {
                   alt={""}
                   title={""}
                   className={"wp-image-520"}
-                  style={{ width: "100%", height: "auto" }}
+                  style={{ width: "100%", height: "auto", display: "block" }}
                 />
               </span>
               {"\n\t\t\t"}
@@ -40,20 +41,20 @@ export default function WhoWeAreSection() {
             className={
               "et_pb_column et_pb_column_1_2 et_pb_column_3  et_pb_css_mix_blend_mode_passthrough et-last-child"
             }
-            style={{ display: "flex", flexDirection: "column", justifyContent: "space-between", padding: "4% 0" }}
+            style={{ display: "flex", flexDirection: "column", justifyContent: "space-between", padding: "16px 0 16px 24px", boxSizing: "border-box" }}
           >
-            {/* 1. Black Guide: Logo in Brown Color */}
-            <div className={"dh-whoweare-logo"} style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", width: "240px" }}>
+            {/* 1. Black Guide: Logo in Brown Color (Large & Exact Centered) */}
+            <div className={"dh-whoweare-logo"} style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", width: "250px" }}>
               <img
                 src={"/image/Group 1171275756.png"}
                 alt={"Chidiya Ghar"}
-                style={{ width: "240px", height: "auto", display: "block" }}
+                style={{ width: "250px", height: "auto", display: "block" }}
               />
               <img
                 src={"/image/NESTING PROFESSIONALS.svg"}
                 alt={"Nesting Professionals"}
                 style={{
-                  width: "195px",
+                  width: "205px",
                   display: "block",
                   marginTop: "8px",
                   marginLeft: "auto",
@@ -62,22 +63,21 @@ export default function WhoWeAreSection() {
               />
             </div>
 
-            <div style={{ flex: 1, display: "flex", flexDirection: "column", justifyContent: "center" }}>
-              {/* 2. Red Guide: Heading */}
+            {/* 2 & 3. Red Guide (Heading) + Blue Guide (Content) */}
+            <div style={{ margin: "20px 0" }}>
               <div
                 className={
                   "et_pb_module et_pb_text et_pb_text_1  et_pb_text_align_left et_pb_bg_layout_light"
                 }
-                style={{ marginBottom: "20px" }}
+                style={{ marginBottom: "16px" }}
               >
                 <div className={"et_pb_text_inner"}>
-                  <h2 style={{ fontFamily: "'Grift', sans-serif", fontSize: "38px", fontWeight: 700, color: "#5E3023", margin: 0, lineHeight: 1.25 }}>
+                  <h2 style={{ fontFamily: "'Grift', sans-serif", fontSize: "38px", fontWeight: 700, color: "#5E3023", margin: 0, lineHeight: 1.28 }}>
                     {"A Home With Character"}
                   </h2>
                 </div>
               </div>
 
-              {/* 3. Blue Guide: Content */}
               <div
                 className={
                   "et_pb_module et_pb_text et_pb_text_desc et_pb_text_align_left et_pb_bg_layout_light"
@@ -86,12 +86,12 @@ export default function WhoWeAreSection() {
                 <div className={"et_pb_text_inner"}>
                   <p style={{
                     fontFamily: "'Delight', sans-serif",
-                    fontSize: "15px",
+                    fontSize: "15.5px",
                     fontWeight: 400,
-                    lineHeight: "1.7",
+                    lineHeight: "1.75",
                     color: "#5E3023",
                     margin: 0,
-                    maxWidth: "520px",
+                    maxWidth: "540px",
                     letterSpacing: "0.05em",
                   }}>
                     {"Chidiya Ghar is thoughtfully designed to bring together comfort, character and a sense of belonging. Every space is created to feel warm, welcoming and effortlessly livable. Named after the Hindi word for \"Bird House,\" Chidiya Ghar is a home that breathes — alive with natural light, botanical details and the quiet warmth of a place designed with love."}
@@ -115,7 +115,8 @@ export default function WhoWeAreSection() {
                   fontWeight: "800 !important",
                   letterSpacing: "0.12em",
                   textTransform: "uppercase",
-                  padding: "12px 32px",
+                  padding: "13px 36px",
+                  fontSize: "15px",
                 }}
               >
                 {"Discover Our Spaces"}
