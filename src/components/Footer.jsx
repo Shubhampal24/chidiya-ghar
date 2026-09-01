@@ -39,25 +39,57 @@ export default function Footer() {
     position: "absolute",
     left: "50%",
     bottom: "-22px",
-
     transform: "translateX(-50%) scaleX(1.15)",
     transformOrigin: "center bottom",
-
     fontFamily: "'Grift', sans-serif",
     fontSize: "205px",
     fontWeight: 500,
-
     color: "rgba(255,255,255,0.13)",
-
     lineHeight: "0.82",
     whiteSpace: "nowrap",
-
-    pointerEvents: "none",
     userSelect: "none",
     zIndex: 0,
+
+    // Keep the complete text behind the card
+    pointerEvents: "none",
   }}
 >
-  Chidiya Ghar
+  <span
+    style={{
+      display: "inline-block",
+      pointerEvents: "auto",
+      transition:
+        "transform 0.45s cubic-bezier(0.22, 1, 0.36, 1)",
+      cursor: "default",
+    }}
+    onMouseEnter={(e) => {
+      e.currentTarget.style.transform = "translateY(-16px)";
+    }}
+    onMouseLeave={(e) => {
+      e.currentTarget.style.transform = "translateY(0)";
+    }}
+  >
+    Chidiya
+  </span>
+
+  <span
+    style={{
+      display: "inline-block",
+      marginLeft: "18px",
+      pointerEvents: "auto",
+      transition:
+        "transform 0.45s cubic-bezier(0.22, 1, 0.36, 1)",
+      cursor: "default",
+    }}
+    onMouseEnter={(e) => {
+      e.currentTarget.style.transform = "translateY(-16px)";
+    }}
+    onMouseLeave={(e) => {
+      e.currentTarget.style.transform = "translateY(0)";
+    }}
+  >
+    Ghar
+  </span>
 </div>
 
 
