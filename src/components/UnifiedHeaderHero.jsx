@@ -50,8 +50,11 @@ export default function UnifiedHeaderHero({ isHomePage = false, title = "" }) {
         </Link>
 
         {/* Navigation - Centered (Aceternity Navbar Menu) */}
-        <div className="nav flex-1 flex justify-center z-50">
-          <Menu setActive={setActive}>
+        <div
+  className="nav z-50"
+  style={{ position: 'absolute', left: '50%', transform: 'translateX(-50%)' }}
+>
+  <Menu setActive={setActive}>
             {/* Direct Link styled like a MenuItem */}
             <Link 
               to="/" 
