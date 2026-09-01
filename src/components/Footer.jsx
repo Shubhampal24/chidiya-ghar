@@ -11,472 +11,433 @@ export default function Footer() {
   };
 
   return (
-    <footer
-      id="site-footer"
-      style={{
-        background: "#7A351F",
+    <>
+      <style>
+        {`
+          .footer-wrapper {
+            padding: 28px 30px 0;
+            min-height: 500px;
+          }
+          .footer-bg-text {
+            font-size: 205px;
+            bottom: -22px;
+          }
+          .footer-card {
+            grid-template-columns: 180px 150px 205px 1fr;
+            height: 310px;
+            padding: 48px 68px 25px;
+          }
+          .footer-map-container {
+            height: 285px;
+            margin-top: -30px;
+            margin-right: -25px;
+          }
+          .footer-book-btn-wrapper {
+            position: absolute;
+            left: 0;
+            bottom: 30px;
+          }
+          .footer-copyright {
+            bottom: 25px;
+          }
+          .footer-col {
+            text-align: left;
+          }
+          
+          @media (max-width: 1024px) {
+            .footer-card {
+              grid-template-columns: 1fr 1fr;
+              height: auto;
+              padding: 40px;
+              row-gap: 40px;
+            }
+            .footer-map-container {
+              margin-top: 0;
+              margin-right: 0;
+              height: auto;
+            }
+            .footer-bg-text {
+              font-size: 150px;
+            }
+            .footer-wrapper {
+              min-height: auto;
+              padding-bottom: 120px;
+            }
+          }
 
-        /* INCREASED SECTION HEIGHT */
-        padding: "28px 30px 0",
-
-        position: "relative",
-        overflow: "hidden",
-
-        fontFamily: "'Delight',",
-
-        /* Bigger footer */
-        minHeight: "500px",
-
-        boxSizing: "border-box",
-      }}
-    >
-
-      {/* =====================================================
-          LARGE BACKGROUND CHIDIYA GHAR
-      ====================================================== */}
-   <div
-  style={{
-    position: "absolute",
-    left: "50%",
-    bottom: "-22px",
-    transform: "translateX(-50%) scaleX(1.15)",
-    transformOrigin: "center bottom",
-    fontFamily: "'Grift', sans-serif",
-    fontSize: "205px",
-    fontWeight: 500,
-    color: "rgba(255,255,255,0.13)",
-    lineHeight: "0.82",
-    whiteSpace: "nowrap",
-    userSelect: "none",
-    zIndex: 0,
-
-    // Keep the complete text behind the card
-    pointerEvents: "none",
-  }}
->
-  <span
-    style={{
-      display: "inline-block",
-      pointerEvents: "auto",
-      transition:
-        "transform 0.45s cubic-bezier(0.22, 1, 0.36, 1)",
-      cursor: "default",
-    }}
-    onMouseEnter={(e) => {
-      e.currentTarget.style.transform = "translateY(-16px)";
-    }}
-    onMouseLeave={(e) => {
-      e.currentTarget.style.transform = "translateY(0)";
-    }}
-  >
-    Chidiya
-  </span>
-
-  <span
-    style={{
-      display: "inline-block",
-      marginLeft: "18px",
-      pointerEvents: "auto",
-      transition:
-        "transform 0.45s cubic-bezier(0.22, 1, 0.36, 1)",
-      cursor: "default",
-    }}
-    onMouseEnter={(e) => {
-      e.currentTarget.style.transform = "translateY(-16px)";
-    }}
-    onMouseLeave={(e) => {
-      e.currentTarget.style.transform = "translateY(0)";
-    }}
-  >
-    Ghar
-  </span>
-</div>
-
-
-      {/* =====================================================
-          MAIN WHITE FOOTER CARD
-      ====================================================== */}
-      <div
+          @media (max-width: 768px) {
+            .footer-wrapper {
+              padding: 20px 15px 0;
+              padding-bottom: 100px;
+            }
+            .footer-card {
+              grid-template-columns: 1fr;
+              text-align: center;
+              padding: 30px 20px 70px;
+            }
+            .footer-col {
+              text-align: center;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+            }
+            .footer-book-btn-wrapper {
+              position: relative;
+              bottom: auto;
+              left: auto;
+              margin-top: 20px;
+              display: flex;
+              justify-content: center;
+            }
+            .footer-bg-text {
+              font-size: 100px;
+              bottom: -10px;
+            }
+            .footer-copyright {
+              bottom: 20px;
+            }
+          }
+          
+          @media (max-width: 480px) {
+            .footer-bg-text {
+              font-size: 60px;
+              bottom: -5px;
+            }
+            .footer-map-container img {
+              max-width: 100% !important;
+              height: auto !important;
+            }
+          }
+        `}
+      </style>
+      <footer
+        id="site-footer"
+        className="footer-wrapper"
         style={{
+          background: "#7A351F",
           position: "relative",
-
-          zIndex: 2,
-
-          /* Wider card */
-          width: "100%",
-
-          maxWidth: "1055px",
-
-          /* Taller card */
-          height: "310px",
-
-          /* Move card upward */
-          margin: "0 auto",
-
-          background: "#FFFFFF",
-
-          borderRadius: "17px",
-
-          /* Slightly more internal spacing */
-          padding: "48px 68px 25px",
-
+          overflow: "hidden",
+          fontFamily: "'Delight',",
           boxSizing: "border-box",
-
-          boxShadow:
-            "0 10px 28px rgba(0,0,0,0.12)",
-
-          display: "grid",
-
-          gridTemplateColumns:
-            "180px 150px 205px 1fr",
-
-          columnGap: "12px",
         }}
       >
 
-        {/* ===================================================
-            COMPANY
-        ==================================================== */}
+        {/* =====================================================
+            LARGE BACKGROUND CHIDIYA GHAR
+        ====================================================== */}
         <div
-          style={{
-            position: "relative",
-            height: "100%",
-          }}
-        >
-          <h3
-            style={{
-              margin: "0 0 22px",
-
-              fontFamily: "'Grift'",
-
-              fontSize: "27px",
-
-              fontWeight: 500,
-
-              color: "#713521",
-
-              lineHeight: 1,
-
-              letterSpacing: "-0.02em",
-            }}
-          >
-            Company
-          </h3>
-
-
-          {/* Our Amenities */}
-          <a
-            href="#services-section"
-            onClick={(e) => {
-              e.preventDefault();
-              scrollToSection("services-section");
-            }}
-            style={footerLinkStyle}
-          >
-            Our Amenities
-          </a>
-
-
-          {/* Rooms */}
-          <a
-            href="#accommodations-section"
-            onClick={(e) => {
-              e.preventDefault();
-              scrollToSection("accommodations-section");
-            }}
-            style={footerLinkStyle}
-          >
-            Rooms
-          </a>
-
-
-          {/* Email */}
-          <a
-            href="mailto:chidiya@ghar.com"
-            style={{
-              ...footerLinkStyle,
-              marginBottom: "0",
-            }}
-          >
-            chidiya@ghar.com
-          </a>
-
-
-          {/* =================================================
-              BOOK NOW
-          ================================================== */}
-          <div
-            style={{
-              position: "absolute",
-
-              left: "0",
-
-              /* Keep button inside card */
-              bottom: "30px",
-            }}
-          >
-            <a
-              href="#management-section"
-              onClick={(e) => {
-                e.preventDefault();
-
-                const section =
-                  document.getElementById(
-                    "management-section"
-                  ) ||
-                  document.querySelector(
-                    ".et_pb_section_7"
-                  );
-
-                if (section) {
-                  section.scrollIntoView({
-                    behavior: "smooth",
-                    block: "start",
-                  });
-                }
-              }}
-              style={{
-                display: "inline-flex",
-
-                alignItems: "center",
-                justifyContent: "center",
-
-                minWidth: "84px",
-
-                height: "34px",
-
-                padding: "0 15px",
-
-                boxSizing: "border-box",
-
-                borderRadius: "20px",
-
-                background: "#DCC9BF",
-
-                color: "#713521",
-
-                textDecoration: "none",
-
-                fontFamily:
-                  "'Delight',",
-
-                fontSize: "11px",
-
-                fontWeight: 600,
-
-                lineHeight: 1,
-
-                boxShadow:
-                  "0 7px 15px rgba(80,45,30,0.18)",
-
-                transition:
-                  "transform 0.2s ease, box-shadow 0.2s ease",
-              }}
-
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform =
-                  "translateY(-2px)";
-
-                e.currentTarget.style.boxShadow =
-                  "0 9px 18px rgba(80,45,30,0.24)";
-              }}
-
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform =
-                  "translateY(0)";
-
-                e.currentTarget.style.boxShadow =
-                  "0 7px 15px rgba(80,45,30,0.18)";
-              }}
-            >
-              Book Now
-            </a>
-          </div>
-        </div>
-
-
-        {/* ===================================================
-            SUPPORT
-        ==================================================== */}
-        <div>
-          <h3
-            style={{
-              margin: "0 0 22px",
-
-              fontFamily: "'Grift'",
-
-              fontSize: "27px",
-
-              fontWeight: 500,
-
-              color: "#713521",
-
-              lineHeight: 1,
-
-              letterSpacing: "-0.02em",
-            }}
-          >
-            Support
-          </h3>
-
-
-          {/* FAQs */}
-          <a
-            href="#"
-            style={footerLinkStyle}
-            onClick={(e) =>
-              e.preventDefault()
-            }
-          >
-            FAQs
-          </a>
-
-
-          {/* Contact Us */}
-          <a
-            href="#site-footer"
-            onClick={(e) => {
-              e.preventDefault();
-              scrollToSection("site-footer");
-            }}
-            style={footerLinkStyle}
-          >
-            Contact Us
-          </a>
-        </div>
-
-
-        {/* ===================================================
-            TRUST & LEGAL
-        ==================================================== */}
-        <div>
-          <h3
-            style={{
-              margin: "0 0 22px",
-
-              fontFamily: "'Grift'",
-
-              fontSize: "27px",
-
-              fontWeight: 500,
-
-              color: "#713521",
-
-              lineHeight: 1.05,
-
-              letterSpacing: "-0.02em",
-
-              maxWidth: "170px",
-            }}
-          >
-            Trust &amp; Legal
-          </h3>
-
-
-          {/* Terms */}
-          <a
-            href="#"
-            style={footerLinkStyle}
-            onClick={(e) =>
-              e.preventDefault()
-            }
-          >
-            Terms &amp; Conditions
-          </a>
-
-
-          {/* Privacy */}
-          <a
-            href="#"
-            style={footerLinkStyle}
-            onClick={(e) =>
-              e.preventDefault()
-            }
-          >
-            Privacy Policy
-          </a>
-        </div>
-
-
-        {/* ===================================================
-            PUNE MAP
-        ==================================================== */}
-        <div
-          style={{
-            position: "relative",
-
-            /* Larger map area */
-            height: "285px",
-
-            /* Move map upward */
-            marginTop: "-30px",
-
-            /* Give map more room on right */
-            marginRight: "-25px",
-
-            display: "flex",
-
-            alignItems: "center",
-
-            justifyContent: "center",
-
-            overflow: "visible",
-          }}
-        >
-          <img
-            src="/image/pune-location.png"
-            alt="Pune Location"
-            style={{
-              /* Bigger map */
-              width: "100%",
-
-              maxWidth: "330px",
-
-              height: "300px",
-
-              objectFit: "contain",
-
-              display: "block",
-
-              opacity: 0.85,
-            }}
-          />
-        </div>
-
-
-        {/* ===================================================
-            COPYRIGHT
-        ==================================================== */}
-        <div
+          className="footer-bg-text"
           style={{
             position: "absolute",
-
             left: "50%",
-
-            bottom: "25px",
-
-            transform:
-              "translateX(-50%)",
-
-            color: "#9A6A57",
-
-            fontFamily:
-              "'Delight'",
-
-            fontSize: "9px",
-
-            fontWeight: 400,
-
+            transform: "translateX(-50%) scaleX(1.15)",
+            transformOrigin: "center bottom",
+            fontFamily: "'Grift', sans-serif",
+            fontWeight: 500,
+            color: "rgba(255,255,255,0.13)",
+            lineHeight: "0.82",
             whiteSpace: "nowrap",
-
-            lineHeight: 1,
+            userSelect: "none",
+            zIndex: 0,
+            pointerEvents: "none",
           }}
         >
-          2026 Chidiya Ghar. All rights reserved
+          <span
+            style={{
+              display: "inline-block",
+              pointerEvents: "auto",
+              transition: "transform 0.45s cubic-bezier(0.22, 1, 0.36, 1)",
+              cursor: "default",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = "translateY(-16px)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = "translateY(0)";
+            }}
+          >
+            Chidiya
+          </span>
+
+          <span
+            style={{
+              display: "inline-block",
+              marginLeft: "18px",
+              pointerEvents: "auto",
+              transition: "transform 0.45s cubic-bezier(0.22, 1, 0.36, 1)",
+              cursor: "default",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = "translateY(-16px)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = "translateY(0)";
+            }}
+          >
+            Ghar
+          </span>
         </div>
 
-      </div>
-    </footer>
+
+        {/* =====================================================
+            MAIN WHITE FOOTER CARD
+        ====================================================== */}
+        <div
+          className="footer-card"
+          style={{
+            position: "relative",
+            zIndex: 2,
+            width: "100%",
+            maxWidth: "1055px",
+            margin: "0 auto",
+            background: "#FFFFFF",
+            borderRadius: "17px",
+            boxSizing: "border-box",
+            boxShadow: "0 10px 28px rgba(0,0,0,0.12)",
+            display: "grid",
+            columnGap: "12px",
+          }}
+        >
+
+          {/* ===================================================
+              COMPANY
+          ==================================================== */}
+          <div
+            className="footer-col"
+            style={{
+              position: "relative",
+              height: "100%",
+            }}
+          >
+            <h3
+              style={{
+                margin: "0 0 22px",
+                fontFamily: "'Grift'",
+                fontSize: "27px",
+                fontWeight: 500,
+                color: "#713521",
+                lineHeight: 1,
+                letterSpacing: "-0.02em",
+              }}
+            >
+              Company
+            </h3>
+
+            {/* Our Amenities */}
+            <a
+              href="#services-section"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection("services-section");
+              }}
+              style={footerLinkStyle}
+            >
+              Our Amenities
+            </a>
+
+            {/* Rooms */}
+            <a
+              href="#accommodations-section"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection("accommodations-section");
+              }}
+              style={footerLinkStyle}
+            >
+              Rooms
+            </a>
+
+            {/* Email */}
+            <a
+              href="mailto:chidiya@ghar.com"
+              style={{
+                ...footerLinkStyle,
+                marginBottom: "0",
+              }}
+            >
+              chidiya@ghar.com
+            </a>
+
+            {/* =================================================
+                BOOK NOW
+            ================================================== */}
+            <div className="footer-book-btn-wrapper">
+              <a
+                href="#management-section"
+                onClick={(e) => {
+                  e.preventDefault();
+                  const section =
+                    document.getElementById("management-section") ||
+                    document.querySelector(".et_pb_section_7");
+
+                  if (section) {
+                    section.scrollIntoView({
+                      behavior: "smooth",
+                      block: "start",
+                    });
+                  }
+                }}
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  minWidth: "84px",
+                  height: "34px",
+                  padding: "0 15px",
+                  boxSizing: "border-box",
+                  borderRadius: "20px",
+                  background: "#DCC9BF",
+                  color: "#713521",
+                  textDecoration: "none",
+                  fontFamily: "'Delight',",
+                  fontSize: "11px",
+                  fontWeight: 600,
+                  lineHeight: 1,
+                  boxShadow: "0 7px 15px rgba(80,45,30,0.18)",
+                  transition: "transform 0.2s ease, box-shadow 0.2s ease",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = "translateY(-2px)";
+                  e.currentTarget.style.boxShadow = "0 9px 18px rgba(80,45,30,0.24)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = "translateY(0)";
+                  e.currentTarget.style.boxShadow = "0 7px 15px rgba(80,45,30,0.18)";
+                }}
+              >
+                Book Now
+              </a>
+            </div>
+          </div>
+
+          {/* ===================================================
+              SUPPORT
+          ==================================================== */}
+          <div className="footer-col">
+            <h3
+              style={{
+                margin: "0 0 22px",
+                fontFamily: "'Grift'",
+                fontSize: "27px",
+                fontWeight: 500,
+                color: "#713521",
+                lineHeight: 1,
+                letterSpacing: "-0.02em",
+              }}
+            >
+              Support
+            </h3>
+
+            {/* FAQs */}
+            <a
+              href="#"
+              style={footerLinkStyle}
+              onClick={(e) => e.preventDefault()}
+            >
+              FAQs
+            </a>
+
+            {/* Contact Us */}
+            <a
+              href="#site-footer"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection("site-footer");
+              }}
+              style={footerLinkStyle}
+            >
+              Contact Us
+            </a>
+          </div>
+
+          {/* ===================================================
+              TRUST & LEGAL
+          ==================================================== */}
+          <div className="footer-col">
+            <h3
+              style={{
+                margin: "0 0 22px",
+                fontFamily: "'Grift'",
+                fontSize: "27px",
+                fontWeight: 500,
+                color: "#713521",
+                lineHeight: 1.05,
+                letterSpacing: "-0.02em",
+                maxWidth: "170px",
+              }}
+            >
+              Trust &amp; Legal
+            </h3>
+
+            {/* Terms */}
+            <a
+              href="#"
+              style={footerLinkStyle}
+              onClick={(e) => e.preventDefault()}
+            >
+              Terms &amp; Conditions
+            </a>
+
+            {/* Privacy */}
+            <a
+              href="#"
+              style={footerLinkStyle}
+              onClick={(e) => e.preventDefault()}
+            >
+              Privacy Policy
+            </a>
+          </div>
+
+          {/* ===================================================
+              PUNE MAP
+          ==================================================== */}
+          <div
+            className="footer-map-container"
+            style={{
+              position: "relative",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              overflow: "visible",
+            }}
+          >
+            <img
+              src="/image/pune-location.png"
+              alt="Pune Location"
+              style={{
+                width: "100%",
+                maxWidth: "330px",
+                height: "300px",
+                objectFit: "contain",
+                display: "block",
+                opacity: 0.85,
+              }}
+            />
+          </div>
+
+          {/* ===================================================
+              COPYRIGHT
+          ==================================================== */}
+          <div
+            className="footer-copyright"
+            style={{
+              position: "absolute",
+              left: "50%",
+              transform: "translateX(-50%)",
+              color: "#9A6A57",
+              fontFamily: "'Delight'",
+              fontSize: "9px",
+              fontWeight: 400,
+              whiteSpace: "nowrap",
+              lineHeight: 1,
+            }}
+          >
+            2026 Chidiya Ghar. All rights reserved
+          </div>
+
+        </div>
+      </footer>
+    </>
   );
 }
 
