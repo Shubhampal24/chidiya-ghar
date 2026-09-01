@@ -238,7 +238,7 @@ export default function ManagementSection() {
                     </div>
                     <div className={"field"}>
                       <label style={labelStyle}>
-                        Email Address <span style={{ color: "var(--terracotta)" }}>*</span>
+                        Email Address 
                       </label>
                       <input
                         type="email"
@@ -254,7 +254,7 @@ export default function ManagementSection() {
                   {/* Visitor Address */}
                   <div className={"field"}>
                     <label style={labelStyle}>
-                      Visitor Address <span style={{ color: "var(--terracotta)" }}>*</span>
+                      Visitor Address 
                     </label>
                     <input
                       type="text"
@@ -263,7 +263,7 @@ export default function ManagementSection() {
                       value={formData.address}
                       onChange={handleChange}
                       style={inputStyle}
-                      required
+                     
                     />
                   </div>
 
@@ -277,7 +277,7 @@ export default function ManagementSection() {
                   >
                     <div className={"field"}>
                       <label style={labelStyle}>
-                        Date From <span style={{ color: "var(--terracotta)" }}>*</span>
+                        Date From 
                       </label>
                       <input
                         type="date"
@@ -285,12 +285,12 @@ export default function ManagementSection() {
                         value={formData.dateFrom}
                         onChange={handleChange}
                         style={inputStyle}
-                        required
+              
                       />
                     </div>
                     <div className={"field"}>
                       <label style={labelStyle}>
-                        Date Till <span style={{ color: "var(--terracotta)" }}>*</span>
+                        Date Till 
                       </label>
                       <input
                         type="date"
@@ -299,12 +299,12 @@ export default function ManagementSection() {
                         min={formData.dateFrom || undefined}
                         onChange={handleChange}
                         style={inputStyle}
-                        required
+                      
                       />
                     </div>
                     <div className={"field"}>
                       <label style={labelStyle}>
-                        Total Room <span style={{ color: "var(--terracotta)" }}>*</span>
+                        Total Room
                       </label>
                       <select
                         name="totalRooms"
@@ -314,7 +314,7 @@ export default function ManagementSection() {
                           ...inputStyle,
                           cursor: "pointer",
                         }}
-                        required
+                  
                       >
                         <option value="1 Room">1 Room</option>
                         <option value="2 Rooms">2 Rooms</option>
