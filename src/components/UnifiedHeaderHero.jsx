@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Menu as MenuIcon, X } from 'lucide-react';
 import { CloudShader } from './ui/cloud-shader.jsx';
 import { Menu, MenuItem, HoveredLink } from './ui/navbar-menu.jsx';
+import whiteLogoImg from '../assets/image/chidiya-ghar-white-logo-fixed-counters.svg';
 
 export default function UnifiedHeaderHero({ isHomePage = false, title = "" }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -39,7 +40,7 @@ export default function UnifiedHeaderHero({ isHomePage = false, title = "" }) {
     {/* Logo - Extreme Left */}
     <Link to="/" className="flex flex-col items-center flex-shrink-0" style={{ textDecoration: 'none', lineHeight: 1 }}>
           <img
-            src="/image/chidiya-ghar-white-logo-fixed-counters.svg"
+            src={whiteLogoImg}
             alt="Chidiya Ghar"
             style={{ maxWidth: '110px', height: 'auto', display: 'block' }}
           />

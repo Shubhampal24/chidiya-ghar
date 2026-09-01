@@ -1,14 +1,22 @@
 import { useState, useEffect } from "react";
+import acc1 from "../assets/image/acc-1.png";
+import acc2 from "../assets/image/acc-2.png";
+import acc3 from "../assets/image/acc-3.png";
+import acc4 from "../assets/image/acc-4.png";
+import gal1 from "../assets/image/gal-1.png";
+import gal2 from "../assets/image/gal-2.png";
+import gal3 from "../assets/image/gal-3.png";
+import gal4 from "../assets/image/gal-4.png";
 
 const GALLERY_IMAGES = [
-  { src: "/image/acc-1.png", alt: "Warm Light Room" },
-  { src: "/image/gal-1.png", alt: "Deluxe Bedroom Suite" },
-  { src: "/image/acc-2.png", alt: "Spacious Living Room" },
-  { src: "/image/gal-2.png", alt: "Cozy Suite with Ambient Lights" },
-  { src: "/image/acc-3.png", alt: "Modern Premium Space" },
-  { src: "/image/gal-3.png", alt: "Resort Exterior & Surroundings" },
-  { src: "/image/acc-4.png", alt: "Studio Haven & Desk" },
-  { src: "/image/gal-4.png", alt: "Botanical Sunlit Corner" },
+  { src: acc1, alt: "Warm Light Room" },
+  { src: gal1, alt: "Deluxe Bedroom Suite" },
+  { src: acc2, alt: "Spacious Living Room" },
+  { src: gal2, alt: "Cozy Suite with Ambient Lights" },
+  { src: acc3, alt: "Modern Premium Space" },
+  { src: gal3, alt: "Resort Exterior & Surroundings" },
+  { src: acc4, alt: "Studio Haven & Desk" },
+  { src: gal4, alt: "Botanical Sunlit Corner" },
 ];
 
 export default function GallerySection() {

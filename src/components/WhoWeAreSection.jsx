@@ -1,3 +1,7 @@
+import rrrImg from "../assets/image/rrr.png";
+import logoSvg from "../assets/image/Group 1171275868.svg";
+import acc2Img from "../assets/image/acc-2.png";
+
 export default function WhoWeAreSection() {
   return (
     <>
@@ -5,7 +9,7 @@ export default function WhoWeAreSection() {
       id="about-us"
         className={"et_pb_section et_pb_section_1 et_section_regular"}
         style={{
-          background: "linear-gradient(to bottom, #FDFBF8 0%, rgba(253, 251, 248, 0.94) 60px, rgba(253, 251, 248, 0.94) 100%), url('/image/acc-2.png') center/cover no-repeat",
+          background: `linear-gradient(to bottom, #FDFBF8 0%, rgba(253, 251, 248, 0.94) 60px, rgba(253, 251, 248, 0.94) 100%), url('${acc2Img}') center/cover no-repeat`,
           padding: "58px 0",
         }}
       >
@@ -27,7 +31,7 @@ export default function WhoWeAreSection() {
                   decoding={"async"}
                   width={"700"}
                   height={"700"}
-                  src={"/image/rrr.png"}
+                  src={rrrImg}
                   alt={""}
                   title={""}
                   className={"wp-image-520"}
@@ -47,7 +51,7 @@ export default function WhoWeAreSection() {
             {/* 1. Black Guide: Logo in Brown Color (Large & Exact Centered) */}
             <div className={"dh-whoweare-logo"} style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", width: "250px" }}>
               <img
-                src={"/image/Group 1171275868.svg"}
+                src={logoSvg}
                 alt={"Chidiya Ghar"}
                 style={{ width: "250px", height: "auto", display: "block" }}
               />

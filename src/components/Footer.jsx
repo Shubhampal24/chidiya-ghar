@@ -1,3 +1,5 @@
+import puneLocationImg from "../assets/image/pune-location.png";
+
 export default function Footer() {
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
@@ -12,104 +14,6 @@ export default function Footer() {
 
   return (
     <>
-      <style>
-        {`
-          .footer-wrapper {
-            padding: 28px 30px 0;
-            min-height: 500px;
-          }
-          .footer-bg-text {
-            font-size: 205px;
-            bottom: -22px;
-          }
-          .footer-card {
-            grid-template-columns: 180px 150px 205px 1fr;
-            height: 310px;
-            padding: 48px 68px 25px;
-          }
-          .footer-map-container {
-            height: 285px;
-            margin-top: -30px;
-            margin-right: -25px;
-          }
-          .footer-book-btn-wrapper {
-            position: absolute;
-            left: 0;
-            bottom: 30px;
-          }
-          .footer-copyright {
-            bottom: 25px;
-          }
-          .footer-col {
-            text-align: left;
-          }
-          
-          @media (max-width: 1024px) {
-            .footer-card {
-              grid-template-columns: 1fr 1fr;
-              height: auto;
-              padding: 40px;
-              row-gap: 40px;
-            }
-            .footer-map-container {
-              margin-top: 0;
-              margin-right: 0;
-              height: auto;
-            }
-            .footer-bg-text {
-              font-size: 150px;
-            }
-            .footer-wrapper {
-              min-height: auto;
-              padding-bottom: 120px;
-            }
-          }
-
-          @media (max-width: 768px) {
-            .footer-wrapper {
-              padding: 20px 15px 0;
-              padding-bottom: 100px;
-            }
-            .footer-card {
-              grid-template-columns: 1fr;
-              text-align: center;
-              padding: 30px 20px 70px;
-            }
-            .footer-col {
-              text-align: center;
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-            }
-            .footer-book-btn-wrapper {
-              position: relative;
-              bottom: auto;
-              left: auto;
-              margin-top: 20px;
-              display: flex;
-              justify-content: center;
-            }
-            .footer-bg-text {
-              font-size: 100px;
-              bottom: -10px;
-            }
-            .footer-copyright {
-              bottom: 20px;
-            }
-          }
-          
-          @media (max-width: 480px) {
-            .footer-bg-text {
-              font-size: 60px;
-              bottom: -5px;
-            }
-            .footer-map-container img {
-              max-width: 100% !important;
-              height: auto !important;
-            }
-          }
-        `}
-      </style>
       <footer
         id="site-footer"
         className="footer-wrapper"
@@ -402,7 +306,7 @@ export default function Footer() {
             }}
           >
             <img
-              src="/image/pune-location.png"
+              src={puneLocationImg}
               alt="Pune Location"
               style={{
                 width: "100%",

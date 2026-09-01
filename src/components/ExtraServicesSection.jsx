@@ -1,3 +1,5 @@
+import freeParkingImg from "../assets/image/free-parking.jpg";
+
 export default function ExtraServicesSection() {
   return (
     <>
@@ -155,7 +157,7 @@ export default function ExtraServicesSection() {
                         decoding={"async"}
                         width={"1200"}
                         height={"728"}
-                        src={"/image/free-parking.jpg"}
+                        src={freeParkingImg}
                         className={"attachment-post-thumbnail size-post-thumbnail wp-post-image"}
                         alt={"Free Parking"}
                         style={{ borderRadius: "12px", width: "100%", height: "170px", objectFit: "cover", display: "block" }}

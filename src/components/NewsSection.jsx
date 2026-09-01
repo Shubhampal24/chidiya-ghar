@@ -1,18 +1,9 @@
+import freeParkingImg from "../assets/image/free_parking.jpg";
+import news2Img from "../assets/image/news-2.jpg";
+
 export default function NewsSection() {
   return (
     <>
-    <style>
-  {`
-    .dh-highlights-cream {
-  background: #F3E9DC !important;
-  background-color: #F3E9DC !important;
-  box-shadow: 0 0 0 100vmax #F3E9DC;
-  clip-path: inset(0 -100vmax);
-  margin-top: -1px !important;
-  padding-bottom: 50px !important;
-}
-  `}
-</style>
       <div
   className={"dh-news-section-wrap dh-highlights-cream"}
 >
@@ -33,7 +24,7 @@ export default function NewsSection() {
             <div className={"dh-news-img-wrap"}>
               {"\n\t\t\t\t\t"}
               <img
-                src={"/image/free_parking.jpg"}
+                src={freeParkingImg}
                 alt={"Complimentary Parking"}
               />
               {"\n\t\t\t\t"}
@@ -64,7 +55,7 @@ export default function NewsSection() {
             {"\n\t\t\t\t"}
             <div className={"dh-news-img-wrap"}>
               {"\n\t\t\t\t\t"}
-              <img src={"/image/news-2.jpg"} alt={"Lush Green Surroundings"} />
+              <img src={news2Img} alt={"Lush Green Surroundings"} />
               {"\n\t\t\t\t"}
             </div>
             {"\n\t\t\t\t"}

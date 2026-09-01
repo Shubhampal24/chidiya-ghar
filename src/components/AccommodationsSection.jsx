@@ -1,4 +1,8 @@
-import sectionBg from "../../image/ChatGPT Image Aug 31, 2026, 05_20_00 PM.png";
+import sectionBg from "../assets/image/section-bg.png";
+import acc1 from "../assets/image/acc-1.png";
+import acc2 from "../assets/image/acc-2.png";
+import acc3 from "../assets/image/acc-3.png";
+import acc4 from "../assets/image/acc-4.png";
 
 export default function AccommodationsSection() {
   return (
@@ -66,7 +70,7 @@ export default function AccommodationsSection() {
                           decoding={"async"}
                           width={"1200"}
                           height={"728"}
-                          src={"/image/acc-1.png"}
+                          src={acc1}
                           className={"attachment-post-thumbnail size-post-thumbnail wp-post-image"}
                           alt={"Accommodation I"}
                         />
@@ -148,7 +152,7 @@ export default function AccommodationsSection() {
                           decoding={"async"}
                           width={"1200"}
                           height={"728"}
-                          src={"/image/acc-2.png"}
+                          src={acc2}
                           className={"attachment-post-thumbnail size-post-thumbnail wp-post-image"}
                           alt={"Accommodation II"}
                         />
@@ -228,7 +232,7 @@ export default function AccommodationsSection() {
                           decoding={"async"}
                           width={"1200"}
                           height={"728"}
-                          src={"/image/acc-3.png"}
+                          src={acc3}
                           className={"attachment-post-thumbnail size-post-thumbnail wp-post-image"}
                           alt={"Accommodation III"}
                         />
@@ -308,7 +312,7 @@ export default function AccommodationsSection() {
                           decoding={"async"}
                           width={"1200"}
                           height={"728"}
-                          src={"/image/acc-4.png"}
+                          src={acc4}
                           className={"attachment-post-thumbnail size-post-thumbnail wp-post-image"}
                           alt={"Accommodation IV"}
                         />

@@ -8,6 +8,14 @@ import {
   Gamepad2,
   MapPin,
 } from "lucide-react";
+import roomImg from "../assets/image/room.svg";
+import commonareaImg from "../assets/image/commonarea.svg";
+import wifiImg from "../assets/image/wifi.svg";
+import securityImg from "../assets/image/security.svg";
+import housekeepingImg from "../assets/image/housekeeping.svg";
+import carImg from "../assets/image/car.svg";
+import recreationImg from "../assets/image/recreation.svg";
+import locationImg from "../assets/image/location.svg";
 
 export default function ServicesSection() { 
   return ( 
@@ -49,7 +57,7 @@ export default function ServicesSection() {
             {/* Item 1 */} 
             <div className="dh-service-card" style={{ background: "#FDFBF8", padding: "25px", borderRadius: "20px", border: "1px solid rgba(218, 180, 157, 0.3)", transition: "all 0.3s ease" }}> 
               <img
-  src="/image/room.svg"
+  src={roomImg}
   alt="Comfortable Rooms"
   style={{ height: "30px", marginBottom: "15px" }}
 /> 
@@ -60,7 +68,7 @@ export default function ServicesSection() {
             {/* Item 2 */} 
             <div className="dh-service-card" style={{ background: "#FDFBF8", padding: "25px", borderRadius: "20px", border: "1px solid rgba(218, 180, 157, 0.3)", transition: "all 0.3s ease" }}> 
               <img
-  src="/image/commonarea.svg"
+  src={commonareaImg}
   alt="Clean Common Areas"
   style={{ height: "30px", marginBottom: "15px" }}
 /> 
@@ -71,7 +79,7 @@ export default function ServicesSection() {
             {/* Item 3 */} 
             <div className="dh-service-card" style={{ background: "#FDFBF8", padding: "25px", borderRadius: "20px", border: "1px solid rgba(218, 180, 157, 0.3)", transition: "all 0.3s ease" }}> 
               <img
-  src="/image/wifi.svg"
+  src={wifiImg}
   alt="High-Speed Wi-Fi"
   style={{ height: "30px", marginBottom: "15px" }}
 /> 
@@ -82,7 +90,7 @@ export default function ServicesSection() {
             {/* Item 4 */} 
             <div className="dh-service-card" style={{ background: "#FDFBF8", padding: "25px", borderRadius: "20px", border: "1px solid rgba(218, 180, 157, 0.3)", transition: "all 0.3s ease" }}> 
               <img
-  src="/image/security.svg"
+  src={securityImg}
   alt="24x7 Security"
   style={{ height: "30px", marginBottom: "15px" }}
 /> 
@@ -93,7 +101,7 @@ export default function ServicesSection() {
             {/* Item 5 */} 
             <div className="dh-service-card" style={{ background: "#FDFBF8", padding: "25px", borderRadius: "20px", border: "1px solid rgba(218, 180, 157, 0.3)", transition: "all 0.3s ease" }}> 
               <img
-  src="/image/housekeeping.svg"
+  src={housekeepingImg}
   alt="Housekeeping"
   style={{ height: "30px", marginBottom: "15px" }}
 /> 
@@ -104,7 +112,7 @@ export default function ServicesSection() {
             {/* Item 6 */} 
             <div className="dh-service-card" style={{ background: "#FDFBF8", padding: "25px", borderRadius: "20px", border: "1px solid rgba(218, 180, 157, 0.3)", transition: "all 0.3s ease" }}> 
               <img
-  src="/image/car.svg"
+  src={carImg}
   alt="Secure Parking"
   style={{ height: "30px", marginBottom: "15px" }}
 /> 
@@ -115,7 +123,7 @@ export default function ServicesSection() {
             {/* Item 7 */} 
             <div className="dh-service-card" style={{ background: "#FDFBF8", padding: "25px", borderRadius: "20px", border: "1px solid rgba(218, 180, 157, 0.3)", transition: "all 0.3s ease" }}> 
               <img
-  src="/image/recreation.svg"
+  src={recreationImg}
   alt="Recreational Spaces"
   style={{ height: "30px", marginBottom: "15px" }}
 /> 
@@ -126,7 +134,7 @@ export default function ServicesSection() {
             {/* Item 8 */} 
             <div className="dh-service-card" style={{ background: "#FDFBF8", padding: "25px", borderRadius: "20px", border: "1px solid rgba(218, 180, 157, 0.3)", transition: "all 0.3s ease" }}> 
               <img
-  src="/image/location.svg"
+  src={locationImg}
   alt="Prime Location"
   style={{ height: "30px", marginBottom: "15px" }}
 /> 

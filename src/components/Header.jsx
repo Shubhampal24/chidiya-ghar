@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Facebook, Instagram, Youtube, Menu, X } from 'lucide-react';
+import logoImg from '../assets/image/Group 1171275756.png';
+import nestingProfessionalsImg from '../assets/image/NESTING PROFESSIONALS.svg';
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -23,12 +25,12 @@ export default function Header() {
         {/* Logo — tightly stacked, no gap */}
         <Link to="/" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textDecoration: 'none', lineHeight: 1 }}>
           <img
-            src="/image/Group 1171275756.png"
+            src={logoImg}
             alt="Chidiya Ghar"
             style={{ maxWidth: '110px', height: 'auto', display: 'block' }}
           />
           <img
-            src="/image/NESTING PROFESSIONALS.svg"
+            src={nestingProfessionalsImg}
             alt="Nesting Professionals"
             style={{ maxWidth: '92px', width: '100%', display: 'block', marginTop: '3px' }}
           />

@@ -1,22 +1,25 @@
 import { useState } from "react";
+import testimonial1 from "../assets/image/testimonial-1.jpg";
+import testimonial2 from "../assets/image/testimonial-2.jpg";
+import testimonial3 from "../assets/image/testimonial-3.jpg";
 
 const TESTIMONIALS = [
   {
-    avatar: "/image/testimonial-1.jpg",
+    avatar: testimonial1,
     quote:
       "Chidiya Ghar feels like a home away from home. The warmth of the place, the thoughtful details and the calming atmosphere made our stay truly memorable. We'll be back without a doubt.",
     name: "Priya Mehta",
     role: "Resident",
   },
   {
-    avatar: "/image/testimonial-2.jpg",
+    avatar: testimonial2,
     quote:
       "Our stay here was magnificent! The scenic surroundings, immaculate room cleanliness, and warm, accommodating staff made this our favorite holiday ever.",
     name: "Sarah Jenkins",
     role: "Tourist",
   },
   {
-    avatar: "/image/testimonial-3.jpg",
+    avatar: testimonial3,
     quote:
       "From check-in to checkout, everything was flawless. Exceptional food, peaceful ambiance, and five-star hospitality throughout our entire week.",
     name: "Michael Scott",
