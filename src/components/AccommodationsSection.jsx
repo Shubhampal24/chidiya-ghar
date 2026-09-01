@@ -4,6 +4,7 @@ export default function AccommodationsSection() {
   return (
     <>
       <div
+      id="accommodations-section"
         className={"et_pb_section et_pb_section_3 et_section_regular"}
         style={{
           backgroundImage: `url("${sectionBg}")`,

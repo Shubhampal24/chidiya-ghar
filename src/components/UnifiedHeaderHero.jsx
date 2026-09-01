@@ -35,8 +35,9 @@ export default function UnifiedHeaderHero({ isHomePage = false, title = "" }) {
 
       {/* Header Layout */}
       <header className="header">
-        {/* Logo - Extreme Left */}
-        <Link to="/" className="flex flex-col items-center flex-shrink-0" style={{ textDecoration: 'none', lineHeight: 1 }}>
+  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
+    {/* Logo - Extreme Left */}
+    <Link to="/" className="flex flex-col items-center flex-shrink-0" style={{ textDecoration: 'none', lineHeight: 1 }}>
           <img
             src="/image/chidiya-ghar-white-logo-fixed-counters.svg"
             alt="Chidiya Ghar"
@@ -66,33 +67,56 @@ export default function UnifiedHeaderHero({ isHomePage = false, title = "" }) {
             </Link>
             
             {/* Direct Link styled like a MenuItem */}
-            <Link 
-              to="/accommodations" 
-              style={{ color: 'white', fontSize: '14px', fontWeight: 500, textDecoration: 'none', display: 'inline-flex', alignItems: 'center' }}
-              className="hover:opacity-80"
-              onMouseEnter={() => setActive(null)}
-            >
-              Accommodations
-            </Link>
+            <a
+  href="#accommodations-section"
+  style={{ color: 'white', fontSize: '14px', fontWeight: 500, textDecoration: 'none', display: 'inline-flex', alignItems: 'center', cursor: 'pointer' }}
+  className="hover:opacity-80"
+  onClick={(e) => {
+    e.preventDefault();
+    const section = document.getElementById('accommodations-section');
+
+    if (section) {
+      section.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  }}
+  onMouseEnter={() => setActive(null)}
+>
+  Accommodations
+</a>
 
             <MenuItem setActive={setActive} active={active} item="Pages">
               <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
-                <HoveredLink href="/about-us">About us</HoveredLink>
-                <HoveredLink href="/blog">Blog</HoveredLink>
-                <HoveredLink href="/contact-us">Contact Us</HoveredLink>
-                <HoveredLink href="/search-results">Search Results</HoveredLink>
+                <HoveredLink href="#about-us">About us</HoveredLink>
+                {/* <HoveredLink href="/blog">Blog</HoveredLink> */}
+                <HoveredLink href="#site-footer">Contact Us</HoveredLink>
+                {/* <HoveredLink href="/search-results">Search Results</HoveredLink> */}
               </div>
             </MenuItem>
 
             {/* Direct Link styled like a MenuItem */}
-            <Link 
-              to="/our-services" 
-              style={{ color: 'white', fontSize: '14px', fontWeight: 500, textDecoration: 'none', display: 'inline-flex', alignItems: 'center' }}
-              className="hover:opacity-80"
-              onMouseEnter={() => setActive(null)}
-            >
-              Our Services
-            </Link>
+            <a
+  href="#services-section"
+  style={{ color: 'white', fontSize: '14px', fontWeight: 500, textDecoration: 'none', display: 'inline-flex', alignItems: 'center', cursor: 'pointer' }}
+  className="hover:opacity-80"
+  onClick={(e) => {
+    e.preventDefault();
+
+    const section = document.getElementById('services-section');
+
+    if (section) {
+      section.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  }}
+  onMouseEnter={() => setActive(null)}
+>
+  Our Services
+</a>
           </Menu>
         </div>
 
@@ -111,7 +135,8 @@ export default function UnifiedHeaderHero({ isHomePage = false, title = "" }) {
             style={{
               boxShadow: 'inset 0 0 0 1.5px rgba(255, 255, 255, 0.45)',
               color: '#ffffff',
-              padding: '9px 24px',
+              height: '50px',
+              padding: '0 24px',
               borderRadius: '9999px',
               letterSpacing: '0.08em',
               fontWeight: 700,
@@ -147,7 +172,8 @@ export default function UnifiedHeaderHero({ isHomePage = false, title = "" }) {
             style={{
               boxShadow: 'inset 0 0 0 1.5px rgba(255, 255, 255, 0.45)',
               color: '#ffffff',
-              padding: '9px 24px',
+              height: '50px',
+              padding: '0 24px',
               borderRadius: '9999px',
               letterSpacing: '0.08em',
               fontWeight: 700,
@@ -161,7 +187,7 @@ export default function UnifiedHeaderHero({ isHomePage = false, title = "" }) {
               textDecoration: 'none',
               transition: 'all 200ms ease',
               cursor: 'pointer',
-              whiteSpace: 'nowrap'
+              whiteSpace: 'nowrap',
             }}
             onMouseEnter={e => {
               e.currentTarget.style.background = 'rgba(255, 255, 255, 0.22)';
@@ -186,6 +212,7 @@ export default function UnifiedHeaderHero({ isHomePage = false, title = "" }) {
             {isMobileMenuOpen ? <X size={28} /> : <MenuIcon size={28} />}
           </button>
         </div>
+         </div>
       </header>
 
       {/* Mobile Menu Dropdown */}
@@ -193,9 +220,45 @@ export default function UnifiedHeaderHero({ isHomePage = false, title = "" }) {
         <div className="relative z-50 w-full" style={{ background: 'var(--cream)', padding: '18px', borderTop: '1px solid rgba(0,0,0,0.05)' }}>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
             <Link to="/" style={{ fontSize: '15px', color: 'var(--ink)' }} onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
-            <Link to="/accommodations" style={{ fontSize: '15px', color: 'var(--ink)' }} onClick={() => setIsMobileMenuOpen(false)}>Accommodations</Link>
+            <a
+  href="#accommodations-section"
+  style={{ fontSize: '15px', color: 'var(--ink)' }}
+  onClick={(e) => {
+    e.preventDefault();
+    setIsMobileMenuOpen(false);
+
+    const section = document.getElementById('accommodations-section');
+
+    if (section) {
+      section.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  }}
+>
+  Accommodations
+</a>
             <Link to="/about-us" style={{ fontSize: '15px', color: 'var(--ink)' }} onClick={() => setIsMobileMenuOpen(false)}>Pages</Link>
-            <Link to="/our-services" style={{ fontSize: '15px', color: 'var(--ink)' }} onClick={() => setIsMobileMenuOpen(false)}>Our Services</Link>
+            <a
+  href="#services-section"
+  style={{ fontSize: '15px', color: 'var(--ink)' }}
+  onClick={(e) => {
+    e.preventDefault();
+    setIsMobileMenuOpen(false);
+
+    const section = document.getElementById('services-section');
+
+    if (section) {
+      section.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  }}
+>
+  Our Services
+</a>
             <a href="tel:+15432167890" style={{ fontSize: '15px', color: 'var(--brown)', fontWeight: 600 }} onClick={() => setIsMobileMenuOpen(false)}>Call Us</a>
             <a href="#site-footer" style={{ fontSize: '15px', color: 'var(--brown)', fontWeight: 600 }} onClick={(e) => { setIsMobileMenuOpen(false); scrollToFooter(e); }}>Book Now</a>
           </div>
@@ -212,7 +275,7 @@ export default function UnifiedHeaderHero({ isHomePage = false, title = "" }) {
               fontFamily: "'Grift', sans-serif",
               fontWeight: 800,
               fontSize: 'clamp(2.8rem, 6.2vw, 5.2rem)',
-              lineHeight: 1.12,
+              lineHeight: 0.95,
               color: 'white',
               letterSpacing: '0.02em',
               textShadow: '0 4px 20px rgba(0,0,0,0.35)',

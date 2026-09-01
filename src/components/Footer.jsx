@@ -35,21 +35,21 @@ export default function Footer() {
           <div className="dh-footer-col">
             <h4 className="dh-footer-col-title">Accommodation</h4>
             <ul className="dh-footer-links">
-              <li><a href="#">Rooms</a></li>
-              <li><a href="#">Villas</a></li>
-              <li><a href="#">Suites</a></li>
-            </ul>
+  <li><a href="#accommodations-section">Rooms</a></li>
+  <li><a href="#accommodations-section">Villas</a></li>
+  <li><a href="#accommodations-section">Suites</a></li>
+</ul>
           </div>
 
           {/* Column 3 — Quick Access */}
           <div className="dh-footer-col">
             <h4 className="dh-footer-col-title">Quick Access</h4>
             <ul className="dh-footer-links">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Contact Us</a></li>
-            </ul>
+  <li><a href="#">Home</a></li>
+  <li><a href="#about-us">About Us</a></li>
+  <li><a href="#services-section">Services</a></li>
+  <li><a href="#site-footer">Contact Us</a></li>
+</ul>
           </div>
 
           {/* Column 4 — Contact */}

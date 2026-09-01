@@ -1,7 +1,9 @@
 export default function ServicesSection() {
   return (
     <>
-      <div className={"et_pb_section et_pb_section_2 et_section_regular"}>
+      <div 
+      id="services-section" 
+      className={"et_pb_section et_pb_section_2 et_section_regular"}>
         {"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t"}
         <div className={"et_pb_row et_pb_row_3 et_pb_gutters2"}>
           {"\n\t\t\t\t"}

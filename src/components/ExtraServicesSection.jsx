@@ -51,7 +51,7 @@ export default function ExtraServicesSection() {
               {"\n\t\t\t\t"}
               <a
                 className={"et_pb_button et_pb_button_1 et_pb_bg_layout_light"}
-                href={"#"}
+                href={"#services-section"}
                 data-icon={""}
                 style={{
                   fontFamily: "'Delight-SemiBold', 'Delight Semi Bold', 'Delight', sans-serif",

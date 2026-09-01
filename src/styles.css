@@ -341,7 +341,7 @@ html, body, #root, #page-container, body #page-container, #et-boc, #et-main-area
   min-height: 54px;
   background: transparent;
   display: flex;
-  align-items: center;
+  align-items: flex-start;   /* ← changed from: align-items: center; */
   justify-content: space-between;
   padding: 15px 45px;
   position: absolute;
@@ -2647,4 +2647,4 @@ a.et_pb_button_0,
 a.et_pb_button_1 {
   font-family: 'Delight-SemiBold', 'Delight Semi Bold', 'Delight', sans-serif !important;
   font-weight: 600 !important;
-}
+}

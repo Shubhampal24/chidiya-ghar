@@ -2,6 +2,7 @@ export default function WhoWeAreSection() {
   return (
     <>
       <div
+      id="about-us"
         className={"et_pb_section et_pb_section_1 et_section_regular"}
         style={{
           background: "linear-gradient(to bottom, #FDFBF8 0%, rgba(253, 251, 248, 0.94) 60px, rgba(253, 251, 248, 0.94) 100%), url('/image/acc-2.png') center/cover no-repeat",
@@ -109,7 +110,7 @@ export default function WhoWeAreSection() {
               >
                 <a
                   className={"et_pb_button et_pb_button_0 et_pb_bg_layout_light"}
-                  href={"#"}
+                  href={"#accommodations-section"}
                   data-icon={""}
                   style={{
                     fontFamily: "'Delight-SemiBold', 'Delight Semi Bold', 'Delight', sans-serif",
