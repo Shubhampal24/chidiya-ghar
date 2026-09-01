@@ -24,6 +24,8 @@ export default function GallerySection() {
   const [windowWidth, setWindowWidth] = useState(
     typeof window !== "undefined" ? window.innerWidth : 1200
   );
+  const [touchStart, setTouchStart] = useState(null);
+  const [touchEnd, setTouchEnd] = useState(null);
 
   useEffect(() => {
     const handleResize = () => setWindowWidth(window.innerWidth);
@@ -37,6 +39,32 @@ export default function GallerySection() {
   const cardWidth = isMobile ? 220 : isTablet ? 280 : 350;
   const cardHeight = isMobile ? 155 : isTablet ? 195 : 245;
   const step = isMobile ? 180 : isTablet ? 250 : 330;
+
+  // Minimum swipe distance (in px) to trigger slide change
+  const minSwipeDistance = 50;
+
+  const onTouchStart = (e) => {
+    setTouchEnd(null);
+    setTouchStart(e.targetTouches[0].clientX);
+  };
+
+  const onTouchMove = (e) => {
+    setTouchEnd(e.targetTouches[0].clientX);
+  };
+
+  const onTouchEnd = () => {
+    if (!touchStart || !touchEnd) return;
+    const distance = touchStart - touchEnd;
+    const isLeftSwipe = distance > minSwipeDistance;
+    const isRightSwipe = distance < -minSwipeDistance;
+    
+    if (isLeftSwipe && activeIndex < GALLERY_IMAGES.length - 1) {
+      setActiveIndex(activeIndex + 1);
+    }
+    if (isRightSwipe && activeIndex > 0) {
+      setActiveIndex(activeIndex - 1);
+    }
+  };
 
   return (
     <div className={"et_pb_section et_pb_section_6 et_section_regular"} style={{ overflow: "hidden", padding: "40px 0 60px" }}>
@@ -83,7 +111,12 @@ export default function GallerySection() {
 
       <div className={"dh-smile-gallery-wrapper"}>
         {/* Smile Arc Stage */}
-        <div className={"dh-smile-gallery-stage"}>
+        <div 
+          className={"dh-smile-gallery-stage"}
+          onTouchStart={onTouchStart}
+          onTouchMove={onTouchMove}
+          onTouchEnd={onTouchEnd}
+        >
           {GALLERY_IMAGES.map((item, idx) => {
             const offset = idx - activeIndex;
             const absOffset = Math.abs(offset);

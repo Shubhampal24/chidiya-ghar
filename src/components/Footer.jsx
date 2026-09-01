@@ -189,24 +189,30 @@ export default function Footer() {
                   height: "34px",
                   padding: "0 15px",
                   boxSizing: "border-box",
-                  borderRadius: "20px",
-                  background: "#DCC9BF",
+                  borderRadius: "50px",
+                  fontFamily: "'Grift', sans-serif",
+                  fontWeight: 700,
+                  fontSize: "13px",
+                  background: "rgba(113, 53, 33, 0.08)",
+                  backdropFilter: "blur(3px)",
+                  WebkitBackdropFilter: "blur(3px)",
+                  boxShadow: "inset 0 0 0 1.5px rgba(113, 53, 33, 0.45)",
                   color: "#713521",
                   textDecoration: "none",
-                  fontFamily: "'Delight',",
-                  fontSize: "11px",
-                  fontWeight: 600,
                   lineHeight: 1,
-                  boxShadow: "0 7px 15px rgba(80,45,30,0.18)",
-                  transition: "transform 0.2s ease, box-shadow 0.2s ease",
+                  transition: "all 200ms ease",
+                  cursor: "pointer",
+                  whiteSpace: "nowrap",
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = "translateY(-2px)";
-                  e.currentTarget.style.boxShadow = "0 9px 18px rgba(80,45,30,0.24)";
+                  e.currentTarget.style.background = "rgba(113, 53, 33, 0.22)";
+                  e.currentTarget.style.boxShadow = "inset 0 0 0 1.5px rgba(113, 53, 33, 0.85), 0 4px 16px rgba(113, 53, 33, 0.2)";
+                  e.currentTarget.style.transform = "translateY(-1px)";
                 }}
                 onMouseLeave={(e) => {
+                  e.currentTarget.style.background = "rgba(113, 53, 33, 0.08)";
+                  e.currentTarget.style.boxShadow = "inset 0 0 0 1.5px rgba(113, 53, 33, 0.45)";
                   e.currentTarget.style.transform = "translateY(0)";
-                  e.currentTarget.style.boxShadow = "0 7px 15px rgba(80,45,30,0.18)";
                 }}
               >
                 Book Now

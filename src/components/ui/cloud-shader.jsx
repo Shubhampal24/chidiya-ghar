@@ -325,6 +325,11 @@ export const CloudShader = ({
         "relative h-full min-h-80 w-full overflow-hidden",
         className,
       )}
+      style={{
+        /* Fallback gradient shown when WebGL is unavailable or loading.
+           Matches the approximate visual appearance of the cloud shader sky. */
+        background: "linear-gradient(to bottom, #3876ba 0%, #6aaad8 40%, #8cbfe8 70%, #b8d8ef 100%)",
+      }}
     >
       <canvas
         ref={canvasRef}
