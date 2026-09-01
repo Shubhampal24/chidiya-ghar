@@ -7,8 +7,11 @@ export default function Footer() {
           {/* Column 1 — Brand */}
           <div className="dh-footer-col dh-footer-brand">
             <div className="dh-footer-logo-wrap">
-              <img src="/image/Group 1171275756.png" alt="Chidiya Ghar" className="dh-footer-logo-img" />
-              <img src="/image/NESTING PROFESSIONALS.svg" alt="Nesting Professionals" className="dh-footer-nesting-img" />
+              <img
+                src="/image/Group 1171275868.svg"
+                alt="Chidiya Ghar"
+                className="dh-footer-logo-img"
+              />
             </div>
             <p className="dh-footer-tagline">
               A home where birds, nature, art and belonging come together.
