@@ -38,15 +38,15 @@ export default function UnifiedHeaderHero({ isHomePage = false, title = "" }) {
         {/* Logo - Extreme Left */}
         <Link to="/" className="flex flex-col items-center flex-shrink-0" style={{ textDecoration: 'none', lineHeight: 1 }}>
           <img
-            src="/image/Group 1171275761.png"
+            src="/image/chidiya-ghar-white-logo-fixed-counters.svg"
             alt="Chidiya Ghar"
             style={{ maxWidth: '110px', height: 'auto', display: 'block' }}
           />
-          <img
+          {/* <img
             src="/image/NESTING PROFESSIONALS.svg"
             alt="Nesting Professionals"
             style={{ maxWidth: '92px', width: '100%', display: 'block', marginTop: '3px', filter: 'brightness(0) invert(1)' }}
-          />
+          /> */}
         </Link>
 
         {/* Navigation - Centered (Aceternity Navbar Menu) */}
