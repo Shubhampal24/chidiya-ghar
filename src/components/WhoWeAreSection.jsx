@@ -46,11 +46,11 @@ export default function WhoWeAreSection() {
             {/* 1. Black Guide: Logo in Brown Color (Large & Exact Centered) */}
             <div className={"dh-whoweare-logo"} style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", width: "250px" }}>
               <img
-                src={"/image/Group 1171275756.png"}
+                src={"/image/Group 1171275868.svg"}
                 alt={"Chidiya Ghar"}
                 style={{ width: "250px", height: "auto", display: "block" }}
               />
-              <img
+              {/* <img
                 src={"/image/NESTING PROFESSIONALS.svg"}
                 alt={"Nesting Professionals"}
                 style={{
@@ -60,7 +60,7 @@ export default function WhoWeAreSection() {
                   marginLeft: "auto",
                   marginRight: "auto",
                 }}
-              />
+              /> */}
             </div>
 
             {/* 2, 3 & 4. Red Guide (Heading) + Blue Guide (Content) + Orange Guide (Button) */}
