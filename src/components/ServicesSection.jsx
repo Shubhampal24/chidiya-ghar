@@ -49,7 +49,7 @@ export default function ServicesSection() {
             {/* Item 1 */} 
             <div className="dh-service-card" style={{ background: "#FDFBF8", padding: "25px", borderRadius: "20px", border: "1px solid rgba(218, 180, 157, 0.3)", transition: "all 0.3s ease" }}> 
               <img
-  src="public/image/room.svg"
+  src="/image/room.svg"
   alt="Comfortable Rooms"
   style={{ height: "30px", marginBottom: "15px" }}
 /> 
@@ -60,7 +60,7 @@ export default function ServicesSection() {
             {/* Item 2 */} 
             <div className="dh-service-card" style={{ background: "#FDFBF8", padding: "25px", borderRadius: "20px", border: "1px solid rgba(218, 180, 157, 0.3)", transition: "all 0.3s ease" }}> 
               <img
-  src="public/image/commonarea.svg"
+  src="/image/commonarea.svg"
   alt="Clean Common Areas"
   style={{ height: "30px", marginBottom: "15px" }}
 /> 
@@ -71,7 +71,7 @@ export default function ServicesSection() {
             {/* Item 3 */} 
             <div className="dh-service-card" style={{ background: "#FDFBF8", padding: "25px", borderRadius: "20px", border: "1px solid rgba(218, 180, 157, 0.3)", transition: "all 0.3s ease" }}> 
               <img
-  src="public/image/wifi.svg"
+  src="/image/wifi.svg"
   alt="High-Speed Wi-Fi"
   style={{ height: "30px", marginBottom: "15px" }}
 /> 
@@ -82,7 +82,7 @@ export default function ServicesSection() {
             {/* Item 4 */} 
             <div className="dh-service-card" style={{ background: "#FDFBF8", padding: "25px", borderRadius: "20px", border: "1px solid rgba(218, 180, 157, 0.3)", transition: "all 0.3s ease" }}> 
               <img
-  src="public/image/security.svg"
+  src="/image/security.svg"
   alt="24x7 Security"
   style={{ height: "30px", marginBottom: "15px" }}
 /> 
@@ -93,7 +93,7 @@ export default function ServicesSection() {
             {/* Item 5 */} 
             <div className="dh-service-card" style={{ background: "#FDFBF8", padding: "25px", borderRadius: "20px", border: "1px solid rgba(218, 180, 157, 0.3)", transition: "all 0.3s ease" }}> 
               <img
-  src="public/image/housekeeping.svg"
+  src="/image/housekeeping.svg"
   alt="Housekeeping"
   style={{ height: "30px", marginBottom: "15px" }}
 /> 
@@ -104,7 +104,7 @@ export default function ServicesSection() {
             {/* Item 6 */} 
             <div className="dh-service-card" style={{ background: "#FDFBF8", padding: "25px", borderRadius: "20px", border: "1px solid rgba(218, 180, 157, 0.3)", transition: "all 0.3s ease" }}> 
               <img
-  src="public/image/car.svg"
+  src="/image/car.svg"
   alt="Secure Parking"
   style={{ height: "30px", marginBottom: "15px" }}
 /> 
@@ -115,7 +115,7 @@ export default function ServicesSection() {
             {/* Item 7 */} 
             <div className="dh-service-card" style={{ background: "#FDFBF8", padding: "25px", borderRadius: "20px", border: "1px solid rgba(218, 180, 157, 0.3)", transition: "all 0.3s ease" }}> 
               <img
-  src="public/image/recreation.svg"
+  src="/image/recreation.svg"
   alt="Recreational Spaces"
   style={{ height: "30px", marginBottom: "15px" }}
 /> 
@@ -126,7 +126,7 @@ export default function ServicesSection() {
             {/* Item 8 */} 
             <div className="dh-service-card" style={{ background: "#FDFBF8", padding: "25px", borderRadius: "20px", border: "1px solid rgba(218, 180, 157, 0.3)", transition: "all 0.3s ease" }}> 
               <img
-  src="public/image/location.svg"
+  src="/image/location.svg"
   alt="Prime Location"
   style={{ height: "30px", marginBottom: "15px" }}
 /> 
