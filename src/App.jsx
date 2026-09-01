@@ -48,11 +48,11 @@ function HomePage() {
                   <ExtraServicesSection />
                   <OfferSection />
                   <GallerySection />
-                  <ManagementSection />
                   <TestimonialsSection />
+                  <NewsSection />
+                  <ManagementSection />
                 </div>
               </div>
-              <NewsSection />
             </article>
           </div>
         </div>

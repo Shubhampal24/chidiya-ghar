@@ -1,7 +1,21 @@
 export default function NewsSection() {
   return (
     <>
-      <div className={"dh-news-section-wrap"}>
+    <style>
+  {`
+    .dh-highlights-cream {
+  background: #F3E9DC !important;
+  background-color: #F3E9DC !important;
+  box-shadow: 0 0 0 100vmax #F3E9DC;
+  clip-path: inset(0 -100vmax);
+  margin-top: -1px !important;
+  padding-bottom: 50px !important;
+}
+  `}
+</style>
+      <div
+  className={"dh-news-section-wrap dh-highlights-cream"}
+>
         {"\n\t\t"}
         <div className={"dh-news-header"}>
           {"\n\t\t\t"}

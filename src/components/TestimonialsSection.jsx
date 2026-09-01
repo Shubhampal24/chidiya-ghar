@@ -40,7 +40,10 @@ export default function TestimonialsSection() {
   const t = TESTIMONIALS[idx];
 
   return (
-    <div className={"et_pb_section et_pb_section_8 et_section_regular"}>
+    <div
+  className={"et_pb_section et_pb_section_8 et_section_regular"}
+  style={{ backgroundColor: "#F3E9DC" }}
+>
       <div className={"et_pb_row et_pb_row_13 et_pb_gutters2"}>
         <div
           className={

@@ -67,13 +67,22 @@ export default function ManagementSection() {
   };
 
   return (
-    <>
-      <div
-        className={
-          "et_pb_section et_pb_section_7 et_pb_with_background et_section_regular"
-        }
-        style={{ padding: "50px 0" }}
-      >
+  <>
+    <style>
+  {`
+    .et_pb_section_7.et_pb_section.dh-management-white {
+      background: #FFFFFF !important;
+      background-color: #FFFFFF !important;
+    }
+  `}
+</style>
+
+    <div
+      className={
+        "et_pb_section et_pb_section_7 et_pb_with_background et_section_regular dh-management-white"
+      }
+      style={{ padding: "0 0 50px 0" }}
+    >
         <div className={"et_pb_row et_pb_row_11 et_pb_gutters2"}>
           <div
             className={
@@ -307,15 +316,23 @@ export default function ManagementSection() {
                         Total Room
                       </label>
                       <select
-                        name="totalRooms"
-                        value={formData.totalRooms}
-                        onChange={handleChange}
-                        style={{
-                          ...inputStyle,
-                          cursor: "pointer",
-                        }}
-                  
-                      >
+  name="totalRooms"
+  value={formData.totalRooms}
+  onChange={handleChange}
+  style={{
+    ...inputStyle,
+    cursor: "pointer",
+    paddingRight: "35px",
+    appearance: "none",
+    WebkitAppearance: "none",
+    MozAppearance: "none",
+    backgroundImage:
+      'url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2712%27 height=%2712%27 viewBox=%270 0 12 12%27%3E%3Cpath d=%27M2 4l4 4 4-4%27 fill=%27none%27 stroke=%27black%27 stroke-width=%271.5%27/%3E%3C/svg%3E")',
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "calc(100% - 18px) center",
+    backgroundSize: "12px 12px",
+  }}
+>
                         <option value="1 Room">1 Room</option>
                         <option value="2 Rooms">2 Rooms</option>
                         <option value="3 Rooms">3 Rooms</option>
