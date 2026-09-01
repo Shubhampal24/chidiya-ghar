@@ -4,7 +4,7 @@ export default function WhoWeAreSection() {
       <div
         className={"et_pb_section et_pb_section_1 et_section_regular"}
         style={{
-          background: "linear-gradient(rgba(253, 251, 248, 0.94), rgba(253, 251, 248, 0.94)), url('/image/acc-2.png') center/cover no-repeat",
+          background: "linear-gradient(to bottom, #FDFBF8 0%, rgba(253, 251, 248, 0.94) 60px, rgba(253, 251, 248, 0.94) 100%), url('/image/acc-2.png') center/cover no-repeat",
           padding: "58px 0",
         }}
       >

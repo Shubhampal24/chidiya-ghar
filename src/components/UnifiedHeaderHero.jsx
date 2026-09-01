@@ -202,7 +202,7 @@ export default function UnifiedHeaderHero({ isHomePage = false, title = "" }) {
       {/* Hero Content */}
       <div className="relative z-10 flex-1 flex flex-col items-center justify-center text-center px-4 w-full">
         {isHomePage ? (
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', paddingBottom: '48px', gap: '0' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', paddingBottom: '70px', gap: '0' }}>
 
             {/* HEADLINE */}
             <h2 style={{
@@ -240,6 +240,57 @@ export default function UnifiedHeaderHero({ isHomePage = false, title = "" }) {
             {title}
           </h1>
         )}
+      </div>
+
+      {/* Seamless Fog, Mist Blur & Cloud Horizon Transition to next section */}
+      <div 
+        className="absolute bottom-0 left-0 right-0 pointer-events-none z-10"
+        style={{
+          height: isHomePage ? '220px' : '110px',
+          overflow: 'hidden',
+        }}
+      >
+        {/* Deep Atmospheric Mist & Backdrop Blur */}
+        <div
+          style={{
+            position: 'absolute',
+            inset: 0,
+            background: 'linear-gradient(to bottom, rgba(253, 251, 248, 0) 0%, rgba(253, 251, 248, 0.25) 30%, rgba(253, 251, 248, 0.65) 60%, rgba(253, 251, 248, 0.95) 88%, #FDFBF8 100%)',
+            backdropFilter: 'blur(8px)',
+            WebkitBackdropFilter: 'blur(8px)',
+            maskImage: 'linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.6) 35%, black 85%)',
+            WebkitMaskImage: 'linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.6) 35%, black 85%)',
+          }}
+        />
+
+        {/* Soft Organic Cloud Wave Silhouette */}
+        <svg
+          viewBox="0 0 1440 90"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          style={{
+            position: 'absolute',
+            bottom: 0,
+            left: 0,
+            width: '100%',
+            height: isHomePage ? '65px' : '35px',
+            display: 'block',
+            zIndex: 2,
+            marginBottom: '-1px',
+          }}
+        >
+          {/* Ambient cloud crest */}
+          <path
+            d="M0,45 C220,20 440,65 720,35 C1000,10 1220,55 1440,30 L1440,90 L0,90 Z"
+            fill="rgba(253, 251, 248, 0.55)"
+          />
+          {/* Main soft rolling cloud base */}
+          <path
+            d="M0,60 C160,40 340,75 560,50 C780,25 980,68 1200,42 C1320,28 1390,52 1440,46 L1440,90 L0,90 Z"
+            fill="#FDFBF8"
+          />
+        </svg>
       </div>
     </div>
   );
