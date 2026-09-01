@@ -23,6 +23,7 @@ uniform float u_count;
 uniform vec3 u_cloud;
 uniform vec3 u_skyTop;
 uniform vec3 u_skyBottom;
+uniform float u_brightness;
 
 const mat2 R = mat2(0.80, 0.60, -0.60, 0.80);
 
@@ -149,7 +150,7 @@ void main() {
   }
   color = cloudPass(color, sky, p, aspect, t, 0.020, 0.48, 0.20, vec2(0.56, 0.24), 57.2, 0.0);
 
-  gl_FragColor = vec4(color, 1.0);
+  gl_FragColor = vec4(color * u_brightness, 1.0);
 }
 `;
 
@@ -197,6 +198,7 @@ export const CloudShader = ({
   cloudColor = "#fbf8f2",
   skyTopColor = "#3876ba",
   skyBottomColor = "#8cbfe8",
+  brightness = 0.8,
 }) => {
   const canvasRef = useRef(null);
   const paramsRef = useRef({
@@ -205,6 +207,7 @@ export const CloudShader = ({
     cloudColor,
     skyTopColor,
     skyBottomColor,
+    brightness,
   });
 
   paramsRef.current = {
@@ -213,6 +216,7 @@ export const CloudShader = ({
     cloudColor,
     skyTopColor,
     skyBottomColor,
+    brightness,
   };
 
   useEffect(() => {
@@ -256,6 +260,7 @@ export const CloudShader = ({
       cloud: gl.getUniformLocation(program, "u_cloud"),
       skyTop: gl.getUniformLocation(program, "u_skyTop"),
       skyBottom: gl.getUniformLocation(program, "u_skyBottom"),
+      brightness: gl.getUniformLocation(program, "u_brightness"),
     };
 
     let frame = 0;
@@ -296,6 +301,7 @@ export const CloudShader = ({
       gl.uniform3f(loc.cloud, cloud[0], cloud[1], cloud[2]);
       gl.uniform3f(loc.skyTop, skyTop[0], skyTop[1], skyTop[2]);
       gl.uniform3f(loc.skyBottom, skyBottom[0], skyBottom[1], skyBottom[2]);
+      gl.uniform1f(loc.brightness, p.brightness ?? 0.8);
       gl.drawArrays(gl.TRIANGLES, 0, 3);
       frame = requestAnimationFrame(draw);
     };

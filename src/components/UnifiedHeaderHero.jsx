@@ -31,7 +31,7 @@ export default function UnifiedHeaderHero({ isHomePage = false, title = "" }) {
   return (
     <div className={`relative w-full overflow-hidden flex flex-col ${isHomePage ? 'min-h-[85vh]' : 'min-h-[40vh]'}`}>
       {/* Cloud Shader Background spanning entire component */}
-      <CloudShader className="absolute inset-0 z-0" />
+      <CloudShader className="absolute inset-0 z-0" brightness={0.8} />
 
       {/* Header Layout */}
       <header className="header">

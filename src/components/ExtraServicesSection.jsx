@@ -53,6 +53,10 @@ export default function ExtraServicesSection() {
                 className={"et_pb_button et_pb_button_1 et_pb_bg_layout_light"}
                 href={"#"}
                 data-icon={""}
+                style={{
+                  fontFamily: "'Delight', 'Delight Semi Bold', sans-serif !important",
+                  fontWeight: "600 !important",
+                }}
               >
                 {"Know More"}
               </a>

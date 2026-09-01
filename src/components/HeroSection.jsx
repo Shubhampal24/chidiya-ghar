@@ -10,7 +10,7 @@ export default function HeroSection() {
         style={{ background: 'transparent' }}
       >
         <div className="absolute inset-0 w-full h-full z-0 overflow-hidden">
-          <CloudShader className="absolute inset-0" />
+          <CloudShader className="absolute inset-0" brightness={0.8} />
         </div>
         {"\n\t\t\t\t\n\t\t\t\t"}
 
