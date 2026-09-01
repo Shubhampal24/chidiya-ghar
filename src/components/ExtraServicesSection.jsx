@@ -54,8 +54,8 @@ export default function ExtraServicesSection() {
                 href={"#"}
                 data-icon={""}
                 style={{
-                  fontFamily: "'Delight', 'Delight Semi Bold', sans-serif !important",
-                  fontWeight: "600 !important",
+                  fontFamily: "'Delight-SemiBold', 'Delight Semi Bold', 'Delight', sans-serif",
+                  fontWeight: 600,
                 }}
               >
                 {"Know More"}

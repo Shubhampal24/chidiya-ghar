@@ -112,8 +112,8 @@ export default function WhoWeAreSection() {
                   href={"#"}
                   data-icon={""}
                   style={{
-                    fontFamily: "'Delight', 'Delight Semi Bold', sans-serif !important",
-                    fontWeight: "600 !important",
+                    fontFamily: "'Delight-SemiBold', 'Delight Semi Bold', 'Delight', sans-serif",
+                    fontWeight: 600,
                     letterSpacing: "0.12em",
                     textTransform: "uppercase",
                     padding: "13px 36px",
