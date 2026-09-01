@@ -17,9 +17,9 @@ export default function OfferSection() {
           <div
             className="dh-custom-offer-card"
             style={{
-              background: "rgba(243, 233, 220, 0.78)",
-              backdropFilter: "blur(8px)",
-              WebkitBackdropFilter: "blur(8px)",
+              background: "rgba(243, 233, 220, 0.45)",
+backdropFilter: "none",
+WebkitBackdropFilter: "none",
               boxShadow: "inset 0 0 0 1.5px rgba(255, 255, 255, 0.75), 0 12px 36px rgba(94, 48, 35, 0.16)",
               border: "none",
               borderRadius: "20px",
