@@ -356,6 +356,7 @@ export default function ManagementSection() {
                       style={{
                         width: "100%",
                         minHeight: "100px",
+                        maxHeight:"100px",
                         borderRadius: "20px",
                         border: "1px solid var(--tan)",
                         background: "var(--white)",

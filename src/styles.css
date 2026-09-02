@@ -2965,3 +2965,35 @@ a.et_pb_button_1 {
   font-family: 'Delight', sans-serif !important;
 }
 
+/* ====================================================
+   WHO WE ARE (ABOUT US) HERO BACKGROUND & GRADIENT
+   ==================================================== */
+@media (max-width: 900px) {
+  .who-we-are-section {
+    min-height: auto !important;
+    padding: 30px 0 50px !important;
+  }
+  .who-we-are-bg {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .who-we-are-gradient {
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.25) 160px,
+      rgba(255, 255, 255, 0.92) 280px,
+      #ffffff 360px,
+      #ffffff 100%
+    ) !important;
+  }
+  .who-we-are-spacer {
+    display: none !important;
+  }
+  .who-we-are-content-col {
+    padding: 240px 10px 20px !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+}
+
