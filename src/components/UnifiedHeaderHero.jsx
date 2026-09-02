@@ -10,13 +10,24 @@ export default function UnifiedHeaderHero({ isHomePage = false, title = "" }) {
   const [active, setActive] = useState(null);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isRightHovered, setIsRightHovered] = useState(false);
+  const [isPagesExpanded, setIsPagesExpanded] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 80);
     };
+    const handleResize = () => {
+      if (window.innerWidth >= 768) {
+        setIsMobileMenuOpen(false);
+        setIsPagesExpanded(false);
+      }
+    };
     window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener('resize', handleResize, { passive: true });
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleResize);
+    };
   }, []);
 
   const scrollToFooter = (e) => {
@@ -218,7 +229,7 @@ export default function UnifiedHeaderHero({ isHomePage = false, title = "" }) {
 
       {/* Mobile Menu Dropdown */}
       {isMobileMenuOpen && (
-        <div className="relative z-50 w-full" style={{ background: 'var(--cream)', padding: '18px', borderTop: '1px solid rgba(0,0,0,0.05)' }}>
+        <div className="relative z-50 w-full md:hidden" style={{ background: 'var(--cream)', padding: '18px', borderTop: '1px solid rgba(0,0,0,0.05)' }}>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
             <Link to="/" style={{ fontSize: '15px', color: 'var(--ink)' }} onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
             <a
@@ -240,7 +251,41 @@ export default function UnifiedHeaderHero({ isHomePage = false, title = "" }) {
 >
   Accommodations
 </a>
-            <Link to="/about-us" style={{ fontSize: '15px', color: 'var(--ink)' }} onClick={() => setIsMobileMenuOpen(false)}>Pages</Link>
+            <button
+              onClick={(e) => {
+                e.preventDefault();
+                setIsPagesExpanded(!isPagesExpanded);
+              }}
+              style={{ fontSize: '15px', color: 'var(--ink)', background: 'transparent', border: 'none', textAlign: 'left', padding: 0, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}
+            >
+              Pages <span style={{ fontSize: '10px' }}>{isPagesExpanded ? '▲' : '▼'}</span>
+            </button>
+            {isPagesExpanded && (
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', paddingLeft: '15px', marginTop: '-4px' }}>
+                <a
+                  href="#about-us"
+                  style={{ fontSize: '14px', color: 'var(--muted)' }}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setIsMobileMenuOpen(false);
+                    const section = document.getElementById('about-us');
+                    if (section) section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                  }}
+                >
+                  About us
+                </a>
+                <a
+                  href="#site-footer"
+                  style={{ fontSize: '14px', color: 'var(--muted)' }}
+                  onClick={(e) => {
+                    setIsMobileMenuOpen(false);
+                    scrollToFooter(e);
+                  }}
+                >
+                  Contact Us
+                </a>
+              </div>
+            )}
             <a
   href="#services-section"
   style={{ fontSize: '15px', color: 'var(--ink)' }}

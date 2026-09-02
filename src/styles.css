@@ -24,7 +24,7 @@ html {
 body {
   margin: 0 !important;
   padding: 0 !important;
-  font-family: 'Delight', 'DM Sans', Arial, sans-serif;
+  font-family: 'Delight';
   font-weight: 400;
   color: var(--ink);
   background: var(--white);
@@ -33,7 +33,7 @@ body {
   width: 100% !important;
 }
 p {
-  font-family: 'Delight', 'DM Sans', Arial, sans-serif;
+  font-family: 'Delight';
   font-weight: 400 !important;
 }
 
@@ -186,7 +186,7 @@ label,
 .facility-item,
 .mphb-price-period,
 .subcontent {
-  font-family: 'Delight', 'DM Sans', Arial, sans-serif !important;
+  font-family: 'Delight', 'Delight'!important;
 }
 
 .eyebrow,
@@ -196,7 +196,7 @@ label,
 .mphb-attribute-title,
 .mphb-regular-price strong,
 .field label {
-  font-family: 'Delight', 'DM Sans', Arial, sans-serif !important;
+  font-family: 'Delight', 'Delight'!important;
 }
 
 /* ====================================================
@@ -280,13 +280,13 @@ h4,
 /* Custom typography */
 .your-style,
 .font-flix-normal {
-  font-family: 'Flix Normal', 'Flix', sans-serif;
+  font-family: 'Delight';
   font-weight: normal;
   font-style: normal;
 }
 
 .font-silo-bold {
-  font-family: 'silo-Bold', 'Silo-Bold', 'Silo', sans-serif;
+  font-family: 'Grift';
   font-weight: bold;
   font-style: normal;
 }
@@ -847,7 +847,7 @@ footer { background: var(--cream); color: var(--ink); padding: 80px 0 0; }
 }
 
 .et_pb_row_4 .et_pb_module_header {
-  font-family: "DM Sans", Arial, sans-serif !important;
+  font-family: 'Delight'!important;
   font-size: 20px !important;
   font-weight: 600 !important;
   color: #5E3023 !important;
@@ -1074,7 +1074,7 @@ footer { background: var(--cream); color: var(--ink); padding: 80px 0 0; }
   color: #5E3023 !important;
   border: 1.5px solid #895737 !important;
   padding: 4px 14px !important;
-  font-family: 'DM Sans', Arial, sans-serif !important;
+  font-family: 'Delight'!important;
   font-weight: 700 !important;
   font-size: 11px !important;
   letter-spacing: 0.12em !important;
@@ -1103,7 +1103,7 @@ footer { background: var(--cream); color: var(--ink); padding: 80px 0 0; }
   left: 14px !important;
   background: rgba(243, 233, 220, 0.95) !important;
   color: #5E3023 !important;
-  font-family: 'DM Sans', Arial, sans-serif !important;
+  font-family: 'Delight'!important;
   font-size: 10.5px !important;
   padding: 2px 6px !important;
   margin: 0 !important;
@@ -1153,7 +1153,7 @@ footer { background: var(--cream); color: var(--ink); padding: 80px 0 0; }
   list-style: none !important;
   padding: 0 !important;
   margin: 0 !important;
-  font-family: 'DM Sans', Arial, sans-serif !important;
+  font-family: 'Delight'!important;
   font-size: 11px !important;
   color: #5E3023 !important;
   display: flex !important;
@@ -1379,7 +1379,7 @@ body #page-container .et_pb_section .et_pb_signup_0_tb_footer.et_pb_subscribe .e
   box-shadow: inset 0 0 0 1.5px rgba(255, 255, 255, 0.35), 0 4px 14px rgba(94, 48, 35, 0.2) !important;
   border: none !important;
   border-radius: 9999px !important;
-  font-family: 'Delight', 'DM Sans', sans-serif !important;
+  font-family: 'Delight', 'Delight'!important;
   font-size: 14px !important;
   font-weight: 700 !important;
   letter-spacing: 0.08em !important;
@@ -1441,7 +1441,7 @@ p.mphb-required-fields-tip,
 }
 
 .horizontal-search-form .mphb_sc_search-form > p label {
-  font-family: 'DM Sans', Arial, sans-serif !important;
+  font-family: 'Delight'!important;
   font-size: 14px !important;
   font-weight: 500 !important;
   color: #5E3023 !important;
@@ -1463,7 +1463,7 @@ p.mphb-required-fields-tip,
   background: #FFFFFF !important;
   border: 1px solid #DAB49D !important;
   border-radius: 25px !important;
-  font-family: 'DM Sans', Arial, sans-serif !important;
+  font-family: 'Delight'!important;
   font-size: 14px !important;
   color: #5E3023 !important;
   box-sizing: border-box !important;
@@ -2768,3 +2768,29 @@ a.et_pb_button_1 {
   margin-top: -1px !important;
   padding-bottom: 50px !important;
 }
+
+/* --- Override Typography based on user requests --- */
+/* 1. Navigation Menu (Matches Buttons: Delight) */
+.et_pb_menu ul li a,
+.et_pb_menu_0_tb_header.et_pb_menu ul li a,
+.et_pb_menu_1_tb_header.et_pb_menu ul li a,
+.et_pb_menu_0_tb_header.et_pb_menu .nav li ul.sub-menu a, 
+.et_pb_menu_0_tb_header.et_pb_menu .et_mobile_menu a,
+.et_mobile_menu li a,
+.nav li a {
+  font-family: 'Delight', sans-serif !important;
+}
+
+/* 2. Global Content Reading Text (Delight) */
+.et_pb_text,
+.et_pb_text p,
+.et_pb_blurb,
+.et_pb_blurb p,
+.et_pb_post,
+.et_pb_post .post-content,
+.et_pb_post .post-content p,
+.et_pb_slide_content,
+.et_pb_slide_description {
+  font-family: 'Delight', sans-serif !important;
+}
+
