@@ -2666,24 +2666,195 @@ a.et_pb_button_1 {
 
 .footer-card {
   grid-template-columns: 180px 150px 205px 1fr;
-  height: 310px;
-  padding: 48px 68px 25px;
+  height: 335px;
+  padding: 46px 68px 28px;
 }
 
 .footer-map-container {
   height: 285px;
-  margin-top: -30px;
-  margin-right: -25px;
+  margin-top: -15px;
+  margin-right: -10px;
+  margin-bottom: 5px;
+}
+
+/* =====================================================
+   MAP CUTOUT TRAVELING BORDER LINE
+===================================================== */
+.footer-map-gemini-wrap {
+  position: relative;
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.footer-map-gemini-wrap:hover {
+  transform: scale(1.045);
+}
+
+/* Map image — NEVER changes color, filter, or opacity */
+.footer-map-img {
+  opacity: 1;
+  filter: none;
+}
+
+/* ====================================================
+   PUNE MAP SILHOUETTE CONTOUR ANIMATION
+   ==================================================== */
+.pune-contour-base {
+  stroke: #713520;
+  stroke-opacity: 0.14;
+  stroke-width: 1.2px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+}
+
+.pune-contour-traveler {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+  pointer-events: none;
+}
+
+/* Primary ring (clockwise) — continuous flow */
+.pune-contour-cw {
+  stroke: #713520;
+  stroke-width: 1.4px;
+  stroke-dasharray: 75 925;
+  stroke-dashoffset: 0;
+  animation: puneContourCW 8s linear infinite;
+  opacity: 1;
+  transition: stroke-dasharray 0.4s ease, stroke-width 0.3s ease, filter 0.3s ease;
+}
+
+/* On hover: primary ring multiplies into dual rings and intensifies */
+.footer-map-gemini-wrap:hover .pune-contour-cw {
+  stroke-width: 1.6px;
+  stroke-dasharray: 70 430;
+  filter: drop-shadow(0 0 2px rgba(113, 53, 32, 0.45));
+}
+
+/* Reverse ring (counter-clockwise in opposite direction) */
+.pune-contour-ccw {
+  stroke: #713520;
+  stroke-width: 1.4px;
+  stroke-dasharray: 65 435;
+  stroke-dashoffset: 0;
+  animation: puneContourCCW 6.5s linear infinite;
+  opacity: 0;
+  transition: opacity 0.4s ease, filter 0.3s ease;
+}
+
+.footer-map-gemini-wrap:hover .pune-contour-ccw {
+  opacity: 0.92;
+  filter: drop-shadow(0 0 2px rgba(113, 53, 32, 0.4));
+}
+
+/* Tertiary secondary wave (clockwise offset, gives multi-pulse depth) */
+.pune-contour-wave2 {
+  stroke: #895737;
+  stroke-width: 1.2px;
+  stroke-dasharray: 55 445;
+  stroke-dashoffset: 250;
+  animation: puneContourCW 5.2s linear infinite;
+  opacity: 0;
+  transition: opacity 0.45s ease;
+}
+
+.footer-map-gemini-wrap:hover .pune-contour-wave2 {
+  opacity: 0.78;
+}
+
+@keyframes puneContourCW {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: -1000;
+  }
+}
+
+@keyframes puneContourCCW {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 1000;
+  }
+}
+
+.footer-map-gemini-wrap:hover .footer-map-pin {
+  animation: pinGeminiHover 1.4s ease-in-out infinite alternate;
+}
+
+.footer-map-pin {
+  position: absolute;
+  transform: translate(-50%, -100%);
+  cursor: pointer;
+  transition: transform 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.footer-map-pin:hover {
+  animation-play-state: paused !important;
+  transform: translate(-50%, -108%) scale(1.15) !important;
+  z-index: 20 !important;
+}
+
+.footer-pin-tooltip {
+  position: absolute;
+  bottom: calc(100% - 2px);
+  left: 50%;
+  transform: translateX(-50%) translateY(4px);
+  background: #713520;
+  color: #FFFFFF;
+  font-family: 'Grift', sans-serif;
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 4px 9px;
+  border-radius: 6px;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+  box-shadow: 0 4px 14px rgba(113, 53, 32, 0.35);
+  z-index: 30;
+  line-height: 1.2;
+}
+
+.footer-pin-tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 4px;
+  border-style: solid;
+  border-color: #713520 transparent transparent transparent;
+}
+
+.footer-map-pin:hover .footer-pin-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+@keyframes pinGeminiHover {
+  0% {
+    transform: translate(-50%, -100%) scale(1);
+  }
+  100% {
+    transform: translate(-50%, -115%) scale(1.12);
+  }
 }
 
 .footer-book-btn-wrapper {
   position: absolute;
   left: 0;
-  bottom: 30px;
+  bottom: 28px;
 }
 
 .footer-copyright {
-  bottom: 25px;
+  bottom: 20px;
 }
 
 .footer-col {
